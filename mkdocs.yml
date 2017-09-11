@@ -10,6 +10,14 @@ theme: 'material'
 pages:
     - Home: 'index.md'
     - Playground: 'playground.md'
+    - PrfM:
+        - Index: 'prfm/index.md'
+    - PmQm:
+        - Index: 'pmqm/index.md'
+    - AppArch:
+        - Index: 'apparch/index.md'
+    - APF:
+        - Index: 'apf/index.md'
 
 markdown_extensions:
   - toc(permalink=true)
