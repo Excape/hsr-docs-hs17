@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>https://doc.robinsuter.ch/</loc>
+     <lastmod>2017-09-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://doc.robinsuter.ch/playground/</loc>
+     <lastmod>2017-09-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>https://doc.robinsuter.ch/prfm/</loc>
+     <lastmod>2017-09-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://doc.robinsuter.ch/pmqm/</loc>
+     <lastmod>2017-09-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://doc.robinsuter.ch/apparch/</loc>
+     <lastmod>2017-09-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://doc.robinsuter.ch/apf/</loc>
+     <lastmod>2017-09-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>
