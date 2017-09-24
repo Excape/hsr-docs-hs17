@@ -12,8 +12,12 @@ pages:
     - Playground: 'playground.md'
     - PrfM:
         - Index: 'prfm/index.md'
+        - Introduction: 'prfm/introduction.md'
+        - Formal Proof: 'prfm/formal_proof.md'
     - PmQm:
         - Index: 'pmqm/index.md'
+        - Exam: 'pmqm/exam.md'
+        - Projekt und Qualität: 'pmqm/projekt_qualitaet.md'
     - AppArch:
         - Index: 'apparch/index.md'
     - APF:
