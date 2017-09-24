@@ -32,13 +32,53 @@
         }, 
         {
             "location": "/prfm/", 
-            "text": "Programmiersprachen und formale Methoden", 
+            "text": "Programmiersprachen und formale Methoden\n\n\n\n\nIntroduction", 
             "title": "Index"
         }, 
         {
             "location": "/prfm/#programmiersprachen-und-formale-methoden", 
-            "text": "", 
+            "text": "Introduction", 
             "title": "Programmiersprachen und formale Methoden"
+        }, 
+        {
+            "location": "/prfm/introduction/", 
+            "text": "Introduction\n\n\nMotivation\n\n\n\n\nUsing a formal language to describe and solve problems is central to software engineering\n\n\nProgramming language theory involves mathematics, software engineering and linguistics\n\n\nMain emphasis: Comparative programming language analysis\n\n\nLike in other engineering disciplines, a mathematical analysis can contribute to a reliable and robust design\n\n\n\n\nDefinitions\n\n\n\n\nFormal language: Set of strings (symbols) constrained by specific rules\n\n\nThe set of formal languages is a subset of context-free languages\n\n\nAll programming languages are formal, we need to be able to interpret them computationally\n\n\n\n\n\n\nInformal language: Any natural language\n\n\n\n\nGoals\n\n\n\n\nUnderstanding of programming paradigms outside OO/imperative\n\n\nCreate programs in functional and logical styles\n\n\nFormal foundations of programming languages\n\n\nBridge the gap between \"computer science\" and theoretical disciplines and practical software engineering\n\n\nShift from execution-based thinking to rule-based thinking\n\n\n\n\nProgramming Paradigms\n\n\n\n\nOOP is not a paradigm in this sense here, more a way of organizing your code (built on the imperative paradigm)", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/prfm/introduction/#introduction", 
+            "text": "", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/prfm/introduction/#motivation", 
+            "text": "Using a formal language to describe and solve problems is central to software engineering  Programming language theory involves mathematics, software engineering and linguistics  Main emphasis: Comparative programming language analysis  Like in other engineering disciplines, a mathematical analysis can contribute to a reliable and robust design", 
+            "title": "Motivation"
+        }, 
+        {
+            "location": "/prfm/introduction/#definitions", 
+            "text": "Formal language: Set of strings (symbols) constrained by specific rules  The set of formal languages is a subset of context-free languages  All programming languages are formal, we need to be able to interpret them computationally    Informal language: Any natural language", 
+            "title": "Definitions"
+        }, 
+        {
+            "location": "/prfm/introduction/#goals", 
+            "text": "Understanding of programming paradigms outside OO/imperative  Create programs in functional and logical styles  Formal foundations of programming languages  Bridge the gap between \"computer science\" and theoretical disciplines and practical software engineering  Shift from execution-based thinking to rule-based thinking", 
+            "title": "Goals"
+        }, 
+        {
+            "location": "/prfm/introduction/#programming-paradigms", 
+            "text": "OOP is not a paradigm in this sense here, more a way of organizing your code (built on the imperative paradigm)", 
+            "title": "Programming Paradigms"
+        }, 
+        {
+            "location": "/prfm/formal_proof/", 
+            "text": "Formal Proof\n\n\n\n\nAn axiom is a proof rule without antecedents\n\n\nEvery proof tree has an axiom at the top (starting with the root at the bottom)\n\n\nA theory is a set of proof rules\n\n\nThis set is usually infinite and specified using a set of \nproof rule schemas", 
+            "title": "Formal Proof"
+        }, 
+        {
+            "location": "/prfm/formal_proof/#formal-proof", 
+            "text": "An axiom is a proof rule without antecedents  Every proof tree has an axiom at the top (starting with the root at the bottom)  A theory is a set of proof rules  This set is usually infinite and specified using a set of  proof rule schemas", 
+            "title": "Formal Proof"
         }, 
         {
             "location": "/pmqm/", 
@@ -49,6 +89,31 @@
             "location": "/pmqm/#projekt-und-qualitatsmanagement", 
             "text": "", 
             "title": "Projekt- und Qualit\u00e4tsmanagement"
+        }, 
+        {
+            "location": "/pmqm/exam/", 
+            "text": "Exam\n\n\n\n\nOpen Book", 
+            "title": "Exam"
+        }, 
+        {
+            "location": "/pmqm/exam/#exam", 
+            "text": "Open Book", 
+            "title": "Exam"
+        }, 
+        {
+            "location": "/pmqm/projekt_qualitaet/", 
+            "text": "Projekt und Qualit\u00e4t\n\n\n\n\nWichtig: Qualit\u00e4tsrelevante Interessen kennen!\n\n\n\n\nPlan, Do, Check, Act\n\n\n\n\nPlan - SMART-Ziele\n\n\nSpezifisch, Messbar, Akzeptiert, Realistisch, Terminiert\n\n\n\n\n\n\nDo - OTOBOS\n\n\nOn Time, on Budget, on Scope", 
+            "title": "Projekt und Qualit\u00e4t"
+        }, 
+        {
+            "location": "/pmqm/projekt_qualitaet/#projekt-und-qualitat", 
+            "text": "Wichtig: Qualit\u00e4tsrelevante Interessen kennen!", 
+            "title": "Projekt und Qualit\u00e4t"
+        }, 
+        {
+            "location": "/pmqm/projekt_qualitaet/#plan-do-check-act", 
+            "text": "Plan - SMART-Ziele  Spezifisch, Messbar, Akzeptiert, Realistisch, Terminiert    Do - OTOBOS  On Time, on Budget, on Scope", 
+            "title": "Plan, Do, Check, Act"
         }, 
         {
             "location": "/apparch/", 
