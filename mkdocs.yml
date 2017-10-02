@@ -14,15 +14,19 @@ pages:
         - Index: 'prfm/index.md'
         - Introduction: 'prfm/introduction.md'
         - Formal Proof: 'prfm/formal_proof.md'
+        - Propositional Calculus: 'prfm/propositional_calculus.md'
     - PmQm:
         - Index: 'pmqm/index.md'
         - Exam: 'pmqm/exam.md'
         - Projekt und Qualität: 'pmqm/projekt_qualitaet.md'
+        - Projekte: 'pmqm/projekte.md'
     - AppArch:
         - Index: 'apparch/index.md'
+        - Fundamentals: 'apparch/architecture_fundamentals.md'
     - APF:
         - Index: 'apf/index.md'
 
+        - Introduction: 'apf/intro.md'
 markdown_extensions:
   - toc(permalink=true)
   - sane_lists
