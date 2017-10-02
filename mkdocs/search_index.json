@@ -81,6 +81,36 @@
             "title": "Formal Proof"
         }, 
         {
+            "location": "/prfm/propositional_calculus/", 
+            "text": "Propositional Calculus\n\n\nBasic PC\n\n\n\n\nContains the basic set of PC (like NAND in computing)\n\n\nA \nPredicate\n is a formal statement that is either \ntrue\n or \nfalse\n\n\n\n\n\\vdash\n: \"Turnstile\" or \"tee\"\n\n\n\n\nH \\vdash G\n: \"Prove \nG\n under Hyphotheses \nH\n\"\n\n\nTurnstiles are \"implications\" on the level of a sequent, whereas \"\n\\Rightarrow\n\" is an implication on the predicate level\n\n\n\n\nBasicPC Syntax\n\n\n\n\nExamples of possible strings: \n\\bot\n, \n\\lnot\\bot\n, \n\\bot \\land \\bot\n\n\n\n\n\n\nProof Rule Schemas\n\n\n\n\nSchemas represent an infinite number of proof rules of the same form\n\n\nThey use \nmeta variables\n. If these are instantiated, they become a concrete proof rule\n\n\n\n\n\n\nTodo\n\n\nPut \n\\land\\ goal\n as outer fraction\n\n\n\n\nExample: Prove \nP \\land Q \\vdash Q \\land P\n\n\n\n\n\n\n\\frac{\\frac{\\frac{}{P, Q \\vdash Q}hyp \\frac{}{P, Q \\vdash P} hyp}{P, Q \\vdash Q \\land P} \\land goal}{P\\land Q \\vdash Q \\land P} \\land hyp\n\n\n\n\n\n\nEvery \"string\" you can generate using the basicPC Syntax can be used to instantiate a meta variable\n\n\n\n\nH\n can be an empty set\n\n\n\n\nExtending the syntax\n\n\n\n\nWe extend basicPC by introducing \"syntactic sugar\", new Symbols like \nT\n for True and \n\\lor\n\n\n\n\nThese syntactical equivalences can be used like proof rules\n\n\nAll the new rules of PC can be proven with the basicPC proof schemas", 
+            "title": "Propositional Calculus"
+        }, 
+        {
+            "location": "/prfm/propositional_calculus/#propositional-calculus", 
+            "text": "", 
+            "title": "Propositional Calculus"
+        }, 
+        {
+            "location": "/prfm/propositional_calculus/#basic-pc", 
+            "text": "Contains the basic set of PC (like NAND in computing)  A  Predicate  is a formal statement that is either  true  or  false   \\vdash : \"Turnstile\" or \"tee\"   H \\vdash G : \"Prove  G  under Hyphotheses  H \"  Turnstiles are \"implications\" on the level of a sequent, whereas \" \\Rightarrow \" is an implication on the predicate level", 
+            "title": "Basic PC"
+        }, 
+        {
+            "location": "/prfm/propositional_calculus/#basicpc-syntax", 
+            "text": "Examples of possible strings:  \\bot ,  \\lnot\\bot ,  \\bot \\land \\bot", 
+            "title": "BasicPC Syntax"
+        }, 
+        {
+            "location": "/prfm/propositional_calculus/#proof-rule-schemas", 
+            "text": "Schemas represent an infinite number of proof rules of the same form  They use  meta variables . If these are instantiated, they become a concrete proof rule    Todo  Put  \\land\\ goal  as outer fraction   Example: Prove  P \\land Q \\vdash Q \\land P    \\frac{\\frac{\\frac{}{P, Q \\vdash Q}hyp \\frac{}{P, Q \\vdash P} hyp}{P, Q \\vdash Q \\land P} \\land goal}{P\\land Q \\vdash Q \\land P} \\land hyp    Every \"string\" you can generate using the basicPC Syntax can be used to instantiate a meta variable   H  can be an empty set", 
+            "title": "Proof Rule Schemas"
+        }, 
+        {
+            "location": "/prfm/propositional_calculus/#extending-the-syntax", 
+            "text": "We extend basicPC by introducing \"syntactic sugar\", new Symbols like  T  for True and  \\lor   These syntactical equivalences can be used like proof rules  All the new rules of PC can be proven with the basicPC proof schemas", 
+            "title": "Extending the syntax"
+        }, 
+        {
             "location": "/pmqm/", 
             "text": "Projekt- und Qualit\u00e4tsmanagement", 
             "title": "Index"
@@ -116,6 +146,31 @@
             "title": "Plan, Do, Check, Act"
         }, 
         {
+            "location": "/pmqm/projekte/", 
+            "text": "Projekte\n\n\nProjekttypen\n\n\n\n\nLinienprojekt: Alle wichtigen Akteure sind in ihrer Stammorganisation (Chef = PL)\n\n\nKleine Projekte, Startups\n\n\n\n\n\n\nMatrixorganisation: Akteure sind in verschiedenen Einheiten (Entwicklung, Verkauf, etc.)\n\n\nPL ist aus Pool und \"normaler\" Mitarbeiter\n\n\nF\u00fcr grosse Unternehmen\n\n\n\n\n\n\nStablinienorganisation: Gleich wie Matrix, aber PL ist aus Stabsstelle\n\n\nZ.B. mit externem PL\n\n\nFlexible L\u00f6sung f\u00fcr mittelgrosse Projekte\n\n\n\n\n\n\nReine Projektorganisation: Alle wichtigen Akteure werden in die gleiche Einheit zusammen gezogen (Einehitsleiter = PL)\n\n\nF\u00fcr grosse Projekte mit langfristigem Fokus\n\n\n\n\n\n\n\n\nRequirement Engineering\n\n\n\n\nNormalerweise Anforderungen \"Soll\" einteilen, f\u00fcr ganz wichtiges \"Muss\"\n\n\n\n\nLernkontrolle\n\n\n\n\nFrage 2: C und D sind falsch\n\n\nFrage 3: Interviews, Beobachtung", 
+            "title": "Projekte"
+        }, 
+        {
+            "location": "/pmqm/projekte/#projekte", 
+            "text": "", 
+            "title": "Projekte"
+        }, 
+        {
+            "location": "/pmqm/projekte/#projekttypen", 
+            "text": "Linienprojekt: Alle wichtigen Akteure sind in ihrer Stammorganisation (Chef = PL)  Kleine Projekte, Startups    Matrixorganisation: Akteure sind in verschiedenen Einheiten (Entwicklung, Verkauf, etc.)  PL ist aus Pool und \"normaler\" Mitarbeiter  F\u00fcr grosse Unternehmen    Stablinienorganisation: Gleich wie Matrix, aber PL ist aus Stabsstelle  Z.B. mit externem PL  Flexible L\u00f6sung f\u00fcr mittelgrosse Projekte    Reine Projektorganisation: Alle wichtigen Akteure werden in die gleiche Einheit zusammen gezogen (Einehitsleiter = PL)  F\u00fcr grosse Projekte mit langfristigem Fokus", 
+            "title": "Projekttypen"
+        }, 
+        {
+            "location": "/pmqm/projekte/#requirement-engineering", 
+            "text": "Normalerweise Anforderungen \"Soll\" einteilen, f\u00fcr ganz wichtiges \"Muss\"", 
+            "title": "Requirement Engineering"
+        }, 
+        {
+            "location": "/pmqm/projekte/#lernkontrolle", 
+            "text": "Frage 2: C und D sind falsch  Frage 3: Interviews, Beobachtung", 
+            "title": "Lernkontrolle"
+        }, 
+        {
             "location": "/apparch/", 
             "text": "Application Architecture", 
             "title": "Index"
@@ -126,6 +181,41 @@
             "title": "Application Architecture"
         }, 
         {
+            "location": "/apparch/architecture_fundamentals/", 
+            "text": "Softare Architecture Fundamentals\n\n\nDefintion\n\n\n\n\nSoftware Architect ist eine Rolle  mit vielen Disziplinen (consult, create, maintain, review, ...)\n\n\nKann in agiler Entwicklung auch eine \"virtuelle\" Rolle sein\n\n\n\n\nPhasen\n\n\n\n\n\"Architectural Concerns\" - Architekturanforderungen und -interessen\n\n\nArchitectural Analysis - \"Requirements engineering\"\n\n\nArchitectural Synthesis - \"Architektur Design\"\n\n\nArchitectural Evaluation - \"Architektur-Review\"\n\n\n\n\nArchitectural Significance\n\n\n\n\nEconomic Significance: z.B. \"Kann damit der Vertrag erf\u00fcllt werden?\", \"Konkurenz hat dies bereits, brauchen wir auch\"\n\n\nOft entscheidet auch die Erfahrung aus fr\u00fcheren Projekten, ob Requirements f\u00fcr die Architektur relevant sind\n\n\nAndere Checkliste von P. Eeles:\n\n\nungenau definiert, was heisst \"critical\" functionality?\n\n\nDie meisten Anforderungen treffen nach dieser Checkliste zu\n\n\n\n\n\n\n\n\nViewpoints\n\n\n\n\nEin Viewpoint gruppiert Anliegen (concerns) von Stakeholdern\n\n\n\n\n4+1 Viewpoint Model (RUP)\n\n\n\n\nView f\u00fcr Logical (f\u00fcr Designer), Implementation (f\u00fcr Programmer), Process (f\u00fcr Integrators) und Deployment\n\n\nUse-case View in der Mitte, die alles verbindet", 
+            "title": "Fundamentals"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/#softare-architecture-fundamentals", 
+            "text": "", 
+            "title": "Softare Architecture Fundamentals"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/#defintion", 
+            "text": "Software Architect ist eine Rolle  mit vielen Disziplinen (consult, create, maintain, review, ...)  Kann in agiler Entwicklung auch eine \"virtuelle\" Rolle sein", 
+            "title": "Defintion"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/#phasen", 
+            "text": "\"Architectural Concerns\" - Architekturanforderungen und -interessen  Architectural Analysis - \"Requirements engineering\"  Architectural Synthesis - \"Architektur Design\"  Architectural Evaluation - \"Architektur-Review\"", 
+            "title": "Phasen"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/#architectural-significance", 
+            "text": "Economic Significance: z.B. \"Kann damit der Vertrag erf\u00fcllt werden?\", \"Konkurenz hat dies bereits, brauchen wir auch\"  Oft entscheidet auch die Erfahrung aus fr\u00fcheren Projekten, ob Requirements f\u00fcr die Architektur relevant sind  Andere Checkliste von P. Eeles:  ungenau definiert, was heisst \"critical\" functionality?  Die meisten Anforderungen treffen nach dieser Checkliste zu", 
+            "title": "Architectural Significance"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/#viewpoints", 
+            "text": "Ein Viewpoint gruppiert Anliegen (concerns) von Stakeholdern", 
+            "title": "Viewpoints"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/#41-viewpoint-model-rup", 
+            "text": "View f\u00fcr Logical (f\u00fcr Designer), Implementation (f\u00fcr Programmer), Process (f\u00fcr Integrators) und Deployment  Use-case View in der Mitte, die alles verbindet", 
+            "title": "4+1 Viewpoint Model (RUP)"
+        }, 
+        {
             "location": "/apf/", 
             "text": "Advanced Patterns and Frameworks", 
             "title": "Index"
@@ -134,6 +224,26 @@
             "location": "/apf/#advanced-patterns-and-frameworks", 
             "text": "", 
             "title": "Advanced Patterns and Frameworks"
+        }, 
+        {
+            "location": "/apf/intro/", 
+            "text": "APF Intro\n\n\nWas sind Patterns\n\n\n\n\nUrpsrung: Architektur Patterns von Christopher Alexander\n\n\nGenerische L\u00f6sungen f\u00fcr h\u00e4ufige Engineering-Probleme\n\n\nPattern ist selten 1:1 implementierbar\n\n\nForces: Was sind die Probleme und Rahmenbedingungen, die mit einem Pattern gel\u00f6st werden k\u00f6nnen?\n\n\nConsequences: Gut und schlechte Resultate des Patterns\n\n\nPattern Language: Patterns werden miteinander verkn\u00fcpft und bauen aufeinander auf\n\n\nGenerelle Prinzipen sind \nkeine\n Patterns! (DRY, SOLID, etc.)\n\n\nSOLID: \n\n\nSingle Responsibility\n\n\nOpen-Closed: offen f\u00fcr Erweiterung, keine Ver\u00e4nderung von Clients notwendig)\n\n\nLizkov-Substitution Principle\n\n\nInterface segregation principle: Interfaces abspalten\n\n\nDependency Inversion: Abh\u00e4ngigkeiten immer vom konkreten zum abstrakten\n\n\n\n\n\n\n\n\n\n\n\n\nRelevante Patterns\n\n\n\n\nGoF-Patterns (ohne Singleton)\n\n\nEinteilung in drei Teile ist eher k\u00fcnstlich\n\n\n\n\n\n\nPOSA 1: Pattern h\u00e4ngen miteinander zusammen", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/apf/intro/#apf-intro", 
+            "text": "", 
+            "title": "APF Intro"
+        }, 
+        {
+            "location": "/apf/intro/#was-sind-patterns", 
+            "text": "Urpsrung: Architektur Patterns von Christopher Alexander  Generische L\u00f6sungen f\u00fcr h\u00e4ufige Engineering-Probleme  Pattern ist selten 1:1 implementierbar  Forces: Was sind die Probleme und Rahmenbedingungen, die mit einem Pattern gel\u00f6st werden k\u00f6nnen?  Consequences: Gut und schlechte Resultate des Patterns  Pattern Language: Patterns werden miteinander verkn\u00fcpft und bauen aufeinander auf  Generelle Prinzipen sind  keine  Patterns! (DRY, SOLID, etc.)  SOLID:   Single Responsibility  Open-Closed: offen f\u00fcr Erweiterung, keine Ver\u00e4nderung von Clients notwendig)  Lizkov-Substitution Principle  Interface segregation principle: Interfaces abspalten  Dependency Inversion: Abh\u00e4ngigkeiten immer vom konkreten zum abstrakten", 
+            "title": "Was sind Patterns"
+        }, 
+        {
+            "location": "/apf/intro/#relevante-patterns", 
+            "text": "GoF-Patterns (ohne Singleton)  Einteilung in drei Teile ist eher k\u00fcnstlich    POSA 1: Pattern h\u00e4ngen miteinander zusammen", 
+            "title": "Relevante Patterns"
         }
     ]
 }
