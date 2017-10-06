@@ -111,6 +111,21 @@
             "title": "Extending the syntax"
         }, 
         {
+            "location": "/prfm/logic_programming_intro/", 
+            "text": "Logic Programming Introduction\n\n\nHello World\n\n\n\n\nHypthoses are the \"knowledge base\"\n\n\nRules \nm(X):- h(X).\n-\n \n\\forall x.H(x) \\Rightarrow M(x)\n\n\n\n\n\"implied by\" - it's reversed!\n\n\n\n\n\n\nFacts: \nh(s).\n\n\n\n\n\n\nQuery: \n?- m(s).\n\n\n\n\n\\forall x\n is implied with uppercase variables", 
+            "title": "Logical Programming Intro"
+        }, 
+        {
+            "location": "/prfm/logic_programming_intro/#logic-programming-introduction", 
+            "text": "", 
+            "title": "Logic Programming Introduction"
+        }, 
+        {
+            "location": "/prfm/logic_programming_intro/#hello-world", 
+            "text": "Hypthoses are the \"knowledge base\"  Rules  m(X):- h(X). -   \\forall x.H(x) \\Rightarrow M(x)   \"implied by\" - it's reversed!    Facts:  h(s).    Query:  ?- m(s).   \\forall x  is implied with uppercase variables", 
+            "title": "Hello World"
+        }, 
+        {
             "location": "/pmqm/", 
             "text": "Projekt- und Qualit\u00e4tsmanagement", 
             "title": "Index"
@@ -216,6 +231,81 @@
             "title": "4+1 Viewpoint Model (RUP)"
         }, 
         {
+            "location": "/apparch/agile_architecture/", 
+            "text": "Agile Architecture \n Quality Attribute-Driven Design\n\n\nDiscussion\n\n\n\n\nApplication Architecture: Spezifisch auf Ebene \"Logical View\" und \"Development View\"\n\n\nSpezialisierung von \"Software Architecture\", das die ganze Disziplin umfasst\n\n\n\n\n\n\n\n\nAgile Architecting\n\n\n\n\nz.B. Tags auf Issues erstellen f\u00fcr ASR-Kategorisierung\n\n\nProzesse geben Notationen vor (wie Use case diagram)\n\n\nAgile Modeling: Viel auf Whiteboard, pragmatisch\n\n\nAttribute-Driven Design: Aus Quality-Attributes die Architektur entwerfen\n\n\nPatterns und Frameworks werden ausgew\u00e4hlt\n\n\n\n\n\n\n\n\nNFRs\n\n\n\n\nSMART - Specific, Measurable, Agreed, Realistic, Time-bound\n\n\nFURPS: Functionality, Usability, Reliability, Performance, Supportability (\"Betreibbarkeit\")\n\n\nTaxonomy: Begriffe anbringen und diese in Beziehung zueinander setzen\n\n\nSystem: Requirements: Zu Attributes (FURPS, NFR) kommen auch Constraints (z.B. politische, rechtliche) und Functional Requirements\n\n\nTaxonomonien helfen auch bei Reviews, um einen \u00dcberblick zu behalten\n\n\n\n\nQuality Attribute Scenario\n\n\n\n\nEnvironment: z.B. \"Runtime\" oder \"Buildtime\"\n\n\nArtifact: Welche Dokumente / Systeme sind betroffen?\n\n\nWICHTIG\n: Response Measure: Wie wird das Resultat gemessen? Was muss diese Messung erf\u00fcllen?\n\n\n\n\nUser Story Template\n\n\n\n\nUser STories erg\u00e4nzen mit \"to achieve this goal, ...\"\n\n\nNFRs und andere messbare Ziele\n\n\nAlternative zu usability Ziele (more agile): A/B-Testing, mit User im Projekt direkt testen\n\n\nErweiterung \"Quality Story Template\" f\u00fcr System Administratoren\n\n\n\"As a system administrator, i would like [NFR]\"\n\n\n\"To achieve this goal, i'm willing to accept/invest ...\"", 
+            "title": "Agile Architecture"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/#agile-architecture-quality-attribute-driven-design", 
+            "text": "", 
+            "title": "Agile Architecture &amp; Quality Attribute-Driven Design"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/#discussion", 
+            "text": "Application Architecture: Spezifisch auf Ebene \"Logical View\" und \"Development View\"  Spezialisierung von \"Software Architecture\", das die ganze Disziplin umfasst", 
+            "title": "Discussion"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/#agile-architecting", 
+            "text": "z.B. Tags auf Issues erstellen f\u00fcr ASR-Kategorisierung  Prozesse geben Notationen vor (wie Use case diagram)  Agile Modeling: Viel auf Whiteboard, pragmatisch  Attribute-Driven Design: Aus Quality-Attributes die Architektur entwerfen  Patterns und Frameworks werden ausgew\u00e4hlt", 
+            "title": "Agile Architecting"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/#nfrs", 
+            "text": "SMART - Specific, Measurable, Agreed, Realistic, Time-bound  FURPS: Functionality, Usability, Reliability, Performance, Supportability (\"Betreibbarkeit\")  Taxonomy: Begriffe anbringen und diese in Beziehung zueinander setzen  System: Requirements: Zu Attributes (FURPS, NFR) kommen auch Constraints (z.B. politische, rechtliche) und Functional Requirements  Taxonomonien helfen auch bei Reviews, um einen \u00dcberblick zu behalten", 
+            "title": "NFRs"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/#quality-attribute-scenario", 
+            "text": "Environment: z.B. \"Runtime\" oder \"Buildtime\"  Artifact: Welche Dokumente / Systeme sind betroffen?  WICHTIG : Response Measure: Wie wird das Resultat gemessen? Was muss diese Messung erf\u00fcllen?", 
+            "title": "Quality Attribute Scenario"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/#user-story-template", 
+            "text": "User STories erg\u00e4nzen mit \"to achieve this goal, ...\"  NFRs und andere messbare Ziele  Alternative zu usability Ziele (more agile): A/B-Testing, mit User im Projekt direkt testen  Erweiterung \"Quality Story Template\" f\u00fcr System Administratoren  \"As a system administrator, i would like [NFR]\"  \"To achieve this goal, i'm willing to accept/invest ...\"", 
+            "title": "User Story Template"
+        }, 
+        {
+            "location": "/apparch/solution_strategy/", 
+            "text": "Solution Strategy\n\n\nTipps f\u00fcr Solution Strategy: \nhttp://docs.arc42.org/keywords/#solution-strategy\n\n\nArchitectural Synthesis\n\n\n\n\nScope abstecken mit funktionalen Komponenten und externen Interfaces\n\n\nWichtige Entscheidungen zur Architektur (Tiers, Frameworks)\n\n\n\"Twin Peaks Model\": Requirements und Design (Architektur) werden \"gleichzeitig\" ausgearbeitet (iterativ und inkrementell)\n\n\n\n\nLayer-Pattern\n\n\n\n\nIm Layer-Pattern gibt es keine Layer-\"Spr\u00fcnge\"!\n\n\nLayers sind logisch und geben nicht die physikalische Verteilung (tiers) vor\n\n\n\"Enterprise Resources\" = \"Domain Entities\"\n\n\nBusiness Rule: Anforderungen, z.B. \"Kundenanfragen werden in x Min beantwortet\"\n\n\n\n\nClient-Server Cuts\n\n\n\n\nLayer-Pattern zwei mal angewendet: Logisch (logical Viewpoint) und Aufteilung auf phyiskalische Tiers (deployment viewpoint)\n\n\nLayer k\u00f6nnen als ganzes auf Tiers aufgeteilt werden, oder Layer k\u00f6nnen auch \"geschnitten\" werden\n\n\nTiers und Layers werden oft missverst\u00e4ndlich verwendet, am besten immer nachfragen\n\n\nFliessende Layers: Ist z.B. Eingabevalidierung im Presentation-Layer, oder allein / zus\u00e4tzlich noch in Business Logic?\n\n\nz.B. auf beiden Layern testen und mit Tests \"synchronisieren\"\n\n\n\n\n\n\n\n\nC4 Models\n\n\n\n\nContext\n: System ist black-box, welche Schnittstellen kommunizieren damit?\n\n\nDazu geh\u00f6ren andere Systeme und auch User mit Use Cases\n\n\n\n\n\n\nContainer\n: Gibt eine \u00dcbersicht der Architektur (solution strateby)\n\n\nHigh-Level Technology choices\n\n\n\n\n\n\nComponents\n: Logische Komponenten und Kommunikation innerhalb eines Containers (mehr in n\u00e4chster Vorlesung)\n\n\nClasses\n (or Code): Klassendiagramm oder Code selbst", 
+            "title": "Solution Strategy"
+        }, 
+        {
+            "location": "/apparch/solution_strategy/#solution-strategy", 
+            "text": "Tipps f\u00fcr Solution Strategy:  http://docs.arc42.org/keywords/#solution-strategy", 
+            "title": "Solution Strategy"
+        }, 
+        {
+            "location": "/apparch/solution_strategy/#architectural-synthesis", 
+            "text": "Scope abstecken mit funktionalen Komponenten und externen Interfaces  Wichtige Entscheidungen zur Architektur (Tiers, Frameworks)  \"Twin Peaks Model\": Requirements und Design (Architektur) werden \"gleichzeitig\" ausgearbeitet (iterativ und inkrementell)", 
+            "title": "Architectural Synthesis"
+        }, 
+        {
+            "location": "/apparch/solution_strategy/#layer-pattern", 
+            "text": "Im Layer-Pattern gibt es keine Layer-\"Spr\u00fcnge\"!  Layers sind logisch und geben nicht die physikalische Verteilung (tiers) vor  \"Enterprise Resources\" = \"Domain Entities\"  Business Rule: Anforderungen, z.B. \"Kundenanfragen werden in x Min beantwortet\"", 
+            "title": "Layer-Pattern"
+        }, 
+        {
+            "location": "/apparch/solution_strategy/#client-server-cuts", 
+            "text": "Layer-Pattern zwei mal angewendet: Logisch (logical Viewpoint) und Aufteilung auf phyiskalische Tiers (deployment viewpoint)  Layer k\u00f6nnen als ganzes auf Tiers aufgeteilt werden, oder Layer k\u00f6nnen auch \"geschnitten\" werden  Tiers und Layers werden oft missverst\u00e4ndlich verwendet, am besten immer nachfragen  Fliessende Layers: Ist z.B. Eingabevalidierung im Presentation-Layer, oder allein / zus\u00e4tzlich noch in Business Logic?  z.B. auf beiden Layern testen und mit Tests \"synchronisieren\"", 
+            "title": "Client-Server Cuts"
+        }, 
+        {
+            "location": "/apparch/solution_strategy/#c4-models", 
+            "text": "Context : System ist black-box, welche Schnittstellen kommunizieren damit?  Dazu geh\u00f6ren andere Systeme und auch User mit Use Cases    Container : Gibt eine \u00dcbersicht der Architektur (solution strateby)  High-Level Technology choices    Components : Logische Komponenten und Kommunikation innerhalb eines Containers (mehr in n\u00e4chster Vorlesung)  Classes  (or Code): Klassendiagramm oder Code selbst", 
+            "title": "C4 Models"
+        }, 
+        {
+            "location": "/apparch/exercises/ex1/", 
+            "text": "Exercise 1\n\n\n\n\n\n\n\n\nRequirement\n\n\nScore\n\n\nMapping\n\n\nExplanation\n\n\n\n\n\n\n\n\n\n\nCache V2 Kubernetes provider resources (#1919)\n\n\n\n\n\n\n\n\n\n\n\n\nReplace all Frigga usage in Orca (#1920)\n\n\nL-M\n\n\n\n\nFrigga ist eine alte Library, die String Parsing macht; wohl nicht wichtig f\u00fcr QoS\n\n\n\n\n\n\nSupport for custom basePath of Swagger\n\n\nL\n\n\n\n\nSwagger ist API-Framework; Wohl nicht wichtig f\u00fcr Architektur", 
+            "title": "Exercise 1"
+        }, 
+        {
+            "location": "/apparch/exercises/ex1/#exercise-1", 
+            "text": "Requirement  Score  Mapping  Explanation      Cache V2 Kubernetes provider resources (#1919)       Replace all Frigga usage in Orca (#1920)  L-M   Frigga ist eine alte Library, die String Parsing macht; wohl nicht wichtig f\u00fcr QoS    Support for custom basePath of Swagger  L   Swagger ist API-Framework; Wohl nicht wichtig f\u00fcr Architektur", 
+            "title": "Exercise 1"
+        }, 
+        {
             "location": "/apf/", 
             "text": "Advanced Patterns and Frameworks", 
             "title": "Index"
@@ -244,6 +334,136 @@
             "location": "/apf/intro/#relevante-patterns", 
             "text": "GoF-Patterns (ohne Singleton)  Einteilung in drei Teile ist eher k\u00fcnstlich    POSA 1: Pattern h\u00e4ngen miteinander zusammen", 
             "title": "Relevante Patterns"
+        }, 
+        {
+            "location": "/apf/gof_revisited/", 
+            "text": "GoF Revisited\n\n\nRepetition\n\n\nObserver\n\n\nDefine a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.\n\n\nStrategy\n\n\nDefine a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.\n\n\nTemplate Method\n\n\nDefine the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.\n\n\nAbstract Factory\n\n\nProvide an interface for creating families of related or dependent objects without specifying their concrete classes.\n\n\nPrototype\n\n\nEine konkrete Instanz wird gecloned (statt mit Factory) f\u00fcr eine neue Instanz. So k\u00f6nnen gleiche Instanzen schnell erstellt werden, ohne sie jedes Mal neu zu instanzieren\n\n\nComposite\n\n\nCompose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.\n\n\n\n\nTransparent Composite: Oberklasse (Graphic) hat \nadd(Graphic)\n methode\n\n\nProblem: abgeleitete Klassen haben diese dann auch, k\u00f6nnen sie aber nicht brauchen!\n\n\n\n\n\n\n\n\nDecorator\n\n\nAttach additional responsibilities to an object dynamically. Decorators provide a flexible alternative\nto subclassing for extending functionality.\n\n\n\n\nAndere Intention als Composite: Man m\u00f6chte weitere Funktionalit\u00e4t einf\u00fchren, nicht einen Baum aufbauen. Es ist eine \"Kette\" von Funktionalit\u00e4t\n\n\n\n\nFacade\n\n\nProvide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use\n\n\nLesser Known Patterns\n\n\nMediator\n\n\n\n\nKommunikation unter Objekten sicherstellen, ohne dass die Objekte selbst Referenzen untereinander haben\n\n\nMediator ist oft Observer, die beteiligten Objekte Observables\n\n\nz.B. in \nupdate()\n die Updates von einem Colleague einem anderen Colleague \u00fcbergeben\n\n\n\n\n\n\nGut testbar, wenn sauber: Colleagues-Mocks dem Mediator \u00fcbergeben\n\n\nNachteil: Mediator ist SPOF,  kann sehr gross und unstrukturiert werden\n\n\n\n\nMemento\n\n\n\n\nEin Zustand eines Objektes auslagern, damit er sp\u00e4ter wiederhergestellt werden kann, ohne die Kapselung zu verletzen\n\n\nz.B. Savegames\n\n\nDer Zustand vom Originator wird in das Memento kopiert\n\n\nBeim Widerherstellen schreibt der Originator der Zustand vom Memento zu sich selber\n\n\nVorteil: Originator muss nicht seine Internals heraus geben\n\n\nNachteile:\n\n\nBraucht jedes Mal eine vollst\u00e4ndige Kopie\n\n\nViel Speicherplatz ben\u00f6tigt\n\n\n\n\n\n\n\n\nCommand\n\n\n\n\nEin Command kann herumgereicht werden (\"was gibt es auszuf\u00fchren\")\n\n\nCommand wird von einem Invoker ausgef\u00fchrt (\nexecute()\n)\n\n\nCommand kann z.B. geloggt oder scheduled (verz\u00f6gert) werden\n\n\nNachteil: Viele kleine Command-Klassen bei grossem Design, wird zersaust\n\n\nQuasi ein Function pointer, der herum gereicht wird\n\n\n\n\nCommand Processor\n\n\n\n\nWie Command, aber mit Undo / Redo\n\n\nz.B. Commands in Stack speichern als History\n\n\nDer Processor verwaltet die History\n\n\nCommand Processor gibt auch vor, wer die Commands ausf\u00fchrt, d\u00fcrfen nicht mehr \"beliebig\" herum geschoben werden!\n\n\n\n\nVisitor\n\n\n\n\nProblem: Klassenhierarchie braucht neue Methode, ohne die Klasse zu ver\u00e4ndern\n\n\nBeispiel Filesystem Serialisierung: Oberklasse \nFSObj\n hat Methode \naccept(visitor)\n. Die Unterklassen \"konsumieren\" den Visitor\n\n\nDer Visitor ist entweder ein \nXmlVisitor\n oder \nJSONVisitor\n\n\nUnterklassen rufen im \naccept()\n visitor mit Referenz auf sich selbst auf (z.B. in File: \nvisitor.visitFile(this)\n)\n\n\n\n\n\n\nNachteile: \n\n\nDie beiden Hierarchien sind gekoppelt, f\u00fcr neue Elemente m\u00fcssen beide Hierarchien angepasst werden beide Hierarchien angepasst werden\n\n\nGefahr von Code duplication, weil die Logik aufgebrochen wird\n\n\n\n\n\n\n\n\nFlyweight\n\n\n\n\nAusgangslange: Viele Objekte, die alle \"gleich\" sind, aber in einer Art (z.B. Position) unterschiedlich sind\n\n\nInterner State ist immer gleich, externer State kann sich \u00e4ndern\n\n\nZiel: Memory-sparend abbilden\n\n\nDie \nFlyweight\n-Klasse ist z.B. ein Baum\n\n\nFlyweightManager\nverwaltet die Objekte\n\n\nVom Flyweight gibt es nur eine Instanz, gehalten vom Manager \n\n\n\n\n\n\nDer interne (intrinsic) State ist f\u00fcr alle Objekte gleich (immutable Flyweights)\n\n\nDer externe State wird vom Client direkt dem konkreten Flyweight gegeben (und wird dort nicht gespeichert!)", 
+            "title": "GoF Revisited"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#gof-revisited", 
+            "text": "", 
+            "title": "GoF Revisited"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#repetition", 
+            "text": "", 
+            "title": "Repetition"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#observer", 
+            "text": "Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.", 
+            "title": "Observer"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#strategy", 
+            "text": "Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.", 
+            "title": "Strategy"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#template-method", 
+            "text": "Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.", 
+            "title": "Template Method"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#abstract-factory", 
+            "text": "Provide an interface for creating families of related or dependent objects without specifying their concrete classes.", 
+            "title": "Abstract Factory"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#prototype", 
+            "text": "Eine konkrete Instanz wird gecloned (statt mit Factory) f\u00fcr eine neue Instanz. So k\u00f6nnen gleiche Instanzen schnell erstellt werden, ohne sie jedes Mal neu zu instanzieren", 
+            "title": "Prototype"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#composite", 
+            "text": "Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.   Transparent Composite: Oberklasse (Graphic) hat  add(Graphic)  methode  Problem: abgeleitete Klassen haben diese dann auch, k\u00f6nnen sie aber nicht brauchen!", 
+            "title": "Composite"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#decorator", 
+            "text": "Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative\nto subclassing for extending functionality.   Andere Intention als Composite: Man m\u00f6chte weitere Funktionalit\u00e4t einf\u00fchren, nicht einen Baum aufbauen. Es ist eine \"Kette\" von Funktionalit\u00e4t", 
+            "title": "Decorator"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#facade", 
+            "text": "Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use", 
+            "title": "Facade"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#lesser-known-patterns", 
+            "text": "", 
+            "title": "Lesser Known Patterns"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#mediator", 
+            "text": "Kommunikation unter Objekten sicherstellen, ohne dass die Objekte selbst Referenzen untereinander haben  Mediator ist oft Observer, die beteiligten Objekte Observables  z.B. in  update()  die Updates von einem Colleague einem anderen Colleague \u00fcbergeben    Gut testbar, wenn sauber: Colleagues-Mocks dem Mediator \u00fcbergeben  Nachteil: Mediator ist SPOF,  kann sehr gross und unstrukturiert werden", 
+            "title": "Mediator"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#memento", 
+            "text": "Ein Zustand eines Objektes auslagern, damit er sp\u00e4ter wiederhergestellt werden kann, ohne die Kapselung zu verletzen  z.B. Savegames  Der Zustand vom Originator wird in das Memento kopiert  Beim Widerherstellen schreibt der Originator der Zustand vom Memento zu sich selber  Vorteil: Originator muss nicht seine Internals heraus geben  Nachteile:  Braucht jedes Mal eine vollst\u00e4ndige Kopie  Viel Speicherplatz ben\u00f6tigt", 
+            "title": "Memento"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#command", 
+            "text": "Ein Command kann herumgereicht werden (\"was gibt es auszuf\u00fchren\")  Command wird von einem Invoker ausgef\u00fchrt ( execute() )  Command kann z.B. geloggt oder scheduled (verz\u00f6gert) werden  Nachteil: Viele kleine Command-Klassen bei grossem Design, wird zersaust  Quasi ein Function pointer, der herum gereicht wird", 
+            "title": "Command"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#command-processor", 
+            "text": "Wie Command, aber mit Undo / Redo  z.B. Commands in Stack speichern als History  Der Processor verwaltet die History  Command Processor gibt auch vor, wer die Commands ausf\u00fchrt, d\u00fcrfen nicht mehr \"beliebig\" herum geschoben werden!", 
+            "title": "Command Processor"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#visitor", 
+            "text": "Problem: Klassenhierarchie braucht neue Methode, ohne die Klasse zu ver\u00e4ndern  Beispiel Filesystem Serialisierung: Oberklasse  FSObj  hat Methode  accept(visitor) . Die Unterklassen \"konsumieren\" den Visitor  Der Visitor ist entweder ein  XmlVisitor  oder  JSONVisitor  Unterklassen rufen im  accept()  visitor mit Referenz auf sich selbst auf (z.B. in File:  visitor.visitFile(this) )    Nachteile:   Die beiden Hierarchien sind gekoppelt, f\u00fcr neue Elemente m\u00fcssen beide Hierarchien angepasst werden beide Hierarchien angepasst werden  Gefahr von Code duplication, weil die Logik aufgebrochen wird", 
+            "title": "Visitor"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#flyweight", 
+            "text": "Ausgangslange: Viele Objekte, die alle \"gleich\" sind, aber in einer Art (z.B. Position) unterschiedlich sind  Interner State ist immer gleich, externer State kann sich \u00e4ndern  Ziel: Memory-sparend abbilden  Die  Flyweight -Klasse ist z.B. ein Baum  FlyweightManager verwaltet die Objekte  Vom Flyweight gibt es nur eine Instanz, gehalten vom Manager     Der interne (intrinsic) State ist f\u00fcr alle Objekte gleich (immutable Flyweights)  Der externe State wird vom Client direkt dem konkreten Flyweight gegeben (und wird dort nicht gespeichert!)", 
+            "title": "Flyweight"
+        }, 
+        {
+            "location": "/apf/beyond_gof/", 
+            "text": "Beyond GoF\n\n\nEnumerator\n\n\n\n\nProbleme mit Iterator\n\n\nCollections d\u00fcrfen nie w\u00e4hrend Iteration ver\u00e4ndert werden\n\n\nUmgehung davon aufw\u00e4ndig, gibt enges coupling zwischen Iterator und Collection\n\n\n\n\n\n\nGoF hat externer Iterator (\"klassisch\") und interner Iterator (= Enumerator) vermischt\n\n\nEnumerator ist Inversion des Iterators\n\n\nCollection hat selbst eine Methode, die ein Kommando entgegen nimmt\n\n\nz.B. \nc.forEach(i =\n foo(i))\n\n\n\n\n\n\nIteration ist direkt in der Collection, dadurch hat es mehr Kontrolle, z.B. bei \u00c4nderungen w\u00e4hrend der Iteratation, oder mit Locking\n\n\nOhne Lambdas das Command-Pattern verwenden\n\n\n\n\nDistribution\n\n\n\n\nProblem bei Remote Calls, wenn f\u00fcr jedes Element ein eigener Call auf das Remote-system gemacht werden muss\n\n\nL\u00f6sung: \nBatch Method\n Pattern\n\n\nMehrere Elemente auf einmal schicken\n\n\n\n\n\n\n\n\nState Pattern\n\n\n\n\nGoF-Beschreibung ist sehr allgemein, besserer Name w\u00e4re \"Objects for States\"\n\n\nH\u00e4ufig overkill, oft ist auch ein primitives \"Flag-based\" State Management ausreichend\n\n\nKonkrete States m\u00fcssen f\u00fcr \nStateChange\n etwas zur\u00fcckgeben, das den n\u00e4chsten State identifiziert, z.B. den Typ (In State-machine Hashtable f\u00fcr die einzelnen konkreten States verwenden)\n\n\nn.b. das GoF-Sate Pattern definiert keinen solchen Mechanismus zum State-Switch\n\n\n\n\n\n\nWas, wenn ein konkreter State Daten der State-machine ver\u00e4ndern muss?\n\n\nHolder von Daten, der dem konkreten State \u00fcbergeben wird, z.B. \nincrement(timeHolder)\n bei Uhr\n\n\n\n\n\n\n\n\nMethods for States\n\n\n\n\nAlle Methoden (Implementation), die vorher in den States waren, kommen direkt in die State-Machine\n\n\nMethoden, die zum selben State geh\u00f6ren, werden in Function-Pointer-Lists zusammengefasst\n\n\nEine dynamische Struktur (z.B. Structs) wird mit Methoden abgef\u00fcllt, je eine Struktur pro State\n\n\nVorteil: \u00dcbersichtlicher f\u00fcr kleine Anwendungsf\u00e4lle\n\n\nNachteil: Grosse Klasse, viele Methoden\n\n\n\n\nCollections for States\n\n\n\n\nJeder State ist eine Collection in der State Machine\n\n\nIn den Collections k\u00f6nnen auch weitere State Machines sein\n\n\nbei jedem State change werden die Objekte in andere Collections verschoben\n\n\nLogik der State machine ist in einem \"Workpiece\"\n\n\nSimpelste Variante\n\n\n\n\nFrameworks\n\n\n\n\nFrameworks bieten \"Hooks\" f\u00fcr Erweiterungen\n\n\nIm Gegensatz zu einer Library steuert ein Framework den Kontrollfluss\n\n\nArbeiten mit Callbacks, Inversion of control\n\n\nApplication Frameworks sind oft over-engineered", 
+            "title": "Beyond GoF"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#beyond-gof", 
+            "text": "", 
+            "title": "Beyond GoF"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#enumerator", 
+            "text": "Probleme mit Iterator  Collections d\u00fcrfen nie w\u00e4hrend Iteration ver\u00e4ndert werden  Umgehung davon aufw\u00e4ndig, gibt enges coupling zwischen Iterator und Collection    GoF hat externer Iterator (\"klassisch\") und interner Iterator (= Enumerator) vermischt  Enumerator ist Inversion des Iterators  Collection hat selbst eine Methode, die ein Kommando entgegen nimmt  z.B.  c.forEach(i =  foo(i))    Iteration ist direkt in der Collection, dadurch hat es mehr Kontrolle, z.B. bei \u00c4nderungen w\u00e4hrend der Iteratation, oder mit Locking  Ohne Lambdas das Command-Pattern verwenden", 
+            "title": "Enumerator"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#distribution", 
+            "text": "Problem bei Remote Calls, wenn f\u00fcr jedes Element ein eigener Call auf das Remote-system gemacht werden muss  L\u00f6sung:  Batch Method  Pattern  Mehrere Elemente auf einmal schicken", 
+            "title": "Distribution"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#state-pattern", 
+            "text": "GoF-Beschreibung ist sehr allgemein, besserer Name w\u00e4re \"Objects for States\"  H\u00e4ufig overkill, oft ist auch ein primitives \"Flag-based\" State Management ausreichend  Konkrete States m\u00fcssen f\u00fcr  StateChange  etwas zur\u00fcckgeben, das den n\u00e4chsten State identifiziert, z.B. den Typ (In State-machine Hashtable f\u00fcr die einzelnen konkreten States verwenden)  n.b. das GoF-Sate Pattern definiert keinen solchen Mechanismus zum State-Switch    Was, wenn ein konkreter State Daten der State-machine ver\u00e4ndern muss?  Holder von Daten, der dem konkreten State \u00fcbergeben wird, z.B.  increment(timeHolder)  bei Uhr", 
+            "title": "State Pattern"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#methods-for-states", 
+            "text": "Alle Methoden (Implementation), die vorher in den States waren, kommen direkt in die State-Machine  Methoden, die zum selben State geh\u00f6ren, werden in Function-Pointer-Lists zusammengefasst  Eine dynamische Struktur (z.B. Structs) wird mit Methoden abgef\u00fcllt, je eine Struktur pro State  Vorteil: \u00dcbersichtlicher f\u00fcr kleine Anwendungsf\u00e4lle  Nachteil: Grosse Klasse, viele Methoden", 
+            "title": "Methods for States"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#collections-for-states", 
+            "text": "Jeder State ist eine Collection in der State Machine  In den Collections k\u00f6nnen auch weitere State Machines sein  bei jedem State change werden die Objekte in andere Collections verschoben  Logik der State machine ist in einem \"Workpiece\"  Simpelste Variante", 
+            "title": "Collections for States"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#frameworks", 
+            "text": "Frameworks bieten \"Hooks\" f\u00fcr Erweiterungen  Im Gegensatz zu einer Library steuert ein Framework den Kontrollfluss  Arbeiten mit Callbacks, Inversion of control  Application Frameworks sind oft over-engineered", 
+            "title": "Frameworks"
         }
     ]
 }

@@ -10,7 +10,7 @@
         <meta name="description" content="HSR Study Documentation HS17">
       
       
-        <link rel="canonical" href="https://doc.robinsuter.ch/pmqm/projekt_qualitaet/">
+        <link rel="canonical" href="https://doc.robinsuter.ch/apparch/solution_strategy/">
       
       
         <meta name="author" content="Robin Suter">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Projekt und Qualität - HSR Notizen HS17</title>
+        <title>Solution Strategy - HSR Notizen HS17</title>
       
     
     
@@ -86,11 +86,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  PmQm
+                  AppArch
                 </span>
               
             
-            Projekt und Qualität
+            Solution Strategy
           
         </span>
       </div>
@@ -305,12 +305,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       PmQm
@@ -318,6 +316,80 @@
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
         PmQm
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pmqm/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pmqm/exam/" title="Exam" class="md-nav__link">
+      Exam
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pmqm/projekt_qualitaet/" title="Projekt und Qualität" class="md-nav__link">
+      Projekt und Qualität
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pmqm/projekte/" title="Projekte" class="md-nav__link">
+      Projekte
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      AppArch
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        AppArch
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -340,8 +412,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../exam/" title="Exam" class="md-nav__link">
-      Exam
+    <a href="../architecture_fundamentals/" title="Fundamentals" class="md-nav__link">
+      Fundamentals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../agile_architecture/" title="Agile Architecture" class="md-nav__link">
+      Agile Architecture
     </a>
   </li>
 
@@ -361,11 +445,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Projekt und Qualität
+        Solution Strategy
       </label>
     
-    <a href="./" title="Projekt und Qualität" class="md-nav__link md-nav__link--active">
-      Projekt und Qualität
+    <a href="./" title="Solution Strategy" class="md-nav__link md-nav__link--active">
+      Solution Strategy
     </a>
     
       
@@ -379,8 +463,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plan-do-check-act" title="Plan, Do, Check, Act" class="md-nav__link">
-    Plan, Do, Check, Act
+  <a href="#architectural-synthesis" title="Architectural Synthesis" class="md-nav__link">
+    Architectural Synthesis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-pattern" title="Layer-Pattern" class="md-nav__link">
+    Layer-Pattern
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-server-cuts" title="Client-Server Cuts" class="md-nav__link">
+    Client-Server Cuts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c4-models" title="C4 Models" class="md-nav__link">
+    C4 Models
   </a>
   
 </li>
@@ -391,90 +496,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../projekte/" title="Projekte" class="md-nav__link">
-      Projekte
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      AppArch
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        AppArch
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../apparch/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../apparch/architecture_fundamentals/" title="Fundamentals" class="md-nav__link">
-      Fundamentals
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../apparch/agile_architecture/" title="Agile Architecture" class="md-nav__link">
-      Agile Architecture
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../apparch/solution_strategy/" title="Solution Strategy" class="md-nav__link">
-      Solution Strategy
-    </a>
   </li>
 
         
@@ -503,7 +524,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../apparch/exercises/ex1/" title="Exercise 1" class="md-nav__link">
+    <a href="../exercises/ex1/" title="Exercise 1" class="md-nav__link">
       Exercise 1
     </a>
   </li>
@@ -612,8 +633,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plan-do-check-act" title="Plan, Do, Check, Act" class="md-nav__link">
-    Plan, Do, Check, Act
+  <a href="#architectural-synthesis" title="Architectural Synthesis" class="md-nav__link">
+    Architectural Synthesis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-pattern" title="Layer-Pattern" class="md-nav__link">
+    Layer-Pattern
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-server-cuts" title="Client-Server Cuts" class="md-nav__link">
+    Client-Server Cuts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c4-models" title="C4 Models" class="md-nav__link">
+    C4 Models
   </a>
   
 </li>
@@ -632,23 +674,46 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Excape/hsr-docs-hs17/edit/master/docs/pmqm/projekt_qualitaet.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/Excape/hsr-docs-hs17/edit/master/docs/apparch/solution_strategy.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="projekt-und-qualitat">Projekt und Qualität<a class="headerlink" href="#projekt-und-qualitat" title="Permanent link">&para;</a></h1>
+                <h1 id="solution-strategy">Solution Strategy<a class="headerlink" href="#solution-strategy" title="Permanent link">&para;</a></h1>
+<p>Tipps für Solution Strategy: <a href="http://docs.arc42.org/keywords/#solution-strategy">http://docs.arc42.org/keywords/#solution-strategy</a></p>
+<h2 id="architectural-synthesis">Architectural Synthesis<a class="headerlink" href="#architectural-synthesis" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Wichtig: Qualitätsrelevante Interessen kennen!</li>
+<li>Scope abstecken mit funktionalen Komponenten und externen Interfaces</li>
+<li>Wichtige Entscheidungen zur Architektur (Tiers, Frameworks)</li>
+<li>"Twin Peaks Model": Requirements und Design (Architektur) werden "gleichzeitig" ausgearbeitet (iterativ und inkrementell)</li>
 </ul>
-<h2 id="plan-do-check-act">Plan, Do, Check, Act<a class="headerlink" href="#plan-do-check-act" title="Permanent link">&para;</a></h2>
+<h2 id="layer-pattern">Layer-Pattern<a class="headerlink" href="#layer-pattern" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Plan - SMART-Ziele<ul>
-<li>Spezifisch, Messbar, Akzeptiert, Realistisch, Terminiert</li>
+<li>Im Layer-Pattern gibt es keine Layer-"Sprünge"!</li>
+<li>Layers sind logisch und geben nicht die physikalische Verteilung (tiers) vor</li>
+<li>"Enterprise Resources" = "Domain Entities"</li>
+<li>Business Rule: Anforderungen, z.B. "Kundenanfragen werden in x Min beantwortet"</li>
+</ul>
+<h2 id="client-server-cuts">Client-Server Cuts<a class="headerlink" href="#client-server-cuts" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Layer-Pattern zwei mal angewendet: Logisch (logical Viewpoint) und Aufteilung auf phyiskalische Tiers (deployment viewpoint)</li>
+<li>Layer können als ganzes auf Tiers aufgeteilt werden, oder Layer können auch "geschnitten" werden</li>
+<li>Tiers und Layers werden oft missverständlich verwendet, am besten immer nachfragen</li>
+<li>Fliessende Layers: Ist z.B. Eingabevalidierung im Presentation-Layer, oder allein / zusätzlich noch in Business Logic?<ul>
+<li>z.B. auf beiden Layern testen und mit Tests "synchronisieren"</li>
 </ul>
 </li>
-<li>Do - OTOBOS<ul>
-<li>On Time, on Budget, on Scope</li>
+</ul>
+<h2 id="c4-models">C4 Models<a class="headerlink" href="#c4-models" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Context</strong>: System ist black-box, welche Schnittstellen kommunizieren damit?<ul>
+<li>Dazu gehören andere Systeme und auch User mit Use Cases</li>
 </ul>
 </li>
+<li><strong>Container</strong>: Gibt eine Übersicht der Architektur (solution strateby)<ul>
+<li>High-Level Technology choices</li>
+</ul>
+</li>
+<li><strong>Components</strong>: Logische Komponenten und Kommunikation innerhalb eines Containers (mehr in nächster Vorlesung)</li>
+<li><strong>Classes</strong> (or Code): Klassendiagramm oder Code selbst</li>
 </ul>
                 
                   
@@ -668,7 +733,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../exam/" title="Exam" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../agile_architecture/" title="Agile Architecture" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -677,19 +742,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Exam
+                Agile Architecture
               </span>
             </div>
           </a>
         
         
-          <a href="../projekte/" title="Projekte" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../exercises/ex1/" title="Exercise 1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Projekte
+                Exercise 1
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
