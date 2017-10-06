@@ -66,4 +66,16 @@ Provide a unified interface to a set of interfaces in a subsystem. Facade define
 - Beispiel Filesystem Serialisierung: Oberklasse `FSObj` hat Methode `accept(visitor)`. Die Unterklassen "konsumieren" den Visitor
     - Der Visitor ist entweder ein `XmlVisitor` oder `JSONVisitor`
     - Unterklassen rufen im `accept()` visitor mit Referenz auf sich selbst auf (z.B. in File: `visitor.visitFile(this)`)
-- Nachteile: Die beiden Hierarchien sind gekoppelt, für neue Elemente müssen beide Hierarchien angepasst werden
+- Nachteile: 
+    - Die beiden Hierarchien sind gekoppelt, für neue Elemente müssen beide Hierarchien angepasst werden beide Hierarchien angepasst werden
+    - Gefahr von Code duplication, weil die Logik aufgebrochen wird
+
+### Flyweight
+- Ausgangslange: Viele Objekte, die alle "gleich" sind, aber in einer Art (z.B. Position) unterschiedlich sind
+- Interner State ist immer gleich, externer State kann sich ändern
+- Ziel: Memory-sparend abbilden
+- Die `Flyweight`-Klasse ist z.B. ein Baum
+- `FlyweightManager`verwaltet die Objekte
+    - Vom Flyweight gibt es nur eine Instanz, gehalten vom Manager 
+- Der interne (intrinsic) State ist für alle Objekte gleich (immutable Flyweights)
+- Der externe State wird vom Client direkt dem konkreten Flyweight gegeben (und wird dort nicht gespeichert!)
