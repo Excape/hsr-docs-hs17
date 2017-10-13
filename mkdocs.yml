@@ -16,6 +16,7 @@ pages:
         - Formal Proof: 'prfm/formal_proof.md'
         - Propositional Calculus: 'prfm/propositional_calculus.md'
         - Logical Programming Intro: 'prfm/logic_programming_intro.md'
+        - Prolog Unification: 'prfm/prolog_unification.md'
     - PmQm:
         - Index: 'pmqm/index.md'
         - Exam: 'pmqm/exam.md'
@@ -26,6 +27,7 @@ pages:
         - Fundamentals: 'apparch/architecture_fundamentals.md'
         - Agile Architecture: 'apparch/agile_architecture.md'
         - Solution Strategy: 'apparch/solution_strategy.md'
+        - Component Modeling: 'apparch/component_modeling.md'
         - Exercises:
             - Exercise 1: 'apparch/exercises/ex1.md'
     - APF:
@@ -33,6 +35,7 @@ pages:
         - Introduction: 'apf/intro.md'
         - GoF Revisited: 'apf/gof_revisited.md'
         - Beyond GoF: 'apf/beyond_gof.md'
+        - Values: 'apf/values.md'
 
 markdown_extensions:
   - toc(permalink=true)
