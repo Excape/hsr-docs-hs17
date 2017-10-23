@@ -17,17 +17,22 @@ pages:
         - Propositional Calculus: 'prfm/propositional_calculus.md'
         - Logical Programming Intro: 'prfm/logic_programming_intro.md'
         - Prolog Unification: 'prfm/prolog_unification.md'
+        - Prolog Lists: 'prfm/prolog_lists.md'
+        - Prolog Recursion: 'prfm/prolog-recursion.md'
+        - Prolog Arithmetic: 'prfm/prolog_arithmetic.md'
     - PmQm:
         - Index: 'pmqm/index.md'
         - Exam: 'pmqm/exam.md'
         - Projekt und Qualität: 'pmqm/projekt_qualitaet.md'
         - Projekte: 'pmqm/projekte.md'
+        - Finanzen: 'pmqm/finanzen.md'
     - AppArch:
         - Index: 'apparch/index.md'
         - Fundamentals: 'apparch/architecture_fundamentals.md'
         - Agile Architecture: 'apparch/agile_architecture.md'
         - Solution Strategy: 'apparch/solution_strategy.md'
         - Component Modeling: 'apparch/component_modeling.md'
+        - Component Dynamics & Container Patterns: 'apparch/component_dynamics_container_patterns.md'
         - Exercises:
             - Exercise 1: 'apparch/exercises/ex1.md'
     - APF:
@@ -36,6 +41,7 @@ pages:
         - GoF Revisited: 'apf/gof_revisited.md'
         - Beyond GoF: 'apf/beyond_gof.md'
         - Values: 'apf/values.md'
+        - Reflection: 'apf/reflection.md'
 
 markdown_extensions:
   - toc(permalink=true)
