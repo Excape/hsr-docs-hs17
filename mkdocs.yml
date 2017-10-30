@@ -12,7 +12,7 @@ pages:
     - Playground: 'playground.md'
     - PrfM:
         - Index: 'prfm/index.md'
-        - Introduction: 'prfm/introduction.md'
+        - Introduction: 'prfm/introdQuction.md'
         - Formal Proof: 'prfm/formal_proof.md'
         - Propositional Calculus: 'prfm/propositional_calculus.md'
         - Logical Programming Intro: 'prfm/logic_programming_intro.md'
@@ -33,6 +33,7 @@ pages:
         - Solution Strategy: 'apparch/solution_strategy.md'
         - Component Modeling: 'apparch/component_modeling.md'
         - Component Dynamics & Container Patterns: 'apparch/component_dynamics_container_patterns.md'
+        - Tactic DDD & Architectural Coding Style: 'apparch/DDD_coding-style.md'
         - Exercises:
             - Exercise 1: 'apparch/exercises/ex1.md'
     - APF:

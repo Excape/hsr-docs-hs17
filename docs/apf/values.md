@@ -4,7 +4,7 @@
 ## Definition M. Jackson
 - Events ist ein "Individuum", das zu einer bestimmten Zeit passiert
     - z.B. Mausklick, Absenden einer Bestellung
-- Entities sind Indivduen, die über eine Zeit lang existieren und Properties haben, die sich ändern können
+- Entities sind Individuen, die über eine Zeit lang existieren und Properties haben, die sich ändern können
     - Bestellung, Datei, Profil, ...
 - Values sind "unantastbare" Individuen, die sich nicht verändern
     - z.B. Zahlen, Farben, Zeichen, Koordinate
@@ -38,4 +38,3 @@
 ### Mutable Companion
 - z.B. `StringBuilder`
 - Builder, der values zusammen baut
-- 
