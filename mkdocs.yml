@@ -20,6 +20,9 @@ pages:
         - Prolog Lists: 'prfm/prolog_lists.md'
         - Prolog Recursion: 'prfm/prolog-recursion.md'
         - Prolog Arithmetic: 'prfm/prolog_arithmetic.md'
+        - Prolog Under the Hood: 'prfm/prolog_under-hood.md'
+        - Lambda Calculus: 'prfm/lambda_calculus.md'
+        - Lambda Computation: 'prfm/computation_lambda_calculus.md'
     - PmQm:
         - Index: 'pmqm/index.md'
         - Exam: 'pmqm/exam.md'
@@ -43,6 +46,7 @@ pages:
         - Beyond GoF: 'apf/beyond_gof.md'
         - Values: 'apf/values.md'
         - Reflection: 'apf/reflection.md'
+        - JUnit Dissection: 'apf/junit_dissection.md'
 
 markdown_extensions:
   - toc(permalink=true)
