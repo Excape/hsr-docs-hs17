@@ -1,0 +1,949 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "HSR Notizen\n\n\nFall Semester '17\n\n\n\n\nProgrammiersprachen und formale Methoden\n\n\nProjekt- und Qualit\u00e4tsmanagement\n\n\nApplication Architecture\n\n\nAdvanced Patterns and Frameworks\n\n\n\n\nLinks\n\n\n\n\nMathJax Syntax\n\n\nMkDocs User-Guide\n\n\nMarkdown Cheatsheet", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#hsr-notizen", 
+            "text": "", 
+            "title": "HSR Notizen"
+        }, 
+        {
+            "location": "/#fall-semester-17", 
+            "text": "Programmiersprachen und formale Methoden  Projekt- und Qualit\u00e4tsmanagement  Application Architecture  Advanced Patterns and Frameworks", 
+            "title": "Fall Semester '17"
+        }, 
+        {
+            "location": "/#links", 
+            "text": "MathJax Syntax  MkDocs User-Guide  Markdown Cheatsheet", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/playground/", 
+            "text": "Markdown Playground\n\n\nDies ist etwas normaler Text mit etwas \nkursiver\n schrift und etwas \nbold\n schrift\n\n\nDieser Text ist \nmarkiert\n, hier sind emojis: \n \n \n\n\n\n\n1\n2\nDies ist Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text\nzweite Zeile\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n  \npublic\n \nclass\n \nTestClass\n()\n \n{\n\n    \nint\n \nvar\n \n=\n \n1\n;\n\n\n    \npublic\n \nmethod\n()\n \n{\n\n\n      \nreturn\n \nvar\n;\n\n\n    \n}\n\n\n  \n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\n2\n\n\n3\n\n\n\n\n\n\n\n\n\n\n1\n\n\netwas\n\n\nanderes\n\n\n\n\n\n\n2\n\n\nals\n\n\nhier\n\n\n\n\n\n\n\n\n\n\nNotiz\n\n\nTest Notiz mit etwas Text drin\n\n\n\n\nNote\nKlapp mich auf!\n\n\nDanger\n\n\nGefahr!\n\n\n\n\n\n\nWarning\n\n\nWarnung!\n\n\n\n\n\n\nSummary\n\n\nEine Zusammenfassung\n\n\n\n\n\n\nInfo\n\n\nEine Information\n\n\n\n\n\n\nTip\n\n\nEin Tip\n\n\n\n\n\n\nQuestion\n\n\nEine Frage\n\n\n\n\n\n\nBug\n\n\nEin Bug\n\n\n\n\n\n\nQuote\n\n\nEin Zitat\n\n\n\n\nInline Math: \n x_i^2 * \\frac{(n^2 * n) - 1}{\\Omega} \n\n\n\n\nDisplay Math:\n\n\\sum_{i=0}^n i^2\n\n\n\n\nGruppen mit \n{}\n: \n{10}^5\n\n\n\n\n\n\nA \\rightarrow B \n\n\n\\lim_{x\\to \\infty} \\sin x", 
+            "title": "Playground"
+        }, 
+        {
+            "location": "/playground/#markdown-playground", 
+            "text": "Dies ist etwas normaler Text mit etwas  kursiver  schrift und etwas  bold  schrift  Dieser Text ist  markiert , hier sind emojis:        1\n2 Dies ist Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text ein Text\nzweite Zeile   1\n2\n3\n4\n5\n6    public   class   TestClass ()   { \n     int   var   =   1 ;       public   method ()   {         return   var ;       }     }       1  2  3      1  etwas  anderes    2  als  hier      Notiz  Test Notiz mit etwas Text drin   Note Klapp mich auf!  Danger  Gefahr!    Warning  Warnung!    Summary  Eine Zusammenfassung    Info  Eine Information    Tip  Ein Tip    Question  Eine Frage    Bug  Ein Bug    Quote  Ein Zitat   Inline Math:   x_i^2 * \\frac{(n^2 * n) - 1}{\\Omega}    Display Math: \\sum_{i=0}^n i^2   Gruppen mit  {} :  {10}^5    A \\rightarrow B   \\lim_{x\\to \\infty} \\sin x", 
+            "title": "Markdown Playground"
+        }, 
+        {
+            "location": "/prfm/", 
+            "text": "Programmiersprachen und formale Methoden\n\n\n\n\nIntroduction", 
+            "title": "Index"
+        }, 
+        {
+            "location": "/prfm/#programmiersprachen-und-formale-methoden", 
+            "text": "Introduction", 
+            "title": "Programmiersprachen und formale Methoden"
+        }, 
+        {
+            "location": "/prfm/introduction/", 
+            "text": "Introduction\n\n\nMotivation\n\n\n\n\nUsing a formal language to describe and solve problems is central to software engineering\n\n\nProgramming language theory involves mathematics, software engineering and linguistics\n\n\nMain emphasis: Comparative programming language analysis\n\n\nLike in other engineering disciplines, a mathematical analysis can contribute to a reliable and robust design\n\n\n\n\nDefinitions\n\n\n\n\nFormal language: Set of strings (symbols) constrained by specific rules\n\n\nThe set of formal languages is a subset of context-free languages\n\n\nAll programming languages are formal, we need to be able to interpret them computationally\n\n\n\n\n\n\nInformal language: Any natural language\n\n\n\n\nGoals\n\n\n\n\nUnderstanding of programming paradigms outside OO/imperative\n\n\nCreate programs in functional and logical styles\n\n\nFormal foundations of programming languages\n\n\nBridge the gap between \"computer science\" and theoretical disciplines and practical software engineering\n\n\nShift from execution-based thinking to rule-based thinking\n\n\n\n\nProgramming Paradigms\n\n\n\n\nOOP is not a paradigm in this sense here, more a way of organizing your code (built on the imperative paradigm)", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/prfm/introduction/#introduction", 
+            "text": "", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/prfm/introduction/#motivation", 
+            "text": "Using a formal language to describe and solve problems is central to software engineering  Programming language theory involves mathematics, software engineering and linguistics  Main emphasis: Comparative programming language analysis  Like in other engineering disciplines, a mathematical analysis can contribute to a reliable and robust design", 
+            "title": "Motivation"
+        }, 
+        {
+            "location": "/prfm/introduction/#definitions", 
+            "text": "Formal language: Set of strings (symbols) constrained by specific rules  The set of formal languages is a subset of context-free languages  All programming languages are formal, we need to be able to interpret them computationally    Informal language: Any natural language", 
+            "title": "Definitions"
+        }, 
+        {
+            "location": "/prfm/introduction/#goals", 
+            "text": "Understanding of programming paradigms outside OO/imperative  Create programs in functional and logical styles  Formal foundations of programming languages  Bridge the gap between \"computer science\" and theoretical disciplines and practical software engineering  Shift from execution-based thinking to rule-based thinking", 
+            "title": "Goals"
+        }, 
+        {
+            "location": "/prfm/introduction/#programming-paradigms", 
+            "text": "OOP is not a paradigm in this sense here, more a way of organizing your code (built on the imperative paradigm)", 
+            "title": "Programming Paradigms"
+        }, 
+        {
+            "location": "/prfm/formal_proof/", 
+            "text": "Formal Proof\n\n\n\n\nAn axiom is a proof rule without antecedents\n\n\nEvery proof tree has an axiom at the top (starting with the root at the bottom)\n\n\nA theory is a set of proof rules\n\n\nThis set is usually infinite and specified using a set of \nproof rule schemas", 
+            "title": "Formal Proof"
+        }, 
+        {
+            "location": "/prfm/formal_proof/#formal-proof", 
+            "text": "An axiom is a proof rule without antecedents  Every proof tree has an axiom at the top (starting with the root at the bottom)  A theory is a set of proof rules  This set is usually infinite and specified using a set of  proof rule schemas", 
+            "title": "Formal Proof"
+        }, 
+        {
+            "location": "/prfm/propositional_calculus/", 
+            "text": "Propositional Calculus\n\n\nBasic PC\n\n\n\n\nContains the basic set of PC (like NAND in computing)\n\n\nA \nPredicate\n is a formal statement that is either \ntrue\n or \nfalse\n\n\n\n\n\\vdash\n: \"Turnstile\" or \"tee\"\n\n\n\n\nH \\vdash G\n: \"Prove \nG\n under Hyphotheses \nH\n\"\n\n\nTurnstiles are \"implications\" on the level of a sequent, whereas \"\n\\Rightarrow\n\" is an implication on the predicate level\n\n\n\n\nBasicPC Syntax\n\n\n\n\nExamples of possible strings: \n\\bot\n, \n\\lnot\\bot\n, \n\\bot \\land \\bot\n\n\n\n\n\n\nProof Rule Schemas\n\n\n\n\nSchemas represent an infinite number of proof rules of the same form\n\n\nThey use \nmeta variables\n. If these are instantiated, they become a concrete proof rule\n\n\n\n\n\n\nTodo\n\n\nPut \n\\land\\ goal\n as outer fraction\n\n\n\n\nExample: Prove \nP \\land Q \\vdash Q \\land P\n\n\n\n\n\n\n\\frac{\\frac{\\frac{}{P, Q \\vdash Q}hyp \\frac{}{P, Q \\vdash P} hyp}{P, Q \\vdash Q \\land P} \\land goal}{P\\land Q \\vdash Q \\land P} \\land hyp\n\n\n\n\n\n\nEvery \"string\" you can generate using the basicPC Syntax can be used to instantiate a meta variable\n\n\n\n\nH\n can be an empty set\n\n\n\n\nExtending the syntax\n\n\n\n\nWe extend basicPC by introducing \"syntactic sugar\", new Symbols like \nT\n for True and \n\\lor\n\n\n\n\nThese syntactical equivalences can be used like proof rules\n\n\nAll the new rules of PC can be proven with the basicPC proof schemas", 
+            "title": "Propositional Calculus"
+        }, 
+        {
+            "location": "/prfm/propositional_calculus/#propositional-calculus", 
+            "text": "", 
+            "title": "Propositional Calculus"
+        }, 
+        {
+            "location": "/prfm/propositional_calculus/#basic-pc", 
+            "text": "Contains the basic set of PC (like NAND in computing)  A  Predicate  is a formal statement that is either  true  or  false   \\vdash : \"Turnstile\" or \"tee\"   H \\vdash G : \"Prove  G  under Hyphotheses  H \"  Turnstiles are \"implications\" on the level of a sequent, whereas \" \\Rightarrow \" is an implication on the predicate level", 
+            "title": "Basic PC"
+        }, 
+        {
+            "location": "/prfm/propositional_calculus/#basicpc-syntax", 
+            "text": "Examples of possible strings:  \\bot ,  \\lnot\\bot ,  \\bot \\land \\bot", 
+            "title": "BasicPC Syntax"
+        }, 
+        {
+            "location": "/prfm/propositional_calculus/#proof-rule-schemas", 
+            "text": "Schemas represent an infinite number of proof rules of the same form  They use  meta variables . If these are instantiated, they become a concrete proof rule    Todo  Put  \\land\\ goal  as outer fraction   Example: Prove  P \\land Q \\vdash Q \\land P    \\frac{\\frac{\\frac{}{P, Q \\vdash Q}hyp \\frac{}{P, Q \\vdash P} hyp}{P, Q \\vdash Q \\land P} \\land goal}{P\\land Q \\vdash Q \\land P} \\land hyp    Every \"string\" you can generate using the basicPC Syntax can be used to instantiate a meta variable   H  can be an empty set", 
+            "title": "Proof Rule Schemas"
+        }, 
+        {
+            "location": "/prfm/propositional_calculus/#extending-the-syntax", 
+            "text": "We extend basicPC by introducing \"syntactic sugar\", new Symbols like  T  for True and  \\lor   These syntactical equivalences can be used like proof rules  All the new rules of PC can be proven with the basicPC proof schemas", 
+            "title": "Extending the syntax"
+        }, 
+        {
+            "location": "/prfm/logic_programming_intro/", 
+            "text": "Logic Programming Introduction\n\n\nOnline Version of Learn Prolog Now: \nhttp://www.learnprolognow.org/\n\n\nHello World\n\n\n\n\nHypthoses are the \"knowledge base\"\n\n\nRules \nm(X):- h(X).\n-\n \n\\forall x.H(x) \\Rightarrow M(x)\n\n\n\n\n\"implied by\" - it's reversed!\n\n\n\n\n\n\nFacts: \nh(s).\n\n\n\n\n\n\nQuery: \n?- m(s).\n\n\n\n\n\\forall x\n is implied with uppercase variables\n\n\n\n\nKnowledge Base\n\n\n\n\nHypotheses, called \"Knowledge Base\"\n\n\nEvery statement is a \"clause\" and ends with a \n.\n\n\n\n\n1\n2\n3\n4\n5\nwoman\n(\nmia\n).\n\n\nwoman\n(\njody\n).\n\n\nwoman\n(\nyolanda\n).\n\n\nplaysAirGuitar\n(\njody\n).\n\n\nparty\n.\n\n\n\n\n\n\n\n\n\nIf a query cannot be proven true, it is \nfalse\n\n\nUnknown predicates return either \nfalse\n or throw an error (depending on the compiler)\n\n\n\n\nRules\n\n\n1\n2\n3\n4\n5\nhappy\n(\nyolanda\n).\n \n// fact\n\n\nlistens2music\n(\nmia\n).\n \n// fact\n\n\nlistens2music\n(\nyolanda\n)\n:-\n \nhappy\n(\nyolanda\n).\n \n// rule\n\n\nplaysAirGuitar\n(\nmia\n)\n:-\n \nlistens2music\n(\nmia\n).\n\n\nplaysAirGuitar\n(\nyolanda\n)\n:-\n \nlistens2music\n(\nyolanda\n).\n\n\n\n\n\n\n\n\n\nRead: \nhappy(yolanda) =\n listens2music(yolanda)\n (Reversed)\n\n\n\n\nConjuction\n\n\n1\n2\n3\nplaysAirGuitar\n(\nvincent\n)\n:-\n\n    \nlistens2music\n(\nvincent\n),\n\n    \nhappy\n(\nvincent\n).\n\n\n\n\n\n\n\n\n\nRead: \"vincent plays air guitar if he listens to music \nand\n he's happy\"\n\n\n\n\nDisjuction\n\n\n\n\n;\n instead of \n,\n\n\n\n\nSame as defining to rules with the same goal\n\n\n\n\n\n\nThere's no negation in Prolog. An absence of rule is basically a negation\n\n\n\n\nProlog does no proofs of contradiction, but \"negation as failure\" (to construct a proof tree)\n\n\n\n\n\n\n\n\nAsking for alternatives\n\n\n\n\n?- woman(X)\n gives every \nX\n that satisfies \n\\exists x.woman(x)\n\n\n\n\n(Uppercase) variables in the Knowledge Base take into account every occurence (\n\\forall\n universially quantified)\n\n\n\n\nSyntax\n\n\n\n\nAtoms are strings \nstarting with a lowercase letter\n or arbitrary strings in \n''\n\n\nNumbers are integers or floats (no type-checking)\n\n\nVariables are Strings starting with an \nUppercase Letter\n or with a \n_\n\n\nVariables are always \"bound\" in a \n\\exists\n or \n\\forall\n\n\n\n\nThe variable \n_\n is a \"wildcard\"\n\n\n\n\n\n\nComplex Terms are e.g. \nplaysAirGuitar(mia)\n\n\nThe functor must be an atom\n\n\n\n\n\n\n\"Arity\" is the number of arguments in a complex term\n\n\nTwo predicates with different arity are treated as sepparate", 
+            "title": "Logical Programming Intro"
+        }, 
+        {
+            "location": "/prfm/logic_programming_intro/#logic-programming-introduction", 
+            "text": "Online Version of Learn Prolog Now:  http://www.learnprolognow.org/", 
+            "title": "Logic Programming Introduction"
+        }, 
+        {
+            "location": "/prfm/logic_programming_intro/#hello-world", 
+            "text": "Hypthoses are the \"knowledge base\"  Rules  m(X):- h(X). -   \\forall x.H(x) \\Rightarrow M(x)   \"implied by\" - it's reversed!    Facts:  h(s).    Query:  ?- m(s).   \\forall x  is implied with uppercase variables", 
+            "title": "Hello World"
+        }, 
+        {
+            "location": "/prfm/logic_programming_intro/#knowledge-base", 
+            "text": "Hypotheses, called \"Knowledge Base\"  Every statement is a \"clause\" and ends with a  .   1\n2\n3\n4\n5 woman ( mia ).  woman ( jody ).  woman ( yolanda ).  playsAirGuitar ( jody ).  party .     If a query cannot be proven true, it is  false  Unknown predicates return either  false  or throw an error (depending on the compiler)", 
+            "title": "Knowledge Base"
+        }, 
+        {
+            "location": "/prfm/logic_programming_intro/#rules", 
+            "text": "1\n2\n3\n4\n5 happy ( yolanda ).   // fact  listens2music ( mia ).   // fact  listens2music ( yolanda ) :-   happy ( yolanda ).   // rule  playsAirGuitar ( mia ) :-   listens2music ( mia ).  playsAirGuitar ( yolanda ) :-   listens2music ( yolanda ).     Read:  happy(yolanda) =  listens2music(yolanda)  (Reversed)", 
+            "title": "Rules"
+        }, 
+        {
+            "location": "/prfm/logic_programming_intro/#conjuction", 
+            "text": "1\n2\n3 playsAirGuitar ( vincent ) :- \n     listens2music ( vincent ), \n     happy ( vincent ).     Read: \"vincent plays air guitar if he listens to music  and  he's happy\"", 
+            "title": "Conjuction"
+        }, 
+        {
+            "location": "/prfm/logic_programming_intro/#disjuction", 
+            "text": ";  instead of  ,   Same as defining to rules with the same goal    There's no negation in Prolog. An absence of rule is basically a negation   Prolog does no proofs of contradiction, but \"negation as failure\" (to construct a proof tree)", 
+            "title": "Disjuction"
+        }, 
+        {
+            "location": "/prfm/logic_programming_intro/#asking-for-alternatives", 
+            "text": "?- woman(X)  gives every  X  that satisfies  \\exists x.woman(x)   (Uppercase) variables in the Knowledge Base take into account every occurence ( \\forall  universially quantified)", 
+            "title": "Asking for alternatives"
+        }, 
+        {
+            "location": "/prfm/logic_programming_intro/#syntax", 
+            "text": "Atoms are strings  starting with a lowercase letter  or arbitrary strings in  ''  Numbers are integers or floats (no type-checking)  Variables are Strings starting with an  Uppercase Letter  or with a  _  Variables are always \"bound\" in a  \\exists  or  \\forall   The variable  _  is a \"wildcard\"    Complex Terms are e.g.  playsAirGuitar(mia)  The functor must be an atom    \"Arity\" is the number of arguments in a complex term  Two predicates with different arity are treated as sepparate", 
+            "title": "Syntax"
+        }, 
+        {
+            "location": "/prfm/prolog_unification/", 
+            "text": "Prolog Unification and Proof Search\n\n\nUnification\n\n\n\n\nUnification instantiates variables such that two terms are equal\n\n\nwoman(Z)\n and \nwoman(X)\n unifies, because \nX\n can be instantiated with \nmia\n\n\nloves(mia, X)\n and \nloves(X, vincent)\n cannnot be unified, \nX\n needs to be instantiated with one value\n\n\nIn Prolog, unification can be done with \n=\n\n\nProlog ignores the \"occurs check\" (recursive)\n\n\nfather(X) = X\n does not unify with the theoretical definition (would be \nfather(father(father(...)...))\n)\n\n\n\n\n\n\nProlog will give the most general solution, e.g. when there are infinite solutions with 1 free variable, it will state a variable for that\n\n\n\n\nProof Search\n\n\n\n\nFor the query, try unifying it with an expression from the knowledge base. Repeat for every found unification.\n\n\nWhen proof is found, backtrack upwards to find the instantiation\n\n\nSearch Tree example: Try unify, then check every possible instantiaton (here \na\n and \nb\n)\n\n\nRecursive with backtracking, i.e. it goes down of the left side first (\"depth-first\"), then backtrack upwards\n\n\nEvery branch is a proof. The proof search tree searches for all possible proofs. Not to confuse with the proof tree from PC, where only 1 proof was needed!", 
+            "title": "Prolog Unification"
+        }, 
+        {
+            "location": "/prfm/prolog_unification/#prolog-unification-and-proof-search", 
+            "text": "", 
+            "title": "Prolog Unification and Proof Search"
+        }, 
+        {
+            "location": "/prfm/prolog_unification/#unification", 
+            "text": "Unification instantiates variables such that two terms are equal  woman(Z)  and  woman(X)  unifies, because  X  can be instantiated with  mia  loves(mia, X)  and  loves(X, vincent)  cannnot be unified,  X  needs to be instantiated with one value  In Prolog, unification can be done with  =  Prolog ignores the \"occurs check\" (recursive)  father(X) = X  does not unify with the theoretical definition (would be  father(father(father(...)...)) )    Prolog will give the most general solution, e.g. when there are infinite solutions with 1 free variable, it will state a variable for that", 
+            "title": "Unification"
+        }, 
+        {
+            "location": "/prfm/prolog_unification/#proof-search", 
+            "text": "For the query, try unifying it with an expression from the knowledge base. Repeat for every found unification.  When proof is found, backtrack upwards to find the instantiation  Search Tree example: Try unify, then check every possible instantiaton (here  a  and  b )  Recursive with backtracking, i.e. it goes down of the left side first (\"depth-first\"), then backtrack upwards  Every branch is a proof. The proof search tree searches for all possible proofs. Not to confuse with the proof tree from PC, where only 1 proof was needed!", 
+            "title": "Proof Search"
+        }, 
+        {
+            "location": "/prfm/prolog_lists/", 
+            "text": "Prolog Lists\n\n\n\n\nList elements can have arbitrary \"types\" (mixed)\n\n\n\n\nRecursive Definition\n\n\n\n\nEither\n\n\nan empty list: \n[]\n\n\na non-empty list:\n\n\na head = first element\n\n\ntail: every other element (another list)\n\n\n\n\n\n\n\n\n\n\n[H|T]\n to split head and tail for pattern matching\n\n\nUse wildcards \n_\n as \"anonymous variables\"\n\n\n\n\nMember Predicate\n\n\n\n\nmember/2\n: Determine whether something is an element of a list\n\n\n\n\n1\n2\nmember\n(\nX\n,[\nX\n|\nT\n]).\n\n\nmember\n(\nX\n,[\nH\n|\nT\n])\n \n:-\n \nmember\n(\nX\n,\nT\n)\n\n\n\n\n\n\n\na2b Predicate\n\n\n\n\nfirst argument is list of \na\ns, second argument is list ob \nb\ns with same length of first list\n\n\n\n\n1\n2\na2b\n([],\n \n[]).\n \n% base case\n\n\na2b\n([\na\n|\nLa\n],\n \n[\nb\n|\nLb\n])\n \n:-\n \na2b\n(\nLa\n,\n \nLb\n)\n\n\n\n\n\n\n\nappend/3\n\n\n\n\nappend(L1, l2, L3)\n\n\nL3\n is \nL1 + L2\n\n\n\n\n1\n2\n3\n4\nappend\n([],\n \nL\n,\n \nL\n).\n\n\nappend\n(\nL\n,\n \n[],\n \nL\n).\n\n\nappend\n([\nH\n|\nT\n],\n \nL2\n,\n \nL4\n)\n \n:-\n \nappend\n(\nT\n,\n \nL2\n,\n \nL3\n),\n\n                         \nL4\n \n=\n \n[\nH\n|\nL3\n].\n\n\n\n\n\n\n\nsublist\n\n\n\n\nsublist(Lsub, L)\n\n\nSublists are the prefixes of suffixes\n\n\n\n\n1\n2\n3\nsublist\n(\nSub\n,\nList\n)\n \n:-\n\n    \nsuffix\n(\nSuffix\n,\n \nList\n),\n\n    \nprefix\n(\nSub\n,\n \nSuffix\n)", 
+            "title": "Prolog Lists"
+        }, 
+        {
+            "location": "/prfm/prolog_lists/#prolog-lists", 
+            "text": "List elements can have arbitrary \"types\" (mixed)", 
+            "title": "Prolog Lists"
+        }, 
+        {
+            "location": "/prfm/prolog_lists/#recursive-definition", 
+            "text": "Either  an empty list:  []  a non-empty list:  a head = first element  tail: every other element (another list)      [H|T]  to split head and tail for pattern matching  Use wildcards  _  as \"anonymous variables\"", 
+            "title": "Recursive Definition"
+        }, 
+        {
+            "location": "/prfm/prolog_lists/#member-predicate", 
+            "text": "member/2 : Determine whether something is an element of a list   1\n2 member ( X ,[ X | T ]).  member ( X ,[ H | T ])   :-   member ( X , T )", 
+            "title": "Member Predicate"
+        }, 
+        {
+            "location": "/prfm/prolog_lists/#a2b-predicate", 
+            "text": "first argument is list of  a s, second argument is list ob  b s with same length of first list   1\n2 a2b ([],   []).   % base case  a2b ([ a | La ],   [ b | Lb ])   :-   a2b ( La ,   Lb )", 
+            "title": "a2b Predicate"
+        }, 
+        {
+            "location": "/prfm/prolog_lists/#append3", 
+            "text": "append(L1, l2, L3)  L3  is  L1 + L2   1\n2\n3\n4 append ([],   L ,   L ).  append ( L ,   [],   L ).  append ([ H | T ],   L2 ,   L4 )   :-   append ( T ,   L2 ,   L3 ), \n                          L4   =   [ H | L3 ].", 
+            "title": "append/3"
+        }, 
+        {
+            "location": "/prfm/prolog_lists/#sublist", 
+            "text": "sublist(Lsub, L)  Sublists are the prefixes of suffixes   1\n2\n3 sublist ( Sub , List )   :- \n     suffix ( Suffix ,   List ), \n     prefix ( Sub ,   Suffix )", 
+            "title": "sublist"
+        }, 
+        {
+            "location": "/prfm/prolog-recursion/", 
+            "text": "Prolog Recursion\n\n\n\n\nLoops use a global state, declarative programming languages don't have that\n\n\nTherefore, recursion is the only way to do such computation\n\n\n\n\n\n\nNon-terminating programs give an \"out of stack\" error\n\n\nProlog processes the knowledge base from top to bottom and left to right\n\n\nThis determines the order of the output\n\n\n\n\n\n\nRecursion call must always be placed torwards the end of a rule, otherwise it will iterate over the incursion infinitely!", 
+            "title": "Prolog Recursion"
+        }, 
+        {
+            "location": "/prfm/prolog-recursion/#prolog-recursion", 
+            "text": "Loops use a global state, declarative programming languages don't have that  Therefore, recursion is the only way to do such computation    Non-terminating programs give an \"out of stack\" error  Prolog processes the knowledge base from top to bottom and left to right  This determines the order of the output    Recursion call must always be placed torwards the end of a rule, otherwise it will iterate over the incursion infinitely!", 
+            "title": "Prolog Recursion"
+        }, 
+        {
+            "location": "/prfm/prolog_arithmetic/", 
+            "text": "Prolog Arithmetic\n\n\n\n\n+, -, /, *\n are functors with arity 2\n\n\nstatements like \n3+2\n are ordinary terms\n\n\n+(3,2)\n\n\n\n\n\n\n\n\nis predicate\n\n\n\n\nlike \n==\n\n\nboth sides of the predicate get evaluated\n\n\nWorks for integer and real numbers\n\n\nRight-hand site must be concrete, e.g. NOT \n3+2 is X\n\n\n\n\nList Arithmetic\n\n\n1\n2\n3\n4\n% len(list, size)\n\n\n\nlen\n([],\n \n0\n).\n \n\nlen\n([\nH\n|\nT\n],\n \nN\n)\n \n:-\n \nlen\n(\nT\n,\n \nN1\n),\n \nN\n \nis\n \nN1\n+\n1.\n\n\n\n\n\n\n\nTail Recursion\n\n\nacclen/3\n\n\n\n\nacclen(list, acc, size)\n\n\naccumulator starts with 0 and counts up\n\n\n\n\n1\n2\n3\n4\nlen\n(\nL\n,\nN\n)\n \n:-\n \nacclen\n(\nL\n,\n0\n,\nN\n).\n\n\nacclen\n([],\n \nA\n,\n \nN\n)\n \n:-\n \nA\n \n=\n \nN\n.\n\n\nacclen\n([\nH\n|\nT\n],\n \nA\n,\n \nN\n)\n \n:-\n \nA1\n \nis\n \nA\n \n+\n \n1\n,\n \n                       \nacclen\n(\nT\n,\n \nA1\n,\n \nN\n).\n\n\n\n\n\n\n\nmax/2\n\n\n\n\nmax(list, maxElem)\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\nmax\n([\nE\n],\n \nE\n).\n\n\nmax\n([\nH\n|\nT\n],\n \nM\n)\n \n:-\n \nmax\n(\nT\n,\n \nMT\n),\n\n                 \nH\n \n \nMT\n,\n\n                 \nM\n \n=\n \nH\n.\n\n\nmax\n([\nH\n|\nT\n],\n \nM\n)\n \n:-\n \nmax\n(\nT\n,\n \nMT\n),\n \n                 \nH\n \n=\n \nMT\n,\n\n                 \nM\n \n=\n \nMT\n.", 
+            "title": "Prolog Arithmetic"
+        }, 
+        {
+            "location": "/prfm/prolog_arithmetic/#prolog-arithmetic", 
+            "text": "+, -, /, *  are functors with arity 2  statements like  3+2  are ordinary terms  +(3,2)", 
+            "title": "Prolog Arithmetic"
+        }, 
+        {
+            "location": "/prfm/prolog_arithmetic/#is-predicate", 
+            "text": "like  ==  both sides of the predicate get evaluated  Works for integer and real numbers  Right-hand site must be concrete, e.g. NOT  3+2 is X", 
+            "title": "is predicate"
+        }, 
+        {
+            "location": "/prfm/prolog_arithmetic/#list-arithmetic", 
+            "text": "1\n2\n3\n4 % len(list, size)  len ([],   0 ).   len ([ H | T ],   N )   :-   len ( T ,   N1 ),   N   is   N1 + 1.", 
+            "title": "List Arithmetic"
+        }, 
+        {
+            "location": "/prfm/prolog_arithmetic/#tail-recursion", 
+            "text": "", 
+            "title": "Tail Recursion"
+        }, 
+        {
+            "location": "/prfm/prolog_arithmetic/#acclen3", 
+            "text": "acclen(list, acc, size)  accumulator starts with 0 and counts up   1\n2\n3\n4 len ( L , N )   :-   acclen ( L , 0 , N ).  acclen ([],   A ,   N )   :-   A   =   N .  acclen ([ H | T ],   A ,   N )   :-   A1   is   A   +   1 ,  \n                        acclen ( T ,   A1 ,   N ).", 
+            "title": "acclen/3"
+        }, 
+        {
+            "location": "/prfm/prolog_arithmetic/#max2", 
+            "text": "max(list, maxElem)   1\n2\n3\n4\n5\n6\n7 max ([ E ],   E ).  max ([ H | T ],   M )   :-   max ( T ,   MT ), \n                  H     MT , \n                  M   =   H .  max ([ H | T ],   M )   :-   max ( T ,   MT ),  \n                  H   =   MT , \n                  M   =   MT .", 
+            "title": "max/2"
+        }, 
+        {
+            "location": "/prfm/prolog_under-hood/", 
+            "text": "Prolog under the hood\n\n\n\n\nProlog is a subset of \nFoPCe\n\n\nA horn clause is a disjunction of literals where at most one literal is positive\n\n\n\n\nProof by resolution\n\n\n\n\nUnion Sets in clauses and goals where a predicate is positive in one and negative in the other\n\n\ne.g. \n{\\lnotA, \\lnotB, C} \\union {\\lnotC}\n\n\n\n\n\n\n\n\nRepeat until set of goal clauses is empty", 
+            "title": "Prolog Under the Hood"
+        }, 
+        {
+            "location": "/prfm/prolog_under-hood/#prolog-under-the-hood", 
+            "text": "Prolog is a subset of  FoPCe  A horn clause is a disjunction of literals where at most one literal is positive", 
+            "title": "Prolog under the hood"
+        }, 
+        {
+            "location": "/prfm/prolog_under-hood/#proof-by-resolution", 
+            "text": "Union Sets in clauses and goals where a predicate is positive in one and negative in the other  e.g.  {\\lnotA, \\lnotB, C} \\union {\\lnotC}     Repeat until set of goal clauses is empty", 
+            "title": "Proof by resolution"
+        }, 
+        {
+            "location": "/prfm/lambda_calculus/", 
+            "text": "Lambda Calculus\n\n\n\n\nWe will only look at pure untyped calculus\n\n\nLC builds directly on Sequent Calculus\n\n\n\n\nConventions\n\n\n\n\nApplication \nM M\n binds tighter than abstraction\n\n\nApplication is left associative\n\n\n\n\nFree and Bound variables\n\n\n\n\n\n\n\\lambda y.\n can be thought of as a quantifier\n\n\nBound variables are like parameters\n\n\ne.g. in an integral \n\\int{yx^2}{dx}\n, x is bound\n\n\n\n\n\n\n\n\nBeta Redcution\n\n\n\n\nReplace every \nx\n in the abstraction \nM\n with \nN\n\n\n\n\n\n\n\n\n\\frac{}{H\\vdash (\\lambda x. M) N = [x := N]M}\\beta\n\n\n\n\n\n\n\n\nExamples:\n\n\n\n\n\n\n(\\lambda x. square x) 5 = square 5\n\n\n\n\n\n\n(\\lambda x. square x) (\\lambda y. square y) 5 = (square (\\lambda y. square y)) 5\n\n\n\n\nNo further resolution!\n\n\n\n\n\n\n\n\n\n\n\n\nEven if there are different strategies of how to resolute something, the result is always the same", 
+            "title": "Lambda Calculus"
+        }, 
+        {
+            "location": "/prfm/lambda_calculus/#lambda-calculus", 
+            "text": "We will only look at pure untyped calculus  LC builds directly on Sequent Calculus", 
+            "title": "Lambda Calculus"
+        }, 
+        {
+            "location": "/prfm/lambda_calculus/#conventions", 
+            "text": "Application  M M  binds tighter than abstraction  Application is left associative", 
+            "title": "Conventions"
+        }, 
+        {
+            "location": "/prfm/lambda_calculus/#free-and-bound-variables", 
+            "text": "\\lambda y.  can be thought of as a quantifier  Bound variables are like parameters  e.g. in an integral  \\int{yx^2}{dx} , x is bound", 
+            "title": "Free and Bound variables"
+        }, 
+        {
+            "location": "/prfm/lambda_calculus/#beta-redcution", 
+            "text": "Replace every  x  in the abstraction  M  with  N     \\frac{}{H\\vdash (\\lambda x. M) N = [x := N]M}\\beta     Examples:    (\\lambda x. square x) 5 = square 5    (\\lambda x. square x) (\\lambda y. square y) 5 = (square (\\lambda y. square y)) 5   No further resolution!       Even if there are different strategies of how to resolute something, the result is always the same", 
+            "title": "Beta Redcution"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/", 
+            "text": "Computation with the Lambda Calculus\n\n\nNormal Form\n\n\n\n\nA \n\\lambda\n Term is in \n\\beta\n-normal form, iff no further reductions can be applied to it\n\n\nIt's possible to have a different ordering of the resolution, but they all lead to the normal form\n\n\nEvery \n\\lambda\n-term has at most one normal form\n\n\nThat makes computation deterministic\n\n\n\n\n\n\nNot all \n\\lambda\n-terms terminate i.e. have a normal form\n\n\ne.g. \n(\\lambda x.\\,x\\,x)(\\lambda x.\\,x\\,x)\n\n\n\n\nNecessary to make it Turing-complete\n\n\n\n\n\n\n\n\nCurrying\n\n\n\n\n\n\n\\lambda\n-terms only allow single argument functions\n\n\nHow to implement functions with multiple Arguments?\n\n\nCurrying: \nf(x, y) = f\\,x\\,y\n\n\n\n\nApply \nf\n to \nx\n, which returns a function that takes \ny\n\n\n\n\nApply this function to \ny\n\n\n\n\n\n\n\n\n\n\n\n\n\\delta\n-Reduction\n\n\n\n\nSubstitute a defined symbol with its definition\n\n\ne.g. \nsquare(x)\n substituted is \n\\lambda x.\\,*\\,x\\,x\n\n\n\n\n\n\nHigher Order Functions\n\n\n\n\nFunctions that either takes a function as input or returns a function\n\n\nfunctions are \"first-class citizens\"\n\n\n\n\nEvaluation Strategies\n\n\n\n\nA redex (reducible expression) is a any Delta- oder Beta-reducible lambda term\n\n\nStrategie plays a role in the length of derivations and if they terminate\n\n\nThere are an arbitrary number of evaluation strategies\n\n\nInnermost- and Outermost-First are \"extreme\" cases\n\n\n\n\nInnermost-first (applicative order)\n\n\n\n\nThe innermost redex is reduced first\n\n\nIf multiple possible, the leftmost is reduced first\n\n\nA redex is innermost if there is no other redex inside it\n\n\n\n\nOutermost-first (normal order)\n\n\n\n\nThe outermost redex is reduced first\n\n\nIf multiple possible, the leftmost is reduced first\n\n\nA redex is outermost if there is no other redex outside it\n\n\n\n\nComparison\n\n\n\n\ninnermost-first: Arguments are reduced exactly once (even if they're not used)\n\n\noutermost-first: Arguments are reduced as often as they're needed (can be multiple times for one)\n\n\ninnermost-first doesn't always result in shorter derivations\n\n\nOutermost-first always ends in a normal form if it exists\n\n\ninnermost-first may not terminate, e.g. when a non-terminating redux is an argument, but never used\n\n\n\n\n\n\ninnermost-first is like \"call by value\", outermost-first like \"call by ref\"\n\n\n\n\nLazy Evaluation\n\n\n\n\nMake call-by-name more efficient\n\n\nCache evaluations to evaluate arguments only once\n\n\nDefault for Haskell\n\n\n\n\nEncoding Data and Operations\n\n\n\n\nPure lambda does not have primitive data types\n\n\nWe need numbers, booleans \n pairs to construct arbitrary data types\n\n\nThese definitions correspond to AND/OR-Gates on a real CPU (low-level)\n\n\n\n\nBooleans\n\n\n\n\nIt's hard to have an intuition for these, try to prove some properties that must hold (truth tables)\n\n\n\n\nArithmetic\n\n\n\n\nFor every number n, apply a function n times", 
+            "title": "Lambda Computation"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#computation-with-the-lambda-calculus", 
+            "text": "", 
+            "title": "Computation with the Lambda Calculus"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#normal-form", 
+            "text": "A  \\lambda  Term is in  \\beta -normal form, iff no further reductions can be applied to it  It's possible to have a different ordering of the resolution, but they all lead to the normal form  Every  \\lambda -term has at most one normal form  That makes computation deterministic    Not all  \\lambda -terms terminate i.e. have a normal form  e.g.  (\\lambda x.\\,x\\,x)(\\lambda x.\\,x\\,x)   Necessary to make it Turing-complete", 
+            "title": "Normal Form"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#currying", 
+            "text": "\\lambda -terms only allow single argument functions  How to implement functions with multiple Arguments?  Currying:  f(x, y) = f\\,x\\,y   Apply  f  to  x , which returns a function that takes  y   Apply this function to  y", 
+            "title": "Currying"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#delta-reduction", 
+            "text": "Substitute a defined symbol with its definition  e.g.  square(x)  substituted is  \\lambda x.\\,*\\,x\\,x", 
+            "title": "\\delta-Reduction"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#higher-order-functions", 
+            "text": "Functions that either takes a function as input or returns a function  functions are \"first-class citizens\"", 
+            "title": "Higher Order Functions"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#evaluation-strategies", 
+            "text": "A redex (reducible expression) is a any Delta- oder Beta-reducible lambda term  Strategie plays a role in the length of derivations and if they terminate  There are an arbitrary number of evaluation strategies  Innermost- and Outermost-First are \"extreme\" cases", 
+            "title": "Evaluation Strategies"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#innermost-first-applicative-order", 
+            "text": "The innermost redex is reduced first  If multiple possible, the leftmost is reduced first  A redex is innermost if there is no other redex inside it", 
+            "title": "Innermost-first (applicative order)"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#outermost-first-normal-order", 
+            "text": "The outermost redex is reduced first  If multiple possible, the leftmost is reduced first  A redex is outermost if there is no other redex outside it", 
+            "title": "Outermost-first (normal order)"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#comparison", 
+            "text": "innermost-first: Arguments are reduced exactly once (even if they're not used)  outermost-first: Arguments are reduced as often as they're needed (can be multiple times for one)  innermost-first doesn't always result in shorter derivations  Outermost-first always ends in a normal form if it exists  innermost-first may not terminate, e.g. when a non-terminating redux is an argument, but never used    innermost-first is like \"call by value\", outermost-first like \"call by ref\"", 
+            "title": "Comparison"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#lazy-evaluation", 
+            "text": "Make call-by-name more efficient  Cache evaluations to evaluate arguments only once  Default for Haskell", 
+            "title": "Lazy Evaluation"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#encoding-data-and-operations", 
+            "text": "Pure lambda does not have primitive data types  We need numbers, booleans   pairs to construct arbitrary data types  These definitions correspond to AND/OR-Gates on a real CPU (low-level)", 
+            "title": "Encoding Data and Operations"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#booleans", 
+            "text": "It's hard to have an intuition for these, try to prove some properties that must hold (truth tables)", 
+            "title": "Booleans"
+        }, 
+        {
+            "location": "/prfm/computation_lambda_calculus/#arithmetic", 
+            "text": "For every number n, apply a function n times", 
+            "title": "Arithmetic"
+        }, 
+        {
+            "location": "/pmqm/", 
+            "text": "Projekt- und Qualit\u00e4tsmanagement", 
+            "title": "Index"
+        }, 
+        {
+            "location": "/pmqm/#projekt-und-qualitatsmanagement", 
+            "text": "", 
+            "title": "Projekt- und Qualit\u00e4tsmanagement"
+        }, 
+        {
+            "location": "/pmqm/exam/", 
+            "text": "Exam\n\n\n\n\nOpen Book", 
+            "title": "Exam"
+        }, 
+        {
+            "location": "/pmqm/exam/#exam", 
+            "text": "Open Book", 
+            "title": "Exam"
+        }, 
+        {
+            "location": "/pmqm/projekt_qualitaet/", 
+            "text": "Projekt und Qualit\u00e4t\n\n\n\n\nWichtig: Qualit\u00e4tsrelevante Interessen kennen!\n\n\n\n\nPlan, Do, Check, Act\n\n\n\n\nPlan - SMART-Ziele\n\n\nSpezifisch, Messbar, Akzeptiert, Realistisch, Terminiert\n\n\n\n\n\n\nDo - OTOBOS\n\n\nOn Time, on Budget, on Scope", 
+            "title": "Projekt und Qualit\u00e4t"
+        }, 
+        {
+            "location": "/pmqm/projekt_qualitaet/#projekt-und-qualitat", 
+            "text": "Wichtig: Qualit\u00e4tsrelevante Interessen kennen!", 
+            "title": "Projekt und Qualit\u00e4t"
+        }, 
+        {
+            "location": "/pmqm/projekt_qualitaet/#plan-do-check-act", 
+            "text": "Plan - SMART-Ziele  Spezifisch, Messbar, Akzeptiert, Realistisch, Terminiert    Do - OTOBOS  On Time, on Budget, on Scope", 
+            "title": "Plan, Do, Check, Act"
+        }, 
+        {
+            "location": "/pmqm/projekte/", 
+            "text": "Projekte\n\n\nProjekttypen\n\n\n\n\nLinienprojekt: Alle wichtigen Akteure sind in ihrer Stammorganisation (Chef = PL)\n\n\nKleine Projekte, Startups\n\n\n\n\n\n\nMatrixorganisation: Akteure sind in verschiedenen Einheiten (Entwicklung, Verkauf, etc.)\n\n\nPL ist aus Pool und \"normaler\" Mitarbeiter\n\n\nF\u00fcr grosse Unternehmen\n\n\n\n\n\n\nStablinienorganisation: Gleich wie Matrix, aber PL ist aus Stabsstelle\n\n\nZ.B. mit externem PL\n\n\nFlexible L\u00f6sung f\u00fcr mittelgrosse Projekte\n\n\n\n\n\n\nReine Projektorganisation: Alle wichtigen Akteure werden in die gleiche Einheit zusammen gezogen (Einehitsleiter = PL)\n\n\nF\u00fcr grosse Projekte mit langfristigem Fokus\n\n\n\n\n\n\n\n\nRequirement Engineering\n\n\n\n\nNormalerweise Anforderungen \"Soll\" einteilen, f\u00fcr ganz wichtiges \"Muss\"\n\n\n\n\nLernkontrolle\n\n\n\n\nFrage 2: C und D sind falsch\n\n\nFrage 3: Interviews, Beobachtung", 
+            "title": "Projekte"
+        }, 
+        {
+            "location": "/pmqm/projekte/#projekte", 
+            "text": "", 
+            "title": "Projekte"
+        }, 
+        {
+            "location": "/pmqm/projekte/#projekttypen", 
+            "text": "Linienprojekt: Alle wichtigen Akteure sind in ihrer Stammorganisation (Chef = PL)  Kleine Projekte, Startups    Matrixorganisation: Akteure sind in verschiedenen Einheiten (Entwicklung, Verkauf, etc.)  PL ist aus Pool und \"normaler\" Mitarbeiter  F\u00fcr grosse Unternehmen    Stablinienorganisation: Gleich wie Matrix, aber PL ist aus Stabsstelle  Z.B. mit externem PL  Flexible L\u00f6sung f\u00fcr mittelgrosse Projekte    Reine Projektorganisation: Alle wichtigen Akteure werden in die gleiche Einheit zusammen gezogen (Einehitsleiter = PL)  F\u00fcr grosse Projekte mit langfristigem Fokus", 
+            "title": "Projekttypen"
+        }, 
+        {
+            "location": "/pmqm/projekte/#requirement-engineering", 
+            "text": "Normalerweise Anforderungen \"Soll\" einteilen, f\u00fcr ganz wichtiges \"Muss\"", 
+            "title": "Requirement Engineering"
+        }, 
+        {
+            "location": "/pmqm/projekte/#lernkontrolle", 
+            "text": "Frage 2: C und D sind falsch  Frage 3: Interviews, Beobachtung", 
+            "title": "Lernkontrolle"
+        }, 
+        {
+            "location": "/pmqm/finanzen/", 
+            "text": "Finanzen\n\n\nDiskontierung\n\n\n\n\nQuasi interner \"Zinssatz\" + Risiko, der f\u00fcr jedes Jahr in der Zukunft aufaddiert wird, um die Unberechenbarkeit der Zukunft einzuberechnen\n\n\nz.B. Diskontierungsfaktor 4.5%: \nJahresgewinn * (1-(Jahr * 4.5%))\n\n\n\n\nFinanzierung\n\n\n\n\nDie meisten Projekte brauchen zuerst eine interne Finanzierung, auch wenn der gr\u00f6sste Teil danach extern finanziert wird", 
+            "title": "Finanzen"
+        }, 
+        {
+            "location": "/pmqm/finanzen/#finanzen", 
+            "text": "", 
+            "title": "Finanzen"
+        }, 
+        {
+            "location": "/pmqm/finanzen/#diskontierung", 
+            "text": "Quasi interner \"Zinssatz\" + Risiko, der f\u00fcr jedes Jahr in der Zukunft aufaddiert wird, um die Unberechenbarkeit der Zukunft einzuberechnen  z.B. Diskontierungsfaktor 4.5%:  Jahresgewinn * (1-(Jahr * 4.5%))", 
+            "title": "Diskontierung"
+        }, 
+        {
+            "location": "/pmqm/finanzen/#finanzierung", 
+            "text": "Die meisten Projekte brauchen zuerst eine interne Finanzierung, auch wenn der gr\u00f6sste Teil danach extern finanziert wird", 
+            "title": "Finanzierung"
+        }, 
+        {
+            "location": "/apparch/", 
+            "text": "Application Architecture", 
+            "title": "Index"
+        }, 
+        {
+            "location": "/apparch/#application-architecture", 
+            "text": "", 
+            "title": "Application Architecture"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/", 
+            "text": "Softare Architecture Fundamentals\n\n\nDefintion\n\n\n\n\nSoftware Architect ist eine Rolle  mit vielen Disziplinen (consult, create, maintain, review, ...)\n\n\nKann in agiler Entwicklung auch eine \"virtuelle\" Rolle sein\n\n\n\n\nPhasen\n\n\n\n\n\"Architectural Concerns\" - Architekturanforderungen und -interessen\n\n\nArchitectural Analysis - \"Requirements engineering\"\n\n\nArchitectural Synthesis - \"Architektur Design\"\n\n\nArchitectural Evaluation - \"Architektur-Review\"\n\n\n\n\nArchitectural Significance\n\n\n\n\nEconomic Significance: z.B. \"Kann damit der Vertrag erf\u00fcllt werden?\", \"Konkurenz hat dies bereits, brauchen wir auch\"\n\n\nOft entscheidet auch die Erfahrung aus fr\u00fcheren Projekten, ob Requirements f\u00fcr die Architektur relevant sind\n\n\nAndere Checkliste von P. Eeles:\n\n\nungenau definiert, was heisst \"critical\" functionality?\n\n\nDie meisten Anforderungen treffen nach dieser Checkliste zu\n\n\n\n\n\n\n\n\nViewpoints\n\n\n\n\nEin Viewpoint gruppiert Anliegen (concerns) von Stakeholdern\n\n\n\n\n4+1 Viewpoint Model (RUP)\n\n\n\n\nView f\u00fcr Logical (f\u00fcr Designer), Implementation (f\u00fcr Programmer), Process (f\u00fcr Integrators) und Deployment\n\n\nUse-case View in der Mitte, die alles verbindet", 
+            "title": "Fundamentals"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/#softare-architecture-fundamentals", 
+            "text": "", 
+            "title": "Softare Architecture Fundamentals"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/#defintion", 
+            "text": "Software Architect ist eine Rolle  mit vielen Disziplinen (consult, create, maintain, review, ...)  Kann in agiler Entwicklung auch eine \"virtuelle\" Rolle sein", 
+            "title": "Defintion"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/#phasen", 
+            "text": "\"Architectural Concerns\" - Architekturanforderungen und -interessen  Architectural Analysis - \"Requirements engineering\"  Architectural Synthesis - \"Architektur Design\"  Architectural Evaluation - \"Architektur-Review\"", 
+            "title": "Phasen"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/#architectural-significance", 
+            "text": "Economic Significance: z.B. \"Kann damit der Vertrag erf\u00fcllt werden?\", \"Konkurenz hat dies bereits, brauchen wir auch\"  Oft entscheidet auch die Erfahrung aus fr\u00fcheren Projekten, ob Requirements f\u00fcr die Architektur relevant sind  Andere Checkliste von P. Eeles:  ungenau definiert, was heisst \"critical\" functionality?  Die meisten Anforderungen treffen nach dieser Checkliste zu", 
+            "title": "Architectural Significance"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/#viewpoints", 
+            "text": "Ein Viewpoint gruppiert Anliegen (concerns) von Stakeholdern", 
+            "title": "Viewpoints"
+        }, 
+        {
+            "location": "/apparch/architecture_fundamentals/#41-viewpoint-model-rup", 
+            "text": "View f\u00fcr Logical (f\u00fcr Designer), Implementation (f\u00fcr Programmer), Process (f\u00fcr Integrators) und Deployment  Use-case View in der Mitte, die alles verbindet", 
+            "title": "4+1 Viewpoint Model (RUP)"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/", 
+            "text": "Agile Architecture \n Quality Attribute-Driven Design\n\n\nDiscussion\n\n\n\n\nApplication Architecture: Spezifisch auf Ebene \"Logical View\" und \"Development View\"\n\n\nSpezialisierung von \"Software Architecture\", das die ganze Disziplin umfasst\n\n\n\n\n\n\n\n\nAgile Architecting\n\n\n\n\nz.B. Tags auf Issues erstellen f\u00fcr ASR-Kategorisierung\n\n\nProzesse geben Notationen vor (wie Use case diagram)\n\n\nAgile Modeling: Viel auf Whiteboard, pragmatisch\n\n\nAttribute-Driven Design: Aus Quality-Attributes die Architektur entwerfen\n\n\nPatterns und Frameworks werden ausgew\u00e4hlt\n\n\n\n\n\n\n\n\nNFRs\n\n\n\n\nSMART - Specific, Measurable, Agreed, Realistic, Time-bound\n\n\nFURPS: Functionality, Usability, Reliability, Performance, Supportability (\"Betreibbarkeit\")\n\n\nTaxonomy: Begriffe anbringen und diese in Beziehung zueinander setzen\n\n\nSystem: Requirements: Zu Attributes (FURPS, NFR) kommen auch Constraints (z.B. politische, rechtliche) und Functional Requirements\n\n\nTaxonomonien helfen auch bei Reviews, um einen \u00dcberblick zu behalten\n\n\n\n\nQuality Attribute Scenario\n\n\n\n\nEnvironment: z.B. \"Runtime\" oder \"Buildtime\"\n\n\nArtifact: Welche Dokumente / Systeme sind betroffen?\n\n\nWICHTIG\n: Response Measure: Wie wird das Resultat gemessen? Was muss diese Messung erf\u00fcllen?\n\n\n\n\nUser Story Template\n\n\n\n\nUser STories erg\u00e4nzen mit \"to achieve this goal, ...\"\n\n\nNFRs und andere messbare Ziele\n\n\nAlternative zu usability Ziele (more agile): A/B-Testing, mit User im Projekt direkt testen\n\n\nErweiterung \"Quality Story Template\" f\u00fcr System Administratoren\n\n\n\"As a system administrator, i would like [NFR]\"\n\n\n\"To achieve this goal, i'm willing to accept/invest ...\"", 
+            "title": "Agile Architecture"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/#agile-architecture-quality-attribute-driven-design", 
+            "text": "", 
+            "title": "Agile Architecture &amp; Quality Attribute-Driven Design"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/#discussion", 
+            "text": "Application Architecture: Spezifisch auf Ebene \"Logical View\" und \"Development View\"  Spezialisierung von \"Software Architecture\", das die ganze Disziplin umfasst", 
+            "title": "Discussion"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/#agile-architecting", 
+            "text": "z.B. Tags auf Issues erstellen f\u00fcr ASR-Kategorisierung  Prozesse geben Notationen vor (wie Use case diagram)  Agile Modeling: Viel auf Whiteboard, pragmatisch  Attribute-Driven Design: Aus Quality-Attributes die Architektur entwerfen  Patterns und Frameworks werden ausgew\u00e4hlt", 
+            "title": "Agile Architecting"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/#nfrs", 
+            "text": "SMART - Specific, Measurable, Agreed, Realistic, Time-bound  FURPS: Functionality, Usability, Reliability, Performance, Supportability (\"Betreibbarkeit\")  Taxonomy: Begriffe anbringen und diese in Beziehung zueinander setzen  System: Requirements: Zu Attributes (FURPS, NFR) kommen auch Constraints (z.B. politische, rechtliche) und Functional Requirements  Taxonomonien helfen auch bei Reviews, um einen \u00dcberblick zu behalten", 
+            "title": "NFRs"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/#quality-attribute-scenario", 
+            "text": "Environment: z.B. \"Runtime\" oder \"Buildtime\"  Artifact: Welche Dokumente / Systeme sind betroffen?  WICHTIG : Response Measure: Wie wird das Resultat gemessen? Was muss diese Messung erf\u00fcllen?", 
+            "title": "Quality Attribute Scenario"
+        }, 
+        {
+            "location": "/apparch/agile_architecture/#user-story-template", 
+            "text": "User STories erg\u00e4nzen mit \"to achieve this goal, ...\"  NFRs und andere messbare Ziele  Alternative zu usability Ziele (more agile): A/B-Testing, mit User im Projekt direkt testen  Erweiterung \"Quality Story Template\" f\u00fcr System Administratoren  \"As a system administrator, i would like [NFR]\"  \"To achieve this goal, i'm willing to accept/invest ...\"", 
+            "title": "User Story Template"
+        }, 
+        {
+            "location": "/apparch/solution_strategy/", 
+            "text": "Solution Strategy\n\n\nTipps f\u00fcr Solution Strategy: \nhttp://docs.arc42.org/keywords/#solution-strategy\n\n\nArchitectural Synthesis\n\n\n\n\nScope abstecken mit funktionalen Komponenten und externen Interfaces\n\n\nWichtige Entscheidungen zur Architektur (Tiers, Frameworks)\n\n\n\"Twin Peaks Model\": Requirements und Design (Architektur) werden \"gleichzeitig\" ausgearbeitet (iterativ und inkrementell)\n\n\n\n\nLayer-Pattern\n\n\n\n\nIm Layer-Pattern gibt es keine Layer-\"Spr\u00fcnge\"!\n\n\nLayers sind logisch und geben nicht die physikalische Verteilung (tiers) vor\n\n\n\"Enterprise Resources\" = \"Domain Entities\"\n\n\nBusiness Rule: Anforderungen, z.B. \"Kundenanfragen werden in x Min beantwortet\"\n\n\n\n\nClient-Server Cuts\n\n\n\n\nLayer-Pattern zwei mal angewendet: Logisch (logical Viewpoint) und Aufteilung auf phyiskalische Tiers (deployment viewpoint)\n\n\nLayer k\u00f6nnen als ganzes auf Tiers aufgeteilt werden, oder Layer k\u00f6nnen auch \"geschnitten\" werden\n\n\nTiers und Layers werden oft missverst\u00e4ndlich verwendet, am besten immer nachfragen\n\n\nFliessende Layers: Ist z.B. Eingabevalidierung im Presentation-Layer, oder allein / zus\u00e4tzlich noch in Business Logic?\n\n\nz.B. auf beiden Layern testen und mit Tests \"synchronisieren\"\n\n\n\n\n\n\n\n\nC4 Models\n\n\n\n\nContext\n: System ist black-box, welche Schnittstellen kommunizieren damit?\n\n\nDazu geh\u00f6ren andere Systeme und auch User mit Use Cases\n\n\n\n\n\n\nContainer\n: Gibt eine \u00dcbersicht der Architektur (solution strateby)\n\n\nHigh-Level Technology choices\n\n\n\n\n\n\nComponents\n: Logische Komponenten und Kommunikation innerhalb eines Containers (mehr in n\u00e4chster Vorlesung)\n\n\nClasses\n (or Code): Klassendiagramm oder Code selbst", 
+            "title": "Solution Strategy"
+        }, 
+        {
+            "location": "/apparch/solution_strategy/#solution-strategy", 
+            "text": "Tipps f\u00fcr Solution Strategy:  http://docs.arc42.org/keywords/#solution-strategy", 
+            "title": "Solution Strategy"
+        }, 
+        {
+            "location": "/apparch/solution_strategy/#architectural-synthesis", 
+            "text": "Scope abstecken mit funktionalen Komponenten und externen Interfaces  Wichtige Entscheidungen zur Architektur (Tiers, Frameworks)  \"Twin Peaks Model\": Requirements und Design (Architektur) werden \"gleichzeitig\" ausgearbeitet (iterativ und inkrementell)", 
+            "title": "Architectural Synthesis"
+        }, 
+        {
+            "location": "/apparch/solution_strategy/#layer-pattern", 
+            "text": "Im Layer-Pattern gibt es keine Layer-\"Spr\u00fcnge\"!  Layers sind logisch und geben nicht die physikalische Verteilung (tiers) vor  \"Enterprise Resources\" = \"Domain Entities\"  Business Rule: Anforderungen, z.B. \"Kundenanfragen werden in x Min beantwortet\"", 
+            "title": "Layer-Pattern"
+        }, 
+        {
+            "location": "/apparch/solution_strategy/#client-server-cuts", 
+            "text": "Layer-Pattern zwei mal angewendet: Logisch (logical Viewpoint) und Aufteilung auf phyiskalische Tiers (deployment viewpoint)  Layer k\u00f6nnen als ganzes auf Tiers aufgeteilt werden, oder Layer k\u00f6nnen auch \"geschnitten\" werden  Tiers und Layers werden oft missverst\u00e4ndlich verwendet, am besten immer nachfragen  Fliessende Layers: Ist z.B. Eingabevalidierung im Presentation-Layer, oder allein / zus\u00e4tzlich noch in Business Logic?  z.B. auf beiden Layern testen und mit Tests \"synchronisieren\"", 
+            "title": "Client-Server Cuts"
+        }, 
+        {
+            "location": "/apparch/solution_strategy/#c4-models", 
+            "text": "Context : System ist black-box, welche Schnittstellen kommunizieren damit?  Dazu geh\u00f6ren andere Systeme und auch User mit Use Cases    Container : Gibt eine \u00dcbersicht der Architektur (solution strateby)  High-Level Technology choices    Components : Logische Komponenten und Kommunikation innerhalb eines Containers (mehr in n\u00e4chster Vorlesung)  Classes  (or Code): Klassendiagramm oder Code selbst", 
+            "title": "C4 Models"
+        }, 
+        {
+            "location": "/apparch/component_modeling/", 
+            "text": "Component Modeling / Reference Architectures\n\n\nContainer Diagram\n\n\n\n\nContainer Diagram zeigt eine h\u00f6here Abstraktionsebene als das Komponenten-Diagramm\n\n\nJeder Container ist sepparat \"deployable\", z.B. Fileserver, file system, web app\n\n\n\n\n\n\nJeder Container kann in einzelne Components unterteilt werden\n\n\n\n\nComponent Modeling\n\n\n\n\nIn fr\u00fchen Phasen werden Komponenten erst tempor\u00e4r festgelegt, Komponenten heissen hier \"candidate components\"\n\n\nBuy vs. build (kann auch OS-Funktion wie Cron sein)\n\n\n\n\nComponent Identification\n\n\n\n\nKandidaten identifizieren\n\n\nF\u00fcr jede Rolle (Actor) im System eine Channel-Komponente\n\n\nF\u00fcr jedes Features pro Layer eine Komponente (z.B. \nNumberPortingPresentation\n)\n\n\n\n\n\n\nCRC brainstorming\n\n\nF\u00fcr jede Komponente Responsibilities und Collaborators (Interfaces) aufschreiben\n\n\nAusserdem: Welche Technologien k\u00f6nnen eingesetzt werden, was kann als Vorlage / Inspiration genommen werden?\n\n\n\n\n\n\nRefactoring\n\n\nz.B. Split / Merge Components\n\n\nNFA / Implementation beachten (erst jetzt)\n\n\nM\u00f6gliche Technologien\n\n\n\n\n\n\n\n\nArchitectural Styles\n\n\n\n\nAnalog Geb\u00e4ude-Architektur (Gothisch, Romanisch)\n\n\nz.B. \"client/server\", \"Layering\"", 
+            "title": "Component Modeling"
+        }, 
+        {
+            "location": "/apparch/component_modeling/#component-modeling-reference-architectures", 
+            "text": "", 
+            "title": "Component Modeling / Reference Architectures"
+        }, 
+        {
+            "location": "/apparch/component_modeling/#container-diagram", 
+            "text": "Container Diagram zeigt eine h\u00f6here Abstraktionsebene als das Komponenten-Diagramm  Jeder Container ist sepparat \"deployable\", z.B. Fileserver, file system, web app    Jeder Container kann in einzelne Components unterteilt werden", 
+            "title": "Container Diagram"
+        }, 
+        {
+            "location": "/apparch/component_modeling/#component-modeling", 
+            "text": "In fr\u00fchen Phasen werden Komponenten erst tempor\u00e4r festgelegt, Komponenten heissen hier \"candidate components\"  Buy vs. build (kann auch OS-Funktion wie Cron sein)", 
+            "title": "Component Modeling"
+        }, 
+        {
+            "location": "/apparch/component_modeling/#component-identification", 
+            "text": "Kandidaten identifizieren  F\u00fcr jede Rolle (Actor) im System eine Channel-Komponente  F\u00fcr jedes Features pro Layer eine Komponente (z.B.  NumberPortingPresentation )    CRC brainstorming  F\u00fcr jede Komponente Responsibilities und Collaborators (Interfaces) aufschreiben  Ausserdem: Welche Technologien k\u00f6nnen eingesetzt werden, was kann als Vorlage / Inspiration genommen werden?    Refactoring  z.B. Split / Merge Components  NFA / Implementation beachten (erst jetzt)  M\u00f6gliche Technologien", 
+            "title": "Component Identification"
+        }, 
+        {
+            "location": "/apparch/component_modeling/#architectural-styles", 
+            "text": "Analog Geb\u00e4ude-Architektur (Gothisch, Romanisch)  z.B. \"client/server\", \"Layering\"", 
+            "title": "Architectural Styles"
+        }, 
+        {
+            "location": "/apparch/component_dynamics_container_patterns/", 
+            "text": "Component Dynamics \n Container Patterns\n\n\n\n\nINSIEME nach 12 Jahren und 100 Mio. abgebrochen\n\n\n\n\nComponent Dynamics\n\n\n\n\nCandidate Components sind logische Komponenten der Architektur, die \u00e4hnliche Verantwortlichkeiten zusammen fassen\n\n\nImplementation Components sind aus dem Development Viewpoint, dies sind die konkreten Implementation mit deren Interfaces\n\n\nBei der Architektur geht es auch um den Fluss, d.h. um das Verhalten des Systems, nicht nur deren Struktur\n\n\n\n\nContainer Patterns\n\n\nPlugin\n\n\n\n\nz.B. Eclipse, Browser\n\n\nFunktionen werden durch Konfiguration (ohne Neukompilieren) hinzugef\u00fcgt\n\n\n\n\nInversion of Control\n\n\n\n\nFrameworks steuern den Fluss selber, Komponenten werden  vom Framework aufgerufen\n\n\nProblem: Wie wird definiert, wie Frameworks die Komponenten finden kann?\n\n\n-\n Dependency Injection", 
+            "title": "Component Dynamics & Container Patterns"
+        }, 
+        {
+            "location": "/apparch/component_dynamics_container_patterns/#component-dynamics-container-patterns", 
+            "text": "INSIEME nach 12 Jahren und 100 Mio. abgebrochen", 
+            "title": "Component Dynamics &amp; Container Patterns"
+        }, 
+        {
+            "location": "/apparch/component_dynamics_container_patterns/#component-dynamics", 
+            "text": "Candidate Components sind logische Komponenten der Architektur, die \u00e4hnliche Verantwortlichkeiten zusammen fassen  Implementation Components sind aus dem Development Viewpoint, dies sind die konkreten Implementation mit deren Interfaces  Bei der Architektur geht es auch um den Fluss, d.h. um das Verhalten des Systems, nicht nur deren Struktur", 
+            "title": "Component Dynamics"
+        }, 
+        {
+            "location": "/apparch/component_dynamics_container_patterns/#container-patterns", 
+            "text": "", 
+            "title": "Container Patterns"
+        }, 
+        {
+            "location": "/apparch/component_dynamics_container_patterns/#plugin", 
+            "text": "z.B. Eclipse, Browser  Funktionen werden durch Konfiguration (ohne Neukompilieren) hinzugef\u00fcgt", 
+            "title": "Plugin"
+        }, 
+        {
+            "location": "/apparch/component_dynamics_container_patterns/#inversion-of-control", 
+            "text": "Frameworks steuern den Fluss selber, Komponenten werden  vom Framework aufgerufen  Problem: Wie wird definiert, wie Frameworks die Komponenten finden kann?  -  Dependency Injection", 
+            "title": "Inversion of Control"
+        }, 
+        {
+            "location": "/apparch/DDD_coding-style/", 
+            "text": "Tactic DDD \n Architecturally Evident Coding Style\n\n\nRecap\n\n\n\n\nSpringDIAssember\n ist ein erfundener Name, steht f\u00fcr Dependency Injection Komponente von Spring\n\n\n\n\nDomain Model Pattern (PoEAA)\n\n\n\n\nBei Fowler nur sehr knapp definiert, mehr in DDD\n\n\n\n\nBusiness Layer Logic\n\n\n\n\nVerschiedene Arten von Business-Logik: Berechnungen, CRUD, Checks, Reporting, etc.\n\n\n\n\nTactic Domain Driven Design\n\n\n\n\n\"Zoom-in\" auf Domain-Model\n\n\nStrategie: Langfristig, Taktik: Kurzfristige Entscheidungen, um Ziele zu erreichen\n\n\nModifiziertes Layer-Modell\n\n\nInterfaces\n: quasi Presentation Layer\n\n\nApplication\n: Business Logik\n\n\nInfrastructure\n: Data Access, quer zu den anderen Schichten! Geh\u00f6rt eigentlich eher unter Domain\n\n\n\n\n\n\nUbiquitous Language: Sprache von DDD soll \"allgegenw\u00e4rtig\" und einheitlich in der Applikation sein\n\n\nBest Practice: An Aggregate-Grenzen nur Objekt-Ids \u00fcberbgeben, keine Referenzen (Entkopplung)\n\n\n\n\nDDD Patterns\n\n\n\n\nEinteilung von \nEntities\n, \nServices\n und \nvalue objects\n (siehe APF)\n\n\nKlassen mit lediglich \"Do-er\" Methoden (stateless) sind \nservices\n\n\n\n\n\n\nAggregate Pattern: Entities und Value Objects in \nAggregates\n gruppieren\n\n\nAnalog SE1/SE2: Partitionieren\n\n\nJedes Aggregate hat eine \nroot Entity\n, die Zugriff zu anderen Entities bietet und Business Rules (Invariants, Pre-- und Post-conditions) \u00fcberpr\u00fcft\n\n\nAggregate selbst ist keine Klasse, nur ein package!\n\n\n\n\n\n\nPro aggregate und root entity eine \nFactory\n implementieren\n\n\nEine \nRepository\n-Klasse pro Aggregate f\u00fcr alle Entities definieren, die abgerufen werden sollen (per id)\n\n\nz.B. \nfind()\n, \nstore()\n\n\n\n\n\n\n\n\nArchitecturally Evident Coding Styles (AECS)\n\n\n\n\nArchitektur soll im Code nicht \"verloren\" gehen\n\n\nStartup-Code soll zentralisiert sein (und klar benannt)\n\n\nIn DDD: \"Intention Revealing Interfaces\"\n\n\n2-3 W\u00f6rter pro Name\n\n\nStarke Verben verwenden (nicht \"set\", \"change\")", 
+            "title": "Tactic DDD & Architectural Coding Style"
+        }, 
+        {
+            "location": "/apparch/DDD_coding-style/#tactic-ddd-architecturally-evident-coding-style", 
+            "text": "", 
+            "title": "Tactic DDD &amp; Architecturally Evident Coding Style"
+        }, 
+        {
+            "location": "/apparch/DDD_coding-style/#recap", 
+            "text": "SpringDIAssember  ist ein erfundener Name, steht f\u00fcr Dependency Injection Komponente von Spring", 
+            "title": "Recap"
+        }, 
+        {
+            "location": "/apparch/DDD_coding-style/#domain-model-pattern-poeaa", 
+            "text": "Bei Fowler nur sehr knapp definiert, mehr in DDD", 
+            "title": "Domain Model Pattern (PoEAA)"
+        }, 
+        {
+            "location": "/apparch/DDD_coding-style/#business-layer-logic", 
+            "text": "Verschiedene Arten von Business-Logik: Berechnungen, CRUD, Checks, Reporting, etc.", 
+            "title": "Business Layer Logic"
+        }, 
+        {
+            "location": "/apparch/DDD_coding-style/#tactic-domain-driven-design", 
+            "text": "\"Zoom-in\" auf Domain-Model  Strategie: Langfristig, Taktik: Kurzfristige Entscheidungen, um Ziele zu erreichen  Modifiziertes Layer-Modell  Interfaces : quasi Presentation Layer  Application : Business Logik  Infrastructure : Data Access, quer zu den anderen Schichten! Geh\u00f6rt eigentlich eher unter Domain    Ubiquitous Language: Sprache von DDD soll \"allgegenw\u00e4rtig\" und einheitlich in der Applikation sein  Best Practice: An Aggregate-Grenzen nur Objekt-Ids \u00fcberbgeben, keine Referenzen (Entkopplung)", 
+            "title": "Tactic Domain Driven Design"
+        }, 
+        {
+            "location": "/apparch/DDD_coding-style/#ddd-patterns", 
+            "text": "Einteilung von  Entities ,  Services  und  value objects  (siehe APF)  Klassen mit lediglich \"Do-er\" Methoden (stateless) sind  services    Aggregate Pattern: Entities und Value Objects in  Aggregates  gruppieren  Analog SE1/SE2: Partitionieren  Jedes Aggregate hat eine  root Entity , die Zugriff zu anderen Entities bietet und Business Rules (Invariants, Pre-- und Post-conditions) \u00fcberpr\u00fcft  Aggregate selbst ist keine Klasse, nur ein package!    Pro aggregate und root entity eine  Factory  implementieren  Eine  Repository -Klasse pro Aggregate f\u00fcr alle Entities definieren, die abgerufen werden sollen (per id)  z.B.  find() ,  store()", 
+            "title": "DDD Patterns"
+        }, 
+        {
+            "location": "/apparch/DDD_coding-style/#architecturally-evident-coding-styles-aecs", 
+            "text": "Architektur soll im Code nicht \"verloren\" gehen  Startup-Code soll zentralisiert sein (und klar benannt)  In DDD: \"Intention Revealing Interfaces\"  2-3 W\u00f6rter pro Name  Starke Verben verwenden (nicht \"set\", \"change\")", 
+            "title": "Architecturally Evident Coding Styles (AECS)"
+        }, 
+        {
+            "location": "/apparch/exercises/ex1/", 
+            "text": "Exercise 1\n\n\n\n\n\n\n\n\nRequirement\n\n\nScore\n\n\nMapping\n\n\nExplanation\n\n\n\n\n\n\n\n\n\n\nCache V2 Kubernetes provider resources (#1919)\n\n\n\n\n\n\n\n\n\n\n\n\nReplace all Frigga usage in Orca (#1920)\n\n\nL-M\n\n\n\n\nFrigga ist eine alte Library, die String Parsing macht; wohl nicht wichtig f\u00fcr QoS\n\n\n\n\n\n\nSupport for custom basePath of Swagger\n\n\nL\n\n\n\n\nSwagger ist API-Framework; Wohl nicht wichtig f\u00fcr Architektur", 
+            "title": "Exercise 1"
+        }, 
+        {
+            "location": "/apparch/exercises/ex1/#exercise-1", 
+            "text": "Requirement  Score  Mapping  Explanation      Cache V2 Kubernetes provider resources (#1919)       Replace all Frigga usage in Orca (#1920)  L-M   Frigga ist eine alte Library, die String Parsing macht; wohl nicht wichtig f\u00fcr QoS    Support for custom basePath of Swagger  L   Swagger ist API-Framework; Wohl nicht wichtig f\u00fcr Architektur", 
+            "title": "Exercise 1"
+        }, 
+        {
+            "location": "/apf/", 
+            "text": "Advanced Patterns and Frameworks", 
+            "title": "Index"
+        }, 
+        {
+            "location": "/apf/#advanced-patterns-and-frameworks", 
+            "text": "", 
+            "title": "Advanced Patterns and Frameworks"
+        }, 
+        {
+            "location": "/apf/intro/", 
+            "text": "APF Intro\n\n\nWas sind Patterns\n\n\n\n\nUrpsrung: Architektur Patterns von Christopher Alexander\n\n\nGenerische L\u00f6sungen f\u00fcr h\u00e4ufige Engineering-Probleme\n\n\nPattern ist selten 1:1 implementierbar\n\n\nForces: Was sind die Probleme und Rahmenbedingungen, die mit einem Pattern gel\u00f6st werden k\u00f6nnen?\n\n\nConsequences: Gut und schlechte Resultate des Patterns\n\n\nPattern Language: Patterns werden miteinander verkn\u00fcpft und bauen aufeinander auf\n\n\nGenerelle Prinzipen sind \nkeine\n Patterns! (DRY, SOLID, etc.)\n\n\nSOLID: \n\n\nSingle Responsibility\n\n\nOpen-Closed: offen f\u00fcr Erweiterung, keine Ver\u00e4nderung von Clients notwendig)\n\n\nLizkov-Substitution Principle\n\n\nInterface segregation principle: Interfaces abspalten\n\n\nDependency Inversion: Abh\u00e4ngigkeiten immer vom konkreten zum abstrakten\n\n\n\n\n\n\n\n\n\n\n\n\nRelevante Patterns\n\n\n\n\nGoF-Patterns (ohne Singleton)\n\n\nEinteilung in drei Teile ist eher k\u00fcnstlich\n\n\n\n\n\n\nPOSA 1: Pattern h\u00e4ngen miteinander zusammen", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/apf/intro/#apf-intro", 
+            "text": "", 
+            "title": "APF Intro"
+        }, 
+        {
+            "location": "/apf/intro/#was-sind-patterns", 
+            "text": "Urpsrung: Architektur Patterns von Christopher Alexander  Generische L\u00f6sungen f\u00fcr h\u00e4ufige Engineering-Probleme  Pattern ist selten 1:1 implementierbar  Forces: Was sind die Probleme und Rahmenbedingungen, die mit einem Pattern gel\u00f6st werden k\u00f6nnen?  Consequences: Gut und schlechte Resultate des Patterns  Pattern Language: Patterns werden miteinander verkn\u00fcpft und bauen aufeinander auf  Generelle Prinzipen sind  keine  Patterns! (DRY, SOLID, etc.)  SOLID:   Single Responsibility  Open-Closed: offen f\u00fcr Erweiterung, keine Ver\u00e4nderung von Clients notwendig)  Lizkov-Substitution Principle  Interface segregation principle: Interfaces abspalten  Dependency Inversion: Abh\u00e4ngigkeiten immer vom konkreten zum abstrakten", 
+            "title": "Was sind Patterns"
+        }, 
+        {
+            "location": "/apf/intro/#relevante-patterns", 
+            "text": "GoF-Patterns (ohne Singleton)  Einteilung in drei Teile ist eher k\u00fcnstlich    POSA 1: Pattern h\u00e4ngen miteinander zusammen", 
+            "title": "Relevante Patterns"
+        }, 
+        {
+            "location": "/apf/gof_revisited/", 
+            "text": "GoF Revisited\n\n\nRepetition\n\n\nObserver\n\n\nDefine a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.\n\n\nStrategy\n\n\nDefine a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.\n\n\nTemplate Method\n\n\nDefine the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.\n\n\nAbstract Factory\n\n\nProvide an interface for creating families of related or dependent objects without specifying their concrete classes.\n\n\nPrototype\n\n\nEine konkrete Instanz wird gecloned (statt mit Factory) f\u00fcr eine neue Instanz. So k\u00f6nnen gleiche Instanzen schnell erstellt werden, ohne sie jedes Mal neu zu instanzieren\n\n\nComposite\n\n\nCompose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.\n\n\n\n\nTransparent Composite: Oberklasse (Graphic) hat \nadd(Graphic)\n methode\n\n\nProblem: abgeleitete Klassen haben diese dann auch, k\u00f6nnen sie aber nicht brauchen!\n\n\n\n\n\n\n\n\nDecorator\n\n\nAttach additional responsibilities to an object dynamically. Decorators provide a flexible alternative\nto subclassing for extending functionality.\n\n\n\n\nAndere Intention als Composite: Man m\u00f6chte weitere Funktionalit\u00e4t einf\u00fchren, nicht einen Baum aufbauen. Es ist eine \"Kette\" von Funktionalit\u00e4t\n\n\n\n\nFacade\n\n\nProvide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use\n\n\nLesser Known Patterns\n\n\nMediator\n\n\n\n\nKommunikation unter Objekten sicherstellen, ohne dass die Objekte selbst Referenzen untereinander haben\n\n\nMediator ist oft Observer, die beteiligten Objekte Observables\n\n\nz.B. in \nupdate()\n die Updates von einem Colleague einem anderen Colleague \u00fcbergeben\n\n\n\n\n\n\nGut testbar, wenn sauber: Colleagues-Mocks dem Mediator \u00fcbergeben\n\n\nNachteil: Mediator ist SPOF,  kann sehr gross und unstrukturiert werden\n\n\n\n\nMemento\n\n\n\n\nEin Zustand eines Objektes auslagern, damit er sp\u00e4ter wiederhergestellt werden kann, ohne die Kapselung zu verletzen\n\n\nz.B. Savegames\n\n\nDer Zustand vom Originator wird in das Memento kopiert\n\n\nBeim Widerherstellen schreibt der Originator der Zustand vom Memento zu sich selber\n\n\nVorteil: Originator muss nicht seine Internals heraus geben\n\n\nNachteile:\n\n\nBraucht jedes Mal eine vollst\u00e4ndige Kopie\n\n\nViel Speicherplatz ben\u00f6tigt\n\n\n\n\n\n\n\n\nCommand\n\n\n\n\nEin Command kann herumgereicht werden (\"was gibt es auszuf\u00fchren\")\n\n\nCommand wird von einem Invoker ausgef\u00fchrt (\nexecute()\n)\n\n\nCommand kann z.B. geloggt oder scheduled (verz\u00f6gert) werden\n\n\nNachteil: Viele kleine Command-Klassen bei grossem Design, wird zersaust\n\n\nQuasi ein Function pointer, der herum gereicht wird\n\n\n\n\nCommand Processor\n\n\n\n\nWie Command, aber mit Undo / Redo\n\n\nz.B. Commands in Stack speichern als History\n\n\nDer Processor verwaltet die History\n\n\nCommand Processor gibt auch vor, wer die Commands ausf\u00fchrt, d\u00fcrfen nicht mehr \"beliebig\" herum geschoben werden!\n\n\n\n\nVisitor\n\n\n\n\nProblem: Klassenhierarchie braucht neue Methode, ohne die Klasse zu ver\u00e4ndern\n\n\nBeispiel Filesystem Serialisierung: Oberklasse \nFSObj\n hat Methode \naccept(visitor)\n. Die Unterklassen \"konsumieren\" den Visitor\n\n\nDer Visitor ist entweder ein \nXmlVisitor\n oder \nJSONVisitor\n\n\nUnterklassen rufen im \naccept()\n visitor mit Referenz auf sich selbst auf (z.B. in File: \nvisitor.visitFile(this)\n)\n\n\n\n\n\n\nNachteile: \n\n\nDie beiden Hierarchien sind gekoppelt, f\u00fcr neue Elemente m\u00fcssen beide Hierarchien angepasst werden beide Hierarchien angepasst werden\n\n\nGefahr von Code duplication, weil die Logik aufgebrochen wird\n\n\n\n\n\n\n\n\nFlyweight\n\n\n\n\nAusgangslange: Viele Objekte, die alle \"gleich\" sind, aber in einer Art (z.B. Position) unterschiedlich sind\n\n\nInterner State ist immer gleich, externer State kann sich \u00e4ndern\n\n\nZiel: Memory-sparend abbilden\n\n\nDie \nFlyweight\n-Klasse ist z.B. ein Baum\n\n\nFlyweightManager\nverwaltet die Objekte\n\n\nVom Flyweight gibt es nur eine Instanz, gehalten vom Manager \n\n\n\n\n\n\nDer interne (intrinsic) State ist f\u00fcr alle Objekte gleich (immutable Flyweights)\n\n\nDer externe State wird vom Client direkt dem konkreten Flyweight gegeben (und wird dort nicht gespeichert!)", 
+            "title": "GoF Revisited"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#gof-revisited", 
+            "text": "", 
+            "title": "GoF Revisited"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#repetition", 
+            "text": "", 
+            "title": "Repetition"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#observer", 
+            "text": "Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.", 
+            "title": "Observer"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#strategy", 
+            "text": "Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.", 
+            "title": "Strategy"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#template-method", 
+            "text": "Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.", 
+            "title": "Template Method"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#abstract-factory", 
+            "text": "Provide an interface for creating families of related or dependent objects without specifying their concrete classes.", 
+            "title": "Abstract Factory"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#prototype", 
+            "text": "Eine konkrete Instanz wird gecloned (statt mit Factory) f\u00fcr eine neue Instanz. So k\u00f6nnen gleiche Instanzen schnell erstellt werden, ohne sie jedes Mal neu zu instanzieren", 
+            "title": "Prototype"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#composite", 
+            "text": "Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.   Transparent Composite: Oberklasse (Graphic) hat  add(Graphic)  methode  Problem: abgeleitete Klassen haben diese dann auch, k\u00f6nnen sie aber nicht brauchen!", 
+            "title": "Composite"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#decorator", 
+            "text": "Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative\nto subclassing for extending functionality.   Andere Intention als Composite: Man m\u00f6chte weitere Funktionalit\u00e4t einf\u00fchren, nicht einen Baum aufbauen. Es ist eine \"Kette\" von Funktionalit\u00e4t", 
+            "title": "Decorator"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#facade", 
+            "text": "Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use", 
+            "title": "Facade"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#lesser-known-patterns", 
+            "text": "", 
+            "title": "Lesser Known Patterns"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#mediator", 
+            "text": "Kommunikation unter Objekten sicherstellen, ohne dass die Objekte selbst Referenzen untereinander haben  Mediator ist oft Observer, die beteiligten Objekte Observables  z.B. in  update()  die Updates von einem Colleague einem anderen Colleague \u00fcbergeben    Gut testbar, wenn sauber: Colleagues-Mocks dem Mediator \u00fcbergeben  Nachteil: Mediator ist SPOF,  kann sehr gross und unstrukturiert werden", 
+            "title": "Mediator"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#memento", 
+            "text": "Ein Zustand eines Objektes auslagern, damit er sp\u00e4ter wiederhergestellt werden kann, ohne die Kapselung zu verletzen  z.B. Savegames  Der Zustand vom Originator wird in das Memento kopiert  Beim Widerherstellen schreibt der Originator der Zustand vom Memento zu sich selber  Vorteil: Originator muss nicht seine Internals heraus geben  Nachteile:  Braucht jedes Mal eine vollst\u00e4ndige Kopie  Viel Speicherplatz ben\u00f6tigt", 
+            "title": "Memento"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#command", 
+            "text": "Ein Command kann herumgereicht werden (\"was gibt es auszuf\u00fchren\")  Command wird von einem Invoker ausgef\u00fchrt ( execute() )  Command kann z.B. geloggt oder scheduled (verz\u00f6gert) werden  Nachteil: Viele kleine Command-Klassen bei grossem Design, wird zersaust  Quasi ein Function pointer, der herum gereicht wird", 
+            "title": "Command"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#command-processor", 
+            "text": "Wie Command, aber mit Undo / Redo  z.B. Commands in Stack speichern als History  Der Processor verwaltet die History  Command Processor gibt auch vor, wer die Commands ausf\u00fchrt, d\u00fcrfen nicht mehr \"beliebig\" herum geschoben werden!", 
+            "title": "Command Processor"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#visitor", 
+            "text": "Problem: Klassenhierarchie braucht neue Methode, ohne die Klasse zu ver\u00e4ndern  Beispiel Filesystem Serialisierung: Oberklasse  FSObj  hat Methode  accept(visitor) . Die Unterklassen \"konsumieren\" den Visitor  Der Visitor ist entweder ein  XmlVisitor  oder  JSONVisitor  Unterklassen rufen im  accept()  visitor mit Referenz auf sich selbst auf (z.B. in File:  visitor.visitFile(this) )    Nachteile:   Die beiden Hierarchien sind gekoppelt, f\u00fcr neue Elemente m\u00fcssen beide Hierarchien angepasst werden beide Hierarchien angepasst werden  Gefahr von Code duplication, weil die Logik aufgebrochen wird", 
+            "title": "Visitor"
+        }, 
+        {
+            "location": "/apf/gof_revisited/#flyweight", 
+            "text": "Ausgangslange: Viele Objekte, die alle \"gleich\" sind, aber in einer Art (z.B. Position) unterschiedlich sind  Interner State ist immer gleich, externer State kann sich \u00e4ndern  Ziel: Memory-sparend abbilden  Die  Flyweight -Klasse ist z.B. ein Baum  FlyweightManager verwaltet die Objekte  Vom Flyweight gibt es nur eine Instanz, gehalten vom Manager     Der interne (intrinsic) State ist f\u00fcr alle Objekte gleich (immutable Flyweights)  Der externe State wird vom Client direkt dem konkreten Flyweight gegeben (und wird dort nicht gespeichert!)", 
+            "title": "Flyweight"
+        }, 
+        {
+            "location": "/apf/beyond_gof/", 
+            "text": "Beyond GoF\n\n\nEnumerator\n\n\n\n\nProbleme mit Iterator\n\n\nCollections d\u00fcrfen nie w\u00e4hrend Iteration ver\u00e4ndert werden\n\n\nUmgehung davon aufw\u00e4ndig, gibt enges coupling zwischen Iterator und Collection\n\n\n\n\n\n\nGoF hat externer Iterator (\"klassisch\") und interner Iterator (= Enumerator) vermischt\n\n\nEnumerator ist Inversion des Iterators\n\n\nCollection hat selbst eine Methode, die ein Kommando entgegen nimmt\n\n\nz.B. \nc.forEach(i =\n foo(i))\n\n\n\n\n\n\nIteration ist direkt in der Collection, dadurch hat es mehr Kontrolle, z.B. bei \u00c4nderungen w\u00e4hrend der Iteratation, oder mit Locking\n\n\nOhne Lambdas das Command-Pattern verwenden\n\n\n\n\nDistribution\n\n\n\n\nProblem bei Remote Calls, wenn f\u00fcr jedes Element ein eigener Call auf das Remote-system gemacht werden muss\n\n\nL\u00f6sung: \nBatch Method\n Pattern\n\n\nMehrere Elemente auf einmal schicken\n\n\n\n\n\n\n\n\nState Pattern\n\n\n\n\nGoF-Beschreibung ist sehr allgemein, besserer Name w\u00e4re \"Objects for States\"\n\n\nH\u00e4ufig overkill, oft ist auch ein primitives \"Flag-based\" State Management ausreichend\n\n\nKonkrete States m\u00fcssen f\u00fcr \nStateChange\n etwas zur\u00fcckgeben, das den n\u00e4chsten State identifiziert, z.B. den Typ (In State-machine Hashtable f\u00fcr die einzelnen konkreten States verwenden)\n\n\nn.b. das GoF-Sate Pattern definiert keinen solchen Mechanismus zum State-Switch\n\n\n\n\n\n\nWas, wenn ein konkreter State Daten der State-machine ver\u00e4ndern muss?\n\n\nHolder von Daten, der dem konkreten State \u00fcbergeben wird, z.B. \nincrement(timeHolder)\n bei Uhr\n\n\n\n\n\n\n\n\nMethods for States\n\n\n\n\nAlle Methoden (Implementation), die vorher in den States waren, kommen direkt in die State-Machine\n\n\nMethoden, die zum selben State geh\u00f6ren, werden in Function-Pointer-Lists zusammengefasst\n\n\nEine dynamische Struktur (z.B. Structs) wird mit Methoden abgef\u00fcllt, je eine Struktur pro State\n\n\nVorteil: \u00dcbersichtlicher f\u00fcr kleine Anwendungsf\u00e4lle\n\n\nNachteil: Grosse Klasse, viele Methoden\n\n\n\n\nCollections for States\n\n\n\n\nJeder State ist eine Collection in der State Machine\n\n\nIn den Collections k\u00f6nnen auch weitere State Machines sein\n\n\nbei jedem State change werden die Objekte in andere Collections verschoben\n\n\nLogik der State machine ist in einem \"Workpiece\"\n\n\nSimpelste Variante\n\n\n\n\nFrameworks\n\n\n\n\nFrameworks bieten \"Hooks\" f\u00fcr Erweiterungen\n\n\nIm Gegensatz zu einer Library steuert ein Framework den Kontrollfluss\n\n\nArbeiten mit Callbacks, Inversion of control\n\n\nApplication Frameworks sind oft over-engineered", 
+            "title": "Beyond GoF"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#beyond-gof", 
+            "text": "", 
+            "title": "Beyond GoF"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#enumerator", 
+            "text": "Probleme mit Iterator  Collections d\u00fcrfen nie w\u00e4hrend Iteration ver\u00e4ndert werden  Umgehung davon aufw\u00e4ndig, gibt enges coupling zwischen Iterator und Collection    GoF hat externer Iterator (\"klassisch\") und interner Iterator (= Enumerator) vermischt  Enumerator ist Inversion des Iterators  Collection hat selbst eine Methode, die ein Kommando entgegen nimmt  z.B.  c.forEach(i =  foo(i))    Iteration ist direkt in der Collection, dadurch hat es mehr Kontrolle, z.B. bei \u00c4nderungen w\u00e4hrend der Iteratation, oder mit Locking  Ohne Lambdas das Command-Pattern verwenden", 
+            "title": "Enumerator"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#distribution", 
+            "text": "Problem bei Remote Calls, wenn f\u00fcr jedes Element ein eigener Call auf das Remote-system gemacht werden muss  L\u00f6sung:  Batch Method  Pattern  Mehrere Elemente auf einmal schicken", 
+            "title": "Distribution"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#state-pattern", 
+            "text": "GoF-Beschreibung ist sehr allgemein, besserer Name w\u00e4re \"Objects for States\"  H\u00e4ufig overkill, oft ist auch ein primitives \"Flag-based\" State Management ausreichend  Konkrete States m\u00fcssen f\u00fcr  StateChange  etwas zur\u00fcckgeben, das den n\u00e4chsten State identifiziert, z.B. den Typ (In State-machine Hashtable f\u00fcr die einzelnen konkreten States verwenden)  n.b. das GoF-Sate Pattern definiert keinen solchen Mechanismus zum State-Switch    Was, wenn ein konkreter State Daten der State-machine ver\u00e4ndern muss?  Holder von Daten, der dem konkreten State \u00fcbergeben wird, z.B.  increment(timeHolder)  bei Uhr", 
+            "title": "State Pattern"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#methods-for-states", 
+            "text": "Alle Methoden (Implementation), die vorher in den States waren, kommen direkt in die State-Machine  Methoden, die zum selben State geh\u00f6ren, werden in Function-Pointer-Lists zusammengefasst  Eine dynamische Struktur (z.B. Structs) wird mit Methoden abgef\u00fcllt, je eine Struktur pro State  Vorteil: \u00dcbersichtlicher f\u00fcr kleine Anwendungsf\u00e4lle  Nachteil: Grosse Klasse, viele Methoden", 
+            "title": "Methods for States"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#collections-for-states", 
+            "text": "Jeder State ist eine Collection in der State Machine  In den Collections k\u00f6nnen auch weitere State Machines sein  bei jedem State change werden die Objekte in andere Collections verschoben  Logik der State machine ist in einem \"Workpiece\"  Simpelste Variante", 
+            "title": "Collections for States"
+        }, 
+        {
+            "location": "/apf/beyond_gof/#frameworks", 
+            "text": "Frameworks bieten \"Hooks\" f\u00fcr Erweiterungen  Im Gegensatz zu einer Library steuert ein Framework den Kontrollfluss  Arbeiten mit Callbacks, Inversion of control  Application Frameworks sind oft over-engineered", 
+            "title": "Frameworks"
+        }, 
+        {
+            "location": "/apf/values/", 
+            "text": "On the Value of Values\n\n\n\n\nIn C++ werden Objekte kopiert bei Parameter\u00fcbergabe (ausser es werden Referenzen \u00fcbergeben mit \n)\n\n\n\n\nDefinition M. Jackson\n\n\n\n\nEvents ist ein \"Individuum\", das zu einer bestimmten Zeit passiert\n\n\nz.B. Mausklick, Absenden einer Bestellung\n\n\n\n\n\n\nEntities sind Individuen, die \u00fcber eine Zeit lang existieren und Properties haben, die sich \u00e4ndern k\u00f6nnen\n\n\nBestellung, Datei, Profil, ...\n\n\n\n\n\n\nValues sind \"unantastbare\" Individuen, die sich nicht ver\u00e4ndern\n\n\nz.B. Zahlen, Farben, Zeichen, Koordinate\n\n\n\n\n\n\n\n\nDefinition Kevin Henney\n\n\n\n\nEntities m\u00fcssen unterschieden werden k\u00f6nnnen\n\n\nService: Objekte, die durch das Verhalten bestimmt sind (und nicht durch den Zustand)\n\n\nz.B. \nSystem.out\n, Connection-Services\n\n\n\n\n\n\nValue: Objekte sind durch Inhalt bestimmt, sie haben \nkeine relevante Identit\u00e4t\n\n\nz.B. Point, String, Integer\n\n\n\n\n\n\nTask: Im Gegensatz zum Service haben sie eine Identit\u00e4t und einen Zustand\n\n\nz.B. Runnables, Threads\n\n\n\n\n\n\n\n\nValues in Programming\n\n\n\n\nPure Functions k\u00f6nnen auch als values angesehen werden\n\n\nEinfach \u00fcbers Netzwerk zu \u00fcbertragen, weil sowieso nur Values \u00fcbertragen werden k\u00f6nnen\n\n\nDer Wert ist das wichtige, nicht die Identit\u00e4t\n\n\n\n\nOO-Example\n\n\n\n\nISBN als Typ modellieren, sonst muss das Format immer geparsed und gepr\u00fcft werden\n\n\nSo kann sich Format auch mal \u00e4ndern\n\n\n\n\nValue Objects\n\n\n\n\nZiel: Primitive Daten sinnvoll mit z.B. Einheiten repr\u00e4sentieren\n\n\nz.B. Datum\n\n\n\n\nJava\n\n\n\n\nEquals und Hashcode \u00fcberschreiben!\n\n\nAufpassen bei State-changes: Objekt klonen, damit nicht externe Referenzen gesetzt werden\n\n\nAlternative: Klasse immutable machen\n\n\n\n\n\n\n\n\nMutable Companion\n\n\n\n\nz.B. \nStringBuilder\n\n\nBuilder, der values zusammen baut", 
+            "title": "Values"
+        }, 
+        {
+            "location": "/apf/values/#on-the-value-of-values", 
+            "text": "In C++ werden Objekte kopiert bei Parameter\u00fcbergabe (ausser es werden Referenzen \u00fcbergeben mit  )", 
+            "title": "On the Value of Values"
+        }, 
+        {
+            "location": "/apf/values/#definition-m-jackson", 
+            "text": "Events ist ein \"Individuum\", das zu einer bestimmten Zeit passiert  z.B. Mausklick, Absenden einer Bestellung    Entities sind Individuen, die \u00fcber eine Zeit lang existieren und Properties haben, die sich \u00e4ndern k\u00f6nnen  Bestellung, Datei, Profil, ...    Values sind \"unantastbare\" Individuen, die sich nicht ver\u00e4ndern  z.B. Zahlen, Farben, Zeichen, Koordinate", 
+            "title": "Definition M. Jackson"
+        }, 
+        {
+            "location": "/apf/values/#definition-kevin-henney", 
+            "text": "Entities m\u00fcssen unterschieden werden k\u00f6nnnen  Service: Objekte, die durch das Verhalten bestimmt sind (und nicht durch den Zustand)  z.B.  System.out , Connection-Services    Value: Objekte sind durch Inhalt bestimmt, sie haben  keine relevante Identit\u00e4t  z.B. Point, String, Integer    Task: Im Gegensatz zum Service haben sie eine Identit\u00e4t und einen Zustand  z.B. Runnables, Threads", 
+            "title": "Definition Kevin Henney"
+        }, 
+        {
+            "location": "/apf/values/#values-in-programming", 
+            "text": "Pure Functions k\u00f6nnen auch als values angesehen werden  Einfach \u00fcbers Netzwerk zu \u00fcbertragen, weil sowieso nur Values \u00fcbertragen werden k\u00f6nnen  Der Wert ist das wichtige, nicht die Identit\u00e4t", 
+            "title": "Values in Programming"
+        }, 
+        {
+            "location": "/apf/values/#oo-example", 
+            "text": "ISBN als Typ modellieren, sonst muss das Format immer geparsed und gepr\u00fcft werden  So kann sich Format auch mal \u00e4ndern", 
+            "title": "OO-Example"
+        }, 
+        {
+            "location": "/apf/values/#value-objects", 
+            "text": "Ziel: Primitive Daten sinnvoll mit z.B. Einheiten repr\u00e4sentieren  z.B. Datum", 
+            "title": "Value Objects"
+        }, 
+        {
+            "location": "/apf/values/#java", 
+            "text": "Equals und Hashcode \u00fcberschreiben!  Aufpassen bei State-changes: Objekt klonen, damit nicht externe Referenzen gesetzt werden  Alternative: Klasse immutable machen", 
+            "title": "Java"
+        }, 
+        {
+            "location": "/apf/values/#mutable-companion", 
+            "text": "z.B.  StringBuilder  Builder, der values zusammen baut", 
+            "title": "Mutable Companion"
+        }, 
+        {
+            "location": "/apf/reflection/", 
+            "text": "Reflection - Self-aware Software\n\n\nF\u00fcr was\n\n\n\n\nMocking/Test-Frameworks\n\n\nRemote Systems\n\n\nAnnotations\n\n\nOR-Mapper / z.B. EF\n\n\nException Handling (\n stack trace)\n\n\nDebugging\n\n\nPlugin-Systeme\n\n\nLinker / dynamisch (.so, .dll)\n\n\nDynamic Polymorphism\n\n\n\n\nReflection Pattern\n\n\n\n\nIm Base Level sind die normalen Objekte des Programms\n\n\nIm Meta Level sind die Informationen \u00fcber die Base level objekte, als Meta-Objects\n\n\nclass\n-Objekt in Java ist meta object\n\n\n\n\n\n\nMOP (Metaobject Protocol) ist ein interface f\u00fcr die meta objects\n\n\nz.B. \nObject.getClass()\n\n\n\n\n\n\nIntrospection: In Base Level Objects hinein \"schauen\"\n\n\neval\n z.B. ver\u00e4ndert Base Level Objects (intercession)\n\n\n\n\nType Object Pattern\n\n\n\n\nMeta-Object, das calls weiterleitet an ein konkretes Objekt, das von aussen gesetzt wird\n\n\nKonfiguration wird von extern, z.B. mit config-file eingespiesen\n\n\nNachteil: Keine inh\u00e4rente Type-Safety mehr\n\n\n\n\n\n\n\n\nProperty List\n\n\n\n\na.k.a Dictionary, Map\n\n\nProblem: z.B. variable Anzahl Parameter \u00fcbergeben (klassisch \n...varargs\n)\n\n\nL\u00f6sung: Property List \u00fcbergeben\n\n\nNachteile: \n\n\nNicht \"type-safe\"\n\n\nEs k\u00f6nnen beliebig viele Elemente in der Property List sein\n\n\nAttribut-Namen werden nicht von Compiler gepr\u00fcft\n\n\nMemory Management (Garbage Collection?)\n\n\n\n\n\n\n\n\nAnything\n\n\n\n\nRekursive Struktur von Anything-Objekten\n\n\nJedes Element ist entweder \"etwas\" oder eine Liste von \"etwas\" (oder dictionary)\n\n\n\n\n\n\nHeute \"JSON\"\n\n\nMeist f\u00fcr Konfigurationen verwendet\n\n\n\"Anything\" in \"Anything\" mit Composite-Pattern\n\n\nAchtung: Unterschied Composite / Decorator ist nur Assoziation zu Base-Klasse!\nr\n\n\n\n\n\n\n\n\nExtension Interface\n\n\n\n\nQuasi Plugin-Pattern\n\n\nComponent Factory\n instanziiert und verwaltet die Komponenten\n\n\nClient fragt \nComponent Factory\n nach bestimmter Komponenten und bekommt ein Interface zur\u00fcck\n\n\nz.B. Eclipse: Client ben\u00f6tigt C++ Editor\n\n\nBraucht Reflection, um zur Laufzeit die entsprechenden Komponenten zu finden\n\n\n\n\nZusammenfassung\n\n\n\n\nReflection braucht immer overhead durch Runtime\n\n\nBehindert Optimierung (JIT)\n\n\nKontrollfluss kann komplex sein\n\n\nKann sehr n\u00fctzlich sein f\u00fcr sich entwickelnde Systeme\n\n\nKorrektheit ist nicht mehr nachweisbar", 
+            "title": "Reflection"
+        }, 
+        {
+            "location": "/apf/reflection/#reflection-self-aware-software", 
+            "text": "", 
+            "title": "Reflection - Self-aware Software"
+        }, 
+        {
+            "location": "/apf/reflection/#fur-was", 
+            "text": "Mocking/Test-Frameworks  Remote Systems  Annotations  OR-Mapper / z.B. EF  Exception Handling (  stack trace)  Debugging  Plugin-Systeme  Linker / dynamisch (.so, .dll)  Dynamic Polymorphism", 
+            "title": "F\u00fcr was"
+        }, 
+        {
+            "location": "/apf/reflection/#reflection-pattern", 
+            "text": "Im Base Level sind die normalen Objekte des Programms  Im Meta Level sind die Informationen \u00fcber die Base level objekte, als Meta-Objects  class -Objekt in Java ist meta object    MOP (Metaobject Protocol) ist ein interface f\u00fcr die meta objects  z.B.  Object.getClass()    Introspection: In Base Level Objects hinein \"schauen\"  eval  z.B. ver\u00e4ndert Base Level Objects (intercession)", 
+            "title": "Reflection Pattern"
+        }, 
+        {
+            "location": "/apf/reflection/#type-object-pattern", 
+            "text": "Meta-Object, das calls weiterleitet an ein konkretes Objekt, das von aussen gesetzt wird  Konfiguration wird von extern, z.B. mit config-file eingespiesen  Nachteil: Keine inh\u00e4rente Type-Safety mehr", 
+            "title": "Type Object Pattern"
+        }, 
+        {
+            "location": "/apf/reflection/#property-list", 
+            "text": "a.k.a Dictionary, Map  Problem: z.B. variable Anzahl Parameter \u00fcbergeben (klassisch  ...varargs )  L\u00f6sung: Property List \u00fcbergeben  Nachteile:   Nicht \"type-safe\"  Es k\u00f6nnen beliebig viele Elemente in der Property List sein  Attribut-Namen werden nicht von Compiler gepr\u00fcft  Memory Management (Garbage Collection?)", 
+            "title": "Property List"
+        }, 
+        {
+            "location": "/apf/reflection/#anything", 
+            "text": "Rekursive Struktur von Anything-Objekten  Jedes Element ist entweder \"etwas\" oder eine Liste von \"etwas\" (oder dictionary)    Heute \"JSON\"  Meist f\u00fcr Konfigurationen verwendet  \"Anything\" in \"Anything\" mit Composite-Pattern  Achtung: Unterschied Composite / Decorator ist nur Assoziation zu Base-Klasse!\nr", 
+            "title": "Anything"
+        }, 
+        {
+            "location": "/apf/reflection/#extension-interface", 
+            "text": "Quasi Plugin-Pattern  Component Factory  instanziiert und verwaltet die Komponenten  Client fragt  Component Factory  nach bestimmter Komponenten und bekommt ein Interface zur\u00fcck  z.B. Eclipse: Client ben\u00f6tigt C++ Editor  Braucht Reflection, um zur Laufzeit die entsprechenden Komponenten zu finden", 
+            "title": "Extension Interface"
+        }, 
+        {
+            "location": "/apf/reflection/#zusammenfassung", 
+            "text": "Reflection braucht immer overhead durch Runtime  Behindert Optimierung (JIT)  Kontrollfluss kann komplex sein  Kann sehr n\u00fctzlich sein f\u00fcr sich entwickelnde Systeme  Korrektheit ist nicht mehr nachweisbar", 
+            "title": "Zusammenfassung"
+        }, 
+        {
+            "location": "/apf/junit_dissection/", 
+            "text": "Testing Framework Dissection\n\n\nJUnit Design\n\n\n\n\nCommand-Pattern f\u00fcr Tests\n\n\nJeder \nTestCase\n implementiert das Command-Interface \nTest\n\n\nTestCase\n hat \nrun()\n als Template-Method\n\n\nBesteht aus setup, run und teardown als \"hooks\"\n\n\n\n\n\n\nTDD Exkurs: \nZOMBIES\n\n\n\"Zero, One, Many, Behavior Interface, Exceptional Behavior, Simple Scenario / Simple Solution\"\n\n\n\n\n\n\nResultate sammeln mit \nCollecting Parameter\n\n\nFactory Method kommt oft in Template Method vor\n\n\nExceptions werden in TestResult gesammelt\n\n\nF\u00fcr jede Test-Methode wird mit Reflection ein Adapter zum TestCase erstellt\n\n\nViele Test-Cases werden in einer suite gruppiert und mit \nComposite\n ineinander verschachtelt\n\n\n\n\nExtending JUnit\n\n\n\n\nMit Decorator z.B. Timing implementieren\n\n\n\n\nJUTLAND\n\n\n\n\nTodo\n\n\nKevlin Henney's JAOOO Presentation\n\n\n\n\n\n\nMehr als Design-\u00dcbung gemacht\n\n\nTester\n ist \"Nanokernel\" (Micro-Kernel)\n\n\nPolicies definieren Tests\n\n\nTest-Listeners reagieren auf Resultate\n\n\n\n\nFIT\n\n\n\n\nFramework for Integrated Test (von Cunningham)\n\n\nDeklarativ: Was muss Programm k\u00f6nnen?\n\n\nHTML-Tabellen als Input, die Tests spezifizieren\n\n\nSehr schlank mit nur 3 Klassen", 
+            "title": "JUnit Dissection"
+        }, 
+        {
+            "location": "/apf/junit_dissection/#testing-framework-dissection", 
+            "text": "", 
+            "title": "Testing Framework Dissection"
+        }, 
+        {
+            "location": "/apf/junit_dissection/#junit-design", 
+            "text": "Command-Pattern f\u00fcr Tests  Jeder  TestCase  implementiert das Command-Interface  Test  TestCase  hat  run()  als Template-Method  Besteht aus setup, run und teardown als \"hooks\"    TDD Exkurs:  ZOMBIES  \"Zero, One, Many, Behavior Interface, Exceptional Behavior, Simple Scenario / Simple Solution\"    Resultate sammeln mit  Collecting Parameter  Factory Method kommt oft in Template Method vor  Exceptions werden in TestResult gesammelt  F\u00fcr jede Test-Methode wird mit Reflection ein Adapter zum TestCase erstellt  Viele Test-Cases werden in einer suite gruppiert und mit  Composite  ineinander verschachtelt", 
+            "title": "JUnit Design"
+        }, 
+        {
+            "location": "/apf/junit_dissection/#extending-junit", 
+            "text": "Mit Decorator z.B. Timing implementieren", 
+            "title": "Extending JUnit"
+        }, 
+        {
+            "location": "/apf/junit_dissection/#jutland", 
+            "text": "Todo  Kevlin Henney's JAOOO Presentation    Mehr als Design-\u00dcbung gemacht  Tester  ist \"Nanokernel\" (Micro-Kernel)  Policies definieren Tests  Test-Listeners reagieren auf Resultate", 
+            "title": "JUTLAND"
+        }, 
+        {
+            "location": "/apf/junit_dissection/#fit", 
+            "text": "Framework for Integrated Test (von Cunningham)  Deklarativ: Was muss Programm k\u00f6nnen?  HTML-Tabellen als Input, die Tests spezifizieren  Sehr schlank mit nur 3 Klassen", 
+            "title": "FIT"
+        }
+    ]
+}

@@ -1,4 +1,7 @@
 
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
@@ -16,9 +19,22 @@
         <meta name="author" content="Robin Suter">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.1">
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.0.4">
     
     
       
@@ -26,19 +42,14 @@
       
     
     
+      <link rel="stylesheet" href="../../assets/stylesheets/application-709eec9410.css">
+      
+    
+    
       <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-a20f419c8e.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">
-      
-    
-    
-      
-        
-        
-        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -50,10 +61,7 @@
     
   </head>
   
-  
-  
-  
-    <body data-md-color-primary="indigo" data-md-color-accent="pink">
+    <body>
   
     <svg class="md-svg">
       <defs>
@@ -73,7 +81,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://doc.robinsuter.ch" title="HSR Notizen HS17" class="md-header-nav__button md-logo">
           
-            <i class="md-icon md-icon--home"></i>
+            <i class="md-icon"></i>
           
         </a>
       </div>
@@ -96,8 +104,9 @@
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
@@ -108,8 +117,8 @@
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
-          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
             Type to start searching
           </div>
           <ol class="md-search-result__list"></ol>
@@ -118,6 +127,7 @@
     </div>
   </div>
 </div>
+          
         
       </div>
       
@@ -129,7 +139,7 @@
   
 
 
-  <a href="https://github.com/Excape/hsr-docs-hs17" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/Excape/hsr-docs-hs17/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -151,7 +161,6 @@
     
     <div class="md-container">
       
-      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -161,11 +170,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <div class="md-nav__button md-logo">
+    <span class="md-nav__button md-logo">
       
-        <i class="md-icon md-icon--home"></i>
+        <i class="md-icon"></i>
       
-    </div>
+    </span>
     HSR Notizen HS17
   </label>
   
@@ -176,7 +185,7 @@
   
 
 
-  <a href="https://github.com/Excape/hsr-docs-hs17" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/Excape/hsr-docs-hs17/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -325,12 +334,144 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#knowledge-base" title="Knowledge Base" class="md-nav__link">
+    Knowledge Base
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rules" title="Rules" class="md-nav__link">
+    Rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conjuction" title="Conjuction" class="md-nav__link">
+    Conjuction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disjuction" title="Disjuction" class="md-nav__link">
+    Disjuction
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asking-for-alternatives" title="Asking for alternatives" class="md-nav__link">
+    Asking for alternatives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" title="Syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+      
       
       
     </ul>
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../prolog_unification/" title="Prolog Unification" class="md-nav__link">
+      Prolog Unification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../prolog_lists/" title="Prolog Lists" class="md-nav__link">
+      Prolog Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../prolog-recursion/" title="Prolog Recursion" class="md-nav__link">
+      Prolog Recursion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../prolog_arithmetic/" title="Prolog Arithmetic" class="md-nav__link">
+      Prolog Arithmetic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../prolog_under-hood/" title="Prolog Under the Hood" class="md-nav__link">
+      Prolog Under the Hood
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lambda_calculus/" title="Lambda Calculus" class="md-nav__link">
+      Lambda Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../computation_lambda_calculus/" title="Lambda Computation" class="md-nav__link">
+      Lambda Computation
+    </a>
   </li>
 
         
@@ -402,6 +543,18 @@
   <li class="md-nav__item">
     <a href="../../pmqm/projekte/" title="Projekte" class="md-nav__link">
       Projekte
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pmqm/finanzen/" title="Finanzen" class="md-nav__link">
+      Finanzen
     </a>
   </li>
 
@@ -483,15 +636,51 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="../../apparch/component_modeling/" title="Component Modeling" class="md-nav__link">
+      Component Modeling
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apparch/component_dynamics_container_patterns/" title="Component Dynamics & Container Patterns" class="md-nav__link">
+      Component Dynamics & Container Patterns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apparch/DDD_coding-style/" title="Tactic DDD & Architectural Coding Style" class="md-nav__link">
+      Tactic DDD & Architectural Coding Style
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-8" type="checkbox" id="nav-5-8">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-8">
       Exercises
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-8">
         Exercises
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -586,6 +775,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apf/values/" title="Values" class="md-nav__link">
+      Values
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apf/reflection/" title="Reflection" class="md-nav__link">
+      Reflection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apf/junit_dissection/" title="JUnit Dissection" class="md-nav__link">
+      JUnit Dissection
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -618,6 +843,54 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#knowledge-base" title="Knowledge Base" class="md-nav__link">
+    Knowledge Base
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rules" title="Rules" class="md-nav__link">
+    Rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conjuction" title="Conjuction" class="md-nav__link">
+    Conjuction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disjuction" title="Disjuction" class="md-nav__link">
+    Disjuction
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asking-for-alternatives" title="Asking for alternatives" class="md-nav__link">
+    Asking for alternatives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" title="Syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -636,6 +909,7 @@
                 
                 
                 <h1 id="logic-programming-introduction">Logic Programming Introduction<a class="headerlink" href="#logic-programming-introduction" title="Permanent link">&para;</a></h1>
+<p>Online Version of Learn Prolog Now: <a href="http://www.learnprolognow.org/">http://www.learnprolognow.org/</a></p>
 <h2 id="hello-world">Hello World<a class="headerlink" href="#hello-world" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Hypthoses are the "knowledge base"<ul>
@@ -650,6 +924,93 @@
 <li>Query: <code>?- m(s).</code></li>
 <li>
 <script type="math/tex">\forall x</script> is implied with uppercase variables</li>
+</ul>
+<h2 id="knowledge-base">Knowledge Base<a class="headerlink" href="#knowledge-base" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Hypotheses, called "Knowledge Base"</li>
+<li>Every statement is a "clause" and ends with a <code>.</code></li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">woman</span><span class="p">(</span><span class="n">mia</span><span class="p">).</span>
+<span class="n">woman</span><span class="p">(</span><span class="n">jody</span><span class="p">).</span>
+<span class="n">woman</span><span class="p">(</span><span class="n">yolanda</span><span class="p">).</span>
+<span class="n">playsAirGuitar</span><span class="p">(</span><span class="n">jody</span><span class="p">).</span>
+<span class="n">party</span><span class="p">.</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li>If a query cannot be proven true, it is <code>false</code></li>
+<li>Unknown predicates return either <code>false</code> or throw an error (depending on the compiler)</li>
+</ul>
+<h3 id="rules">Rules<a class="headerlink" href="#rules" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">happy</span><span class="p">(</span><span class="n">yolanda</span><span class="p">).</span> <span class="c1">// fact</span>
+<span class="n">listens2music</span><span class="p">(</span><span class="n">mia</span><span class="p">).</span> <span class="c1">// fact</span>
+<span class="n">listens2music</span><span class="p">(</span><span class="n">yolanda</span><span class="p">)</span><span class="o">:-</span> <span class="n">happy</span><span class="p">(</span><span class="n">yolanda</span><span class="p">).</span> <span class="c1">// rule</span>
+<span class="n">playsAirGuitar</span><span class="p">(</span><span class="n">mia</span><span class="p">)</span><span class="o">:-</span> <span class="n">listens2music</span><span class="p">(</span><span class="n">mia</span><span class="p">).</span>
+<span class="n">playsAirGuitar</span><span class="p">(</span><span class="n">yolanda</span><span class="p">)</span><span class="o">:-</span> <span class="n">listens2music</span><span class="p">(</span><span class="n">yolanda</span><span class="p">).</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li>Read: <code>happy(yolanda) =&gt; listens2music(yolanda)</code> (Reversed)</li>
+</ul>
+<h3 id="conjuction">Conjuction<a class="headerlink" href="#conjuction" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">playsAirGuitar</span><span class="p">(</span><span class="n">vincent</span><span class="p">)</span><span class="o">:-</span>
+    <span class="n">listens2music</span><span class="p">(</span><span class="n">vincent</span><span class="p">),</span>
+    <span class="n">happy</span><span class="p">(</span><span class="n">vincent</span><span class="p">).</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li>Read: "vincent plays air guitar if he listens to music <strong>and</strong> he's happy"</li>
+</ul>
+<h3 id="disjuction">Disjuction<a class="headerlink" href="#disjuction" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>;</code> instead of <code>,</code></li>
+<li>
+<p>Same as defining to rules with the same goal</p>
+</li>
+<li>
+<p>There's no negation in Prolog. An absence of rule is basically a negation</p>
+<ul>
+<li>Prolog does no proofs of contradiction, but "negation as failure" (to construct a proof tree)</li>
+</ul>
+</li>
+</ul>
+<h2 id="asking-for-alternatives">Asking for alternatives<a class="headerlink" href="#asking-for-alternatives" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>?- woman(X)</code> gives every <code>X</code> that satisfies <script type="math/tex">\exists x.woman(x)</script>
+</li>
+<li>(Uppercase) variables in the Knowledge Base take into account every occurence (<script type="math/tex">\forall</script> universially quantified)</li>
+</ul>
+<h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Atoms are strings <em>starting with a lowercase letter</em> or arbitrary strings in <code>''</code></li>
+<li>Numbers are integers or floats (no type-checking)</li>
+<li>Variables are Strings starting with an <em>Uppercase Letter</em> or with a <code>_</code><ul>
+<li>Variables are always "bound" in a <script type="math/tex">\exists</script> or <script type="math/tex">\forall</script>
+</li>
+<li>The variable <code>_</code> is a "wildcard"</li>
+</ul>
+</li>
+<li>Complex Terms are e.g. <code>playsAirGuitar(mia)</code><ul>
+<li>The functor must be an atom</li>
+</ul>
+</li>
+<li>"Arity" is the number of arguments in a complex term<ul>
+<li>Two predicates with different arity are treated as sepparate</li>
+</ul>
+</li>
 </ul>
                 
                   
@@ -684,13 +1045,13 @@
           </a>
         
         
-          <a href="../../pmqm/" title="Index" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../prolog_unification/" title="Prolog Unification" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Index
+                Prolog Unification
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -724,10 +1085,9 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application-f3ab9e5ff8.js"></script>
+      <script src="../../assets/javascripts/application-8e4952e681.js"></script>
       
-      
-      <script>app.initialize({url:{base:"../.."}})</script>
+      <script>app.initialize({version:"0.17.1",url:{base:"../.."}})</script>
       
         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
       

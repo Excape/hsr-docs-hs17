@@ -1,4 +1,7 @@
 
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
@@ -16,9 +19,22 @@
         <meta name="author" content="Robin Suter">
       
       
-        <link rel="shortcut icon" href="../assets/images/favicon.png">
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.1">
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.0.4">
     
     
       
@@ -26,19 +42,14 @@
       
     
     
+      <link rel="stylesheet" href="../assets/stylesheets/application-709eec9410.css">
+      
+    
+    
       <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-a20f419c8e.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-23f75ab9c7.palette.css">
-      
-    
-    
-      
-        
-        
-        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -50,10 +61,7 @@
     
   </head>
   
-  
-  
-  
-    <body data-md-color-primary="indigo" data-md-color-accent="pink">
+    <body>
   
     <svg class="md-svg">
       <defs>
@@ -73,7 +81,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://doc.robinsuter.ch" title="HSR Notizen HS17" class="md-header-nav__button md-logo">
           
-            <i class="md-icon md-icon--home"></i>
+            <i class="md-icon"></i>
           
         </a>
       </div>
@@ -96,8 +104,9 @@
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
@@ -108,8 +117,8 @@
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
-          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
             Type to start searching
           </div>
           <ol class="md-search-result__list"></ol>
@@ -118,6 +127,7 @@
     </div>
   </div>
 </div>
+          
         
       </div>
       
@@ -129,7 +139,7 @@
   
 
 
-  <a href="https://github.com/Excape/hsr-docs-hs17" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/Excape/hsr-docs-hs17/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -151,7 +161,6 @@
     
     <div class="md-container">
       
-      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -161,11 +170,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <div class="md-nav__button md-logo">
+    <span class="md-nav__button md-logo">
       
-        <i class="md-icon md-icon--home"></i>
+        <i class="md-icon"></i>
       
-    </div>
+    </span>
     HSR Notizen HS17
   </label>
   
@@ -176,7 +185,7 @@
   
 
 
-  <a href="https://github.com/Excape/hsr-docs-hs17" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/Excape/hsr-docs-hs17/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -307,6 +316,90 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="prolog_unification/" title="Prolog Unification" class="md-nav__link">
+      Prolog Unification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="prolog_lists/" title="Prolog Lists" class="md-nav__link">
+      Prolog Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="prolog-recursion/" title="Prolog Recursion" class="md-nav__link">
+      Prolog Recursion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="prolog_arithmetic/" title="Prolog Arithmetic" class="md-nav__link">
+      Prolog Arithmetic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="prolog_under-hood/" title="Prolog Under the Hood" class="md-nav__link">
+      Prolog Under the Hood
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="lambda_calculus/" title="Lambda Calculus" class="md-nav__link">
+      Lambda Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="computation_lambda_calculus/" title="Lambda Computation" class="md-nav__link">
+      Lambda Computation
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -375,6 +468,18 @@
   <li class="md-nav__item">
     <a href="../pmqm/projekte/" title="Projekte" class="md-nav__link">
       Projekte
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pmqm/finanzen/" title="Finanzen" class="md-nav__link">
+      Finanzen
     </a>
   </li>
 
@@ -456,15 +561,51 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="../apparch/component_modeling/" title="Component Modeling" class="md-nav__link">
+      Component Modeling
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apparch/component_dynamics_container_patterns/" title="Component Dynamics & Container Patterns" class="md-nav__link">
+      Component Dynamics & Container Patterns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apparch/DDD_coding-style/" title="Tactic DDD & Architectural Coding Style" class="md-nav__link">
+      Tactic DDD & Architectural Coding Style
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-8" type="checkbox" id="nav-5-8">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-8">
       Exercises
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-8">
         Exercises
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -555,6 +696,42 @@
   <li class="md-nav__item">
     <a href="../apf/beyond_gof/" title="Beyond GoF" class="md-nav__link">
       Beyond GoF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apf/values/" title="Values" class="md-nav__link">
+      Values
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apf/reflection/" title="Reflection" class="md-nav__link">
+      Reflection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apf/junit_dissection/" title="JUnit Dissection" class="md-nav__link">
+      JUnit Dissection
     </a>
   </li>
 
@@ -671,10 +848,9 @@
       
     </div>
     
-      <script src="../assets/javascripts/application-f3ab9e5ff8.js"></script>
+      <script src="../assets/javascripts/application-8e4952e681.js"></script>
       
-      
-      <script>app.initialize({url:{base:".."}})</script>
+      <script>app.initialize({version:"0.17.1",url:{base:".."}})</script>
       
         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
       
