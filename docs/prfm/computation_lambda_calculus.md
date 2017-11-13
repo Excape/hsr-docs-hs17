@@ -24,3 +24,41 @@
 - functions are "first-class citizens"
 
 ## Evaluation Strategies
+- A redex (reducible expression) is a any Delta- oder Beta-reducible lambda term
+- Strategie plays a role in the length of derivations and if they terminate
+- There are an arbitrary number of evaluation strategies
+- Innermost- and Outermost-First are "extreme" cases
+
+### Innermost-first (applicative order)
+- The innermost redex is reduced first
+- If multiple possible, the leftmost is reduced first
+- A redex is innermost if there is no other redex inside it
+
+### Outermost-first (normal order)
+- The outermost redex is reduced first
+- If multiple possible, the leftmost is reduced first
+- A redex is outermost if there is no other redex outside it
+
+### Comparison
+- innermost-first: Arguments are reduced exactly once (even if they're not used)
+- outermost-first: Arguments are reduced as often as they're needed (can be multiple times for one)
+- innermost-first doesn't always result in shorter derivations
+- Outermost-first always ends in a normal form if it exists
+    - innermost-first may not terminate, e.g. when a non-terminating redux is an argument, but never used
+- innermost-first is like "call by value", outermost-first like "call by ref"
+
+### Lazy Evaluation
+- Make call-by-name more efficient
+- Cache evaluations to evaluate arguments only once
+- Default for Haskell
+
+## Encoding Data and Operations
+- Pure lambda does not have primitive data types
+- We need numbers, booleans & pairs to construct arbitrary data types
+- These definitions correspond to AND/OR-Gates on a real CPU (low-level)
+
+### Booleans
+- It's hard to have an intuition for these, try to prove some properties that must hold (truth tables)
+
+### Arithmetic
+- For every number n, apply a function n times
