@@ -2,6 +2,7 @@
 set -e # exit with nonzero exit code if anything fails
 
 # add ssh key
+chmod 600 ssh-key
 eval `ssh-agent -s`
 ssh-add ssh-key
 
