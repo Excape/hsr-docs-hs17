@@ -1,6 +1,10 @@
 #!/bin/bash
 set -e # exit with nonzero exit code if anything fails
 
+# add ssh key
+eval `ssh-agent -s`
+ssh-add ssh-key
+
 #Build with mkdocs into ./site
 mkdocs build --clean
 
