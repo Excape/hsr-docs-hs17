@@ -12,7 +12,7 @@ pages:
     - Playground: 'playground.md'
     - PrfM:
         - Index: 'prfm/index.md'
-        - Introduction: 'prfm/introdQuction.md'
+        - Introduction: 'prfm/introduction.md'
         - Formal Proof: 'prfm/formal_proof.md'
         - Propositional Calculus: 'prfm/propositional_calculus.md'
         - Logical Programming Intro: 'prfm/logic_programming_intro.md'
