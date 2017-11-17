@@ -23,6 +23,7 @@ pages:
         - Prolog Under the Hood: 'prfm/prolog_under-hood.md'
         - Lambda Calculus: 'prfm/lambda_calculus.md'
         - Lambda Computation: 'prfm/computation_lambda_calculus.md'
+        - Functional Programming Intro: 'prfm/fp_introduction.md'
     - PmQm:
         - Index: 'pmqm/index.md'
         - Exam: 'pmqm/exam.md'
@@ -37,6 +38,7 @@ pages:
         - Component Modeling: 'apparch/component_modeling.md'
         - Component Dynamics & Container Patterns: 'apparch/component_dynamics_container_patterns.md'
         - Tactic DDD & Architectural Coding Style: 'apparch/DDD_coding-style.md'
+        - SOA / RESTful HTTP: 'apparch/soa_restful.md'
         - Exercises:
             - Exercise 1: 'apparch/exercises/ex1.md'
     - APF:
@@ -47,6 +49,7 @@ pages:
         - Values: 'apf/values.md'
         - Reflection: 'apf/reflection.md'
         - JUnit Dissection: 'apf/junit_dissection.md'
+        - WAM: 'apf/wam.md'
 
 markdown_extensions:
   - toc(permalink=true)
