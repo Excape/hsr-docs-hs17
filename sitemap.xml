@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://doc.robinsuter.ch/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>https://doc.robinsuter.ch/playground/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -21,73 +21,79 @@
         
     <url>
      <loc>https://doc.robinsuter.ch/prfm/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/prfm/introduction/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/prfm/formal_proof/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/prfm/propositional_calculus/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/prfm/logic_programming_intro/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/prfm/prolog_unification/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/prfm/prolog_lists/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/prfm/prolog-recursion/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/prfm/prolog_arithmetic/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/prfm/prolog_under-hood/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/prfm/lambda_calculus/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/prfm/computation_lambda_calculus/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://doc.robinsuter.ch/prfm/fp_introduction/</loc>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -97,31 +103,31 @@
         
     <url>
      <loc>https://doc.robinsuter.ch/pmqm/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/pmqm/exam/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/pmqm/projekt_qualitaet/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/pmqm/projekte/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/pmqm/finanzen/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -131,43 +137,49 @@
         
     <url>
      <loc>https://doc.robinsuter.ch/apparch/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/apparch/architecture_fundamentals/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/apparch/agile_architecture/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/apparch/solution_strategy/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/apparch/component_modeling/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/apparch/component_dynamics_container_patterns/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/apparch/DDD_coding-style/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://doc.robinsuter.ch/apparch/soa_restful/</loc>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -183,43 +195,49 @@
         
     <url>
      <loc>https://doc.robinsuter.ch/apf/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/apf/intro/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/apf/gof_revisited/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/apf/beyond_gof/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/apf/values/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/apf/reflection/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://doc.robinsuter.ch/apf/junit_dissection/</loc>
-     <lastmod>2017-11-13</lastmod>
+     <lastmod>2017-11-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://doc.robinsuter.ch/apf/wam/</loc>
+     <lastmod>2017-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

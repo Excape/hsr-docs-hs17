@@ -13,7 +13,7 @@
         <meta name="description" content="HSR Study Documentation HS17">
       
       
-        <link rel="canonical" href="https://doc.robinsuter.ch/apf/junit_dissection/">
+        <link rel="canonical" href="https://doc.robinsuter.ch/apparch/soa_restful/">
       
       
         <meta name="author" content="Robin Suter">
@@ -38,7 +38,7 @@
     
     
       
-        <title>JUnit Dissection - HSR Notizen HS17</title>
+        <title>SOA / RESTful HTTP - HSR Notizen HS17</title>
       
     
     
@@ -94,11 +94,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  APF
+                  AppArch
                 </span>
               
             
-            JUnit Dissection
+            SOA / RESTful HTTP
           
         </span>
       </div>
@@ -494,10 +494,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       AppArch
@@ -515,7 +517,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../apparch/" title="Index" class="md-nav__link">
+    <a href="../" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -527,7 +529,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../apparch/architecture_fundamentals/" title="Fundamentals" class="md-nav__link">
+    <a href="../architecture_fundamentals/" title="Fundamentals" class="md-nav__link">
       Fundamentals
     </a>
   </li>
@@ -539,7 +541,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../apparch/agile_architecture/" title="Agile Architecture" class="md-nav__link">
+    <a href="../agile_architecture/" title="Agile Architecture" class="md-nav__link">
       Agile Architecture
     </a>
   </li>
@@ -551,7 +553,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../apparch/solution_strategy/" title="Solution Strategy" class="md-nav__link">
+    <a href="../solution_strategy/" title="Solution Strategy" class="md-nav__link">
       Solution Strategy
     </a>
   </li>
@@ -563,7 +565,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../apparch/component_modeling/" title="Component Modeling" class="md-nav__link">
+    <a href="../component_modeling/" title="Component Modeling" class="md-nav__link">
       Component Modeling
     </a>
   </li>
@@ -575,7 +577,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../apparch/component_dynamics_container_patterns/" title="Component Dynamics & Container Patterns" class="md-nav__link">
+    <a href="../component_dynamics_container_patterns/" title="Component Dynamics & Container Patterns" class="md-nav__link">
       Component Dynamics & Container Patterns
     </a>
   </li>
@@ -587,7 +589,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../apparch/DDD_coding-style/" title="Tactic DDD & Architectural Coding Style" class="md-nav__link">
+    <a href="../DDD_coding-style/" title="Tactic DDD & Architectural Coding Style" class="md-nav__link">
       Tactic DDD & Architectural Coding Style
     </a>
   </li>
@@ -597,11 +599,60 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../apparch/soa_restful/" title="SOA / RESTful HTTP" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        SOA / RESTful HTTP
+      </label>
+    
+    <a href="./" title="SOA / RESTful HTTP" class="md-nav__link md-nav__link--active">
       SOA / RESTful HTTP
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#application-styles" title="Application Styles" class="md-nav__link">
+    Application Styles
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-layer-pattern" title="Service Layer Pattern" class="md-nav__link">
+    Service Layer Pattern
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -630,7 +681,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../apparch/exercises/ex1/" title="Exercise 1" class="md-nav__link">
+    <a href="../exercises/ex1/" title="Exercise 1" class="md-nav__link">
       Exercise 1
     </a>
   </li>
@@ -650,12 +701,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
       APF
@@ -673,7 +722,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Index" class="md-nav__link">
+    <a href="../../apf/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -685,7 +734,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../intro/" title="Introduction" class="md-nav__link">
+    <a href="../../apf/intro/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -697,7 +746,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../gof_revisited/" title="GoF Revisited" class="md-nav__link">
+    <a href="../../apf/gof_revisited/" title="GoF Revisited" class="md-nav__link">
       GoF Revisited
     </a>
   </li>
@@ -709,7 +758,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../beyond_gof/" title="Beyond GoF" class="md-nav__link">
+    <a href="../../apf/beyond_gof/" title="Beyond GoF" class="md-nav__link">
       Beyond GoF
     </a>
   </li>
@@ -721,7 +770,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../values/" title="Values" class="md-nav__link">
+    <a href="../../apf/values/" title="Values" class="md-nav__link">
       Values
     </a>
   </li>
@@ -733,7 +782,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../reflection/" title="Reflection" class="md-nav__link">
+    <a href="../../apf/reflection/" title="Reflection" class="md-nav__link">
       Reflection
     </a>
   </li>
@@ -743,74 +792,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        JUnit Dissection
-      </label>
-    
-    <a href="./" title="JUnit Dissection" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../apf/junit_dissection/" title="JUnit Dissection" class="md-nav__link">
       JUnit Dissection
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#junit-design" title="JUnit Design" class="md-nav__link">
-    JUnit Design
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#extending-junit" title="Extending JUnit" class="md-nav__link">
-    Extending JUnit
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jutland" title="JUTLAND" class="md-nav__link">
-    JUTLAND
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fit" title="FIT" class="md-nav__link">
-    FIT
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -820,7 +806,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../wam/" title="WAM" class="md-nav__link">
+    <a href="../../apf/wam/" title="WAM" class="md-nav__link">
       WAM
     </a>
   </li>
@@ -852,36 +838,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#junit-design" title="JUnit Design" class="md-nav__link">
-    JUnit Design
+  <a href="#application-styles" title="Application Styles" class="md-nav__link">
+    Application Styles
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#extending-junit" title="Extending JUnit" class="md-nav__link">
-    Extending JUnit
+  <a href="#service-layer-pattern" title="Service Layer Pattern" class="md-nav__link">
+    Service Layer Pattern
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jutland" title="JUTLAND" class="md-nav__link">
-    JUTLAND
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fit" title="FIT" class="md-nav__link">
-    FIT
-  </a>
   
 </li>
       
@@ -899,49 +871,94 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Excape/hsr-docs-hs17/edit/master/docs/apf/junit_dissection.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/Excape/hsr-docs-hs17/edit/master/docs/apparch/soa_restful.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="testing-framework-dissection">Testing Framework Dissection<a class="headerlink" href="#testing-framework-dissection" title="Permanent link">&para;</a></h1>
-<h2 id="junit-design">JUnit Design<a class="headerlink" href="#junit-design" title="Permanent link">&para;</a></h2>
+                <h1 id="service-oriented-architectures-restful-http">Service-Oriented Architectures / Restful HTTP<a class="headerlink" href="#service-oriented-architectures-restful-http" title="Permanent link">&para;</a></h1>
+<h2 id="application-styles">Application Styles<a class="headerlink" href="#application-styles" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Command-Pattern für Tests</li>
-<li>Jeder <code>TestCase</code> implementiert das Command-Interface <code>Test</code></li>
-<li><code>TestCase</code> hat <code>run()</code> als Template-Method<ul>
-<li>Besteht aus setup, run und teardown als "hooks"</li>
+<li>Ziel: Komponenten miteinander integrieren</li>
+<li>4+1-Viewpoint <em>Process</em><ul>
+<li>Im Sinne von OS-Prozessen</li>
 </ul>
 </li>
-<li>TDD Exkurs: <code>ZOMBIES</code><ul>
-<li>"Zero, One, Many, Behavior Interface, Exceptional Behavior, Simple Scenario / Simple Solution"</li>
+<li>Nach Fowler: Komponente ist lokal, Service ist eine Remote-Komponenten, der über ein Interface angesprochen wird</li>
+</ul>
+<h3 id="service-layer-pattern">Service Layer Pattern<a class="headerlink" href="#service-layer-pattern" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Zwischen Domain- und UI-Layer einen Service-Layer einschieben, um komplexe Domain-Modelle vom Presentation-Layer zu verstecken</li>
+<li>Verantwortlichkeiten z.B. für Exception Handling, Access Control, Logging</li>
+</ul>
+<h1 id="dto-pattern">DTO Pattern<a class="headerlink" href="#dto-pattern" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Daten-Objekt ohne Businesslogik</li>
+<li>Kann z.B. Methoden wie <code>toXML()</code> haben</li>
+</ul>
+<h3 id="soa">SOA<a class="headerlink" href="#soa" title="Permanent link">&para;</a></h3>
+<ul>
+<li>"Begriff überladen"</li>
+<li>Grundsätzlich ein Set von Services, das von einem Business angeboten wird</li>
+<li>Auch ein Set von Architektur-Patterns</li>
+<li>Deployment Models wie mit Docker, Container, etc.</li>
+</ul>
+<h4 id="loose-kopplung">Loose Kopplung<a class="headerlink" href="#loose-kopplung" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Zeitliche Entkopplung: Client und Server müssen nicht zur gleichen Zeit aktiv sein (ohne Datenverlust) - Message Queueing</li>
+<li>Adress-Transparenz/-Autonomie: "Location-Transparency"<ul>
+<li>z.B. man gibt URI statt MAC-Adresse ein</li>
 </ul>
 </li>
-<li>Resultate sammeln mit <code>Collecting Parameter</code></li>
-<li>Factory Method kommt oft in Template Method vor</li>
-<li>Exceptions werden in TestResult gesammelt</li>
-<li>Für jede Test-Methode wird mit Reflection ein Adapter zum TestCase erstellt</li>
-<li>Viele Test-Cases werden in einer suite gruppiert und mit <code>Composite</code> ineinander verschachtelt</li>
+<li>Plattform-Autonomie: Man weiss z.B. nicht, in welcher Sprache die andere Komponente (Client/Server) geschrieben ist<ul>
+<li>Gegenbeispiel: Java RMI</li>
 </ul>
-<h3 id="extending-junit">Extending JUnit<a class="headerlink" href="#extending-junit" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Mit Decorator z.B. Timing implementieren</li>
+</li>
+<li>Format-Autonomie: Client und Server müssen sich nicht auf ein Datenmodell einigen<ul>
+<li>Siehe Pattern "Enterprise Service Bus", Anti-Corruption Layer</li>
 </ul>
-<h2 id="jutland">JUTLAND<a class="headerlink" href="#jutland" title="Permanent link">&para;</a></h2>
-<div class="admonition todo">
-<p class="admonition-title">Todo</p>
-<p>Kevlin Henney's JAOOO Presentation</p>
-</div>
+</li>
+</ol>
+<h2 id="rest">REST<a class="headerlink" href="#rest" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Mehr als Design-Übung gemacht</li>
-<li><code>Tester</code> ist "Nanokernel" (Micro-Kernel)</li>
-<li>Policies definieren Tests</li>
-<li>Test-Listeners reagieren auf Resultate</li>
+<li>Representational State Transfer</li>
+<li>REST ist ein Architekturstil, definiert über Constraints (Einschränkungen)</li>
+<li>Ursprünglich völlig Stateless (Server merkt sich nicht, was er vom Client schon erhalten hat)<ul>
+<li>D.h z.B. ohne Cookies</li>
+<li>Dadurch sehr einfach verteilbar</li>
+<li>"AS" (Application State) in HATEOS</li>
 </ul>
-<h2 id="fit">FIT<a class="headerlink" href="#fit" title="Permanent link">&para;</a></h2>
+</li>
+</ul>
+<h3 id="rest-majurity-model">REST Majurity Model<a class="headerlink" href="#rest-majurity-model" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Framework for Integrated Test (von Cunningham)</li>
-<li>Deklarativ: Was muss Programm können?</li>
-<li>HTML-Tabellen als Input, die Tests spezifizieren</li>
-<li>Sehr schlank mit nur 3 Klassen</li>
+<li>Ziel: Level 3 (HATEOS) -&gt; Restful HTTP</li>
+<li>Nicht jedes HTTP-API erfüllt die REST-Kriterien!</li>
+<li>Wichtigste Eigenschaft: Resources<ul>
+<li>Haben jeweils genau eine URI</li>
+</ul>
+</li>
+<li>HTTP-Verben: NUR HTTP-Verben auf Ressourcen aufrufen<ul>
+<li>Ist nicht mehr Platform-Neutral!</li>
+<li>HTTP ist einzige reale "Implementation" von REST</li>
+</ul>
+</li>
+</ul>
+<h3 id="hateoas">HatEoAS<a class="headerlink" href="#hateoas" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Hypertext as the Engine of Application State</li>
+<li>Custom Media Types<ul>
+<li>z.B. <code>application/json</code></li>
+</ul>
+</li>
+<li>Media Types tragen den Application State (Engine)</li>
+<li>Links identifizieren den Application State<ul>
+<li>Was sind die nächsten gültigen Operationen?</li>
+</ul>
+</li>
+<li>Bringt viel Flexibilität, aber auch Unsicherheit<ul>
+<li>Kontrollfluss wird abgegeben an Endpoint</li>
+<li>Dadurch oft nicht verwendet in Application Integration</li>
+</ul>
+</li>
 </ul>
                 
                   
@@ -961,7 +978,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../reflection/" title="Reflection" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../DDD_coding-style/" title="Tactic DDD & Architectural Coding Style" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -970,19 +987,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Reflection
+                Tactic DDD & Architectural Coding Style
               </span>
             </div>
           </a>
         
         
-          <a href="../wam/" title="WAM" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../exercises/ex1/" title="Exercise 1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                WAM
+                Exercise 1
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

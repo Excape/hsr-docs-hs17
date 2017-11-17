@@ -13,7 +13,7 @@
         <meta name="description" content="HSR Study Documentation HS17">
       
       
-        <link rel="canonical" href="https://doc.robinsuter.ch/apf/junit_dissection/">
+        <link rel="canonical" href="https://doc.robinsuter.ch/apf/wam/">
       
       
         <meta name="author" content="Robin Suter">
@@ -38,7 +38,7 @@
     
     
       
-        <title>JUnit Dissection - HSR Notizen HS17</title>
+        <title>WAM - HSR Notizen HS17</title>
       
     
     
@@ -98,7 +98,7 @@
                 </span>
               
             
-            JUnit Dissection
+            WAM
           
         </span>
       </div>
@@ -743,6 +743,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../junit_dissection/" title="JUnit Dissection" class="md-nav__link">
+      JUnit Dissection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -754,11 +766,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        JUnit Dissection
+        WAM
       </label>
     
-    <a href="./" title="JUnit Dissection" class="md-nav__link md-nav__link--active">
-      JUnit Dissection
+    <a href="./" title="WAM" class="md-nav__link md-nav__link--active">
+      WAM
     </a>
     
       
@@ -772,35 +784,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#junit-design" title="JUnit Design" class="md-nav__link">
-    JUnit Design
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#extending-junit" title="Extending JUnit" class="md-nav__link">
-    Extending JUnit
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jutland" title="JUTLAND" class="md-nav__link">
-    JUTLAND
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fit" title="FIT" class="md-nav__link">
-    FIT
+  <a href="#anwendungsbereich" title="Anwendungsbereich" class="md-nav__link">
+    Anwendungsbereich
   </a>
   
 </li>
@@ -811,18 +796,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../wam/" title="WAM" class="md-nav__link">
-      WAM
-    </a>
   </li>
 
         
@@ -852,35 +825,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#junit-design" title="JUnit Design" class="md-nav__link">
-    JUnit Design
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#extending-junit" title="Extending JUnit" class="md-nav__link">
-    Extending JUnit
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jutland" title="JUTLAND" class="md-nav__link">
-    JUTLAND
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fit" title="FIT" class="md-nav__link">
-    FIT
+  <a href="#anwendungsbereich" title="Anwendungsbereich" class="md-nav__link">
+    Anwendungsbereich
   </a>
   
 </li>
@@ -899,49 +845,23 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Excape/hsr-docs-hs17/edit/master/docs/apf/junit_dissection.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/Excape/hsr-docs-hs17/edit/master/docs/apf/wam.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="testing-framework-dissection">Testing Framework Dissection<a class="headerlink" href="#testing-framework-dissection" title="Permanent link">&para;</a></h1>
-<h2 id="junit-design">JUnit Design<a class="headerlink" href="#junit-design" title="Permanent link">&para;</a></h2>
+                <h1 id="wam-framework-construction">WAM Framework Construction<a class="headerlink" href="#wam-framework-construction" title="Permanent link">&para;</a></h1>
 <ul>
-<li>Command-Pattern für Tests</li>
-<li>Jeder <code>TestCase</code> implementiert das Command-Interface <code>Test</code></li>
-<li><code>TestCase</code> hat <code>run()</code> als Template-Method<ul>
-<li>Besteht aus setup, run und teardown als "hooks"</li>
+<li>WAM: Werkzeug, Automat, Material<ul>
+<li>Bilden die zentralen Metaphern</li>
 </ul>
 </li>
-<li>TDD Exkurs: <code>ZOMBIES</code><ul>
-<li>"Zero, One, Many, Behavior Interface, Exceptional Behavior, Simple Scenario / Simple Solution"</li>
+<li>Methodik, um Frameworks zu modellieren</li>
 </ul>
-</li>
-<li>Resultate sammeln mit <code>Collecting Parameter</code></li>
-<li>Factory Method kommt oft in Template Method vor</li>
-<li>Exceptions werden in TestResult gesammelt</li>
-<li>Für jede Test-Methode wird mit Reflection ein Adapter zum TestCase erstellt</li>
-<li>Viele Test-Cases werden in einer suite gruppiert und mit <code>Composite</code> ineinander verschachtelt</li>
-</ul>
-<h3 id="extending-junit">Extending JUnit<a class="headerlink" href="#extending-junit" title="Permanent link">&para;</a></h3>
+<h2 id="anwendungsbereich">Anwendungsbereich<a class="headerlink" href="#anwendungsbereich" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Mit Decorator z.B. Timing implementieren</li>
-</ul>
-<h2 id="jutland">JUTLAND<a class="headerlink" href="#jutland" title="Permanent link">&para;</a></h2>
-<div class="admonition todo">
-<p class="admonition-title">Todo</p>
-<p>Kevlin Henney's JAOOO Presentation</p>
-</div>
-<ul>
-<li>Mehr als Design-Übung gemacht</li>
-<li><code>Tester</code> ist "Nanokernel" (Micro-Kernel)</li>
-<li>Policies definieren Tests</li>
-<li>Test-Listeners reagieren auf Resultate</li>
-</ul>
-<h2 id="fit">FIT<a class="headerlink" href="#fit" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Framework for Integrated Test (von Cunningham)</li>
-<li>Deklarativ: Was muss Programm können?</li>
-<li>HTML-Tabellen als Input, die Tests spezifizieren</li>
-<li>Sehr schlank mit nur 3 Klassen</li>
+<li>"Sachbearbeiter": Arbeitsfluss nicht strikt vorgegeben</li>
+<li>Mensch braucht Kontrolle über Abläufe - Freiheit und Flexibilität notwendig</li>
+<li>Rascher Wandel der Anforderungen</li>
+<li>Software muss flexibel erweiterbar sein</li>
 </ul>
                 
                   
@@ -961,7 +881,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../reflection/" title="Reflection" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../junit_dissection/" title="JUnit Dissection" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -970,25 +890,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Reflection
+                JUnit Dissection
               </span>
             </div>
           </a>
         
-        
-          <a href="../wam/" title="WAM" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                WAM
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
