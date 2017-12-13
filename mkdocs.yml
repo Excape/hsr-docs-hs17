@@ -24,6 +24,7 @@ pages:
         - Lambda Calculus: 'prfm/lambda_calculus.md'
         - Lambda Computation: 'prfm/computation_lambda_calculus.md'
         - Functional Programming Intro: 'prfm/fp_introduction.md'
+        - Haskell: 'prfm/haskell_first-steps.md'
     - PmQm:
         - Index: 'pmqm/index.md'
         - Exam: 'pmqm/exam.md'
@@ -39,6 +40,10 @@ pages:
         - Component Dynamics & Container Patterns: 'apparch/component_dynamics_container_patterns.md'
         - Tactic DDD & Architectural Coding Style: 'apparch/DDD_coding-style.md'
         - SOA / RESTful HTTP: 'apparch/soa_restful.md'
+        - Enterprise Service Bus: 'apparch/esb.md'
+        - Service Contract & Microservices: 'apparch/microservices.md'
+        - State and Event Management / Service Granularity: 'apparch/state_event_mgmt.md'
+        - Guest Lecture Credit Suisse: 'apparch/cs-architecture.md'
         - Exercises:
             - Exercise 1: 'apparch/exercises/ex1.md'
     - APF:
@@ -50,6 +55,7 @@ pages:
         - Reflection: 'apf/reflection.md'
         - JUnit Dissection: 'apf/junit_dissection.md'
         - WAM: 'apf/wam.md'
+        - Eclipse Architecture: 'apf/eclipse_architecture.md'
 
 markdown_extensions:
   - toc(permalink=true)
