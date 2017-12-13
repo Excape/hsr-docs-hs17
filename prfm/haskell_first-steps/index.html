@@ -13,7 +13,7 @@
         <meta name="description" content="HSR Study Documentation HS17">
       
       
-        <link rel="canonical" href="https://doc.robinsuter.ch/prfm/prolog_under-hood/">
+        <link rel="canonical" href="https://doc.robinsuter.ch/prfm/haskell_first-steps/">
       
       
         <meta name="author" content="Robin Suter">
@@ -38,7 +38,7 @@
     
     
       
-        <title>Prolog Under the Hood - HSR Notizen HS17</title>
+        <title>Haskell - HSR Notizen HS17</title>
       
     
     
@@ -96,7 +96,7 @@
                 HSR Notizen HS17
               </span>
               <span class="md-header-nav__topic">
-                Prolog Under the Hood
+                Haskell
               </span>
             
           
@@ -362,47 +362,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Prolog Under the Hood
-      </label>
-    
-    <a href="./" title="Prolog Under the Hood" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../prolog_under-hood/" title="Prolog Under the Hood" class="md-nav__link">
       Prolog Under the Hood
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#proof-by-resolution" title="Proof by resolution" class="md-nav__link">
-    Proof by resolution
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -446,11 +410,183 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../haskell_first-steps/" title="Haskell" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Haskell
+      </label>
+    
+    <a href="./" title="Haskell" class="md-nav__link md-nav__link--active">
       Haskell
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-and-classes" title="Types and Classes" class="md-nav__link">
+    Types and Classes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-types" title="Basic Types" class="md-nav__link">
+    Basic Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-classes" title="Type Classes" class="md-nav__link">
+    Type Classes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-functions" title="Defining Functions" class="md-nav__link">
+    Defining Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conditional-expression" title="Conditional Expression" class="md-nav__link">
+    Conditional Expression
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-matching" title="Pattern Matching" class="md-nav__link">
+    Pattern Matching
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-patterns" title="List Patterns" class="md-nav__link">
+    List Patterns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lambda-expressions" title="Lambda expressions" class="md-nav__link">
+    Lambda expressions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-sections" title="Operator Sections" class="md-nav__link">
+    Operator Sections
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-comprehension" title="List Comprehension" class="md-nav__link">
+    List Comprehension
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zip-function" title="Zip function" class="md-nav__link">
+    Zip function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-comprehensions" title="String comprehensions" class="md-nav__link">
+    String comprehensions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursive-functions" title="Recursive Functions" class="md-nav__link">
+    Recursive Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#higher-order-functions" title="Higher Order Functions" class="md-nav__link">
+    Higher Order Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-types" title="Data Types" class="md-nav__link">
+    Data Types
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polymorphism" title="Polymorphism" class="md-nav__link">
+    Polymorphism
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-programming" title="Interactive Programming" class="md-nav__link">
+    Interactive Programming
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -900,8 +1036,144 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#proof-by-resolution" title="Proof by resolution" class="md-nav__link">
-    Proof by resolution
+  <a href="#types-and-classes" title="Types and Classes" class="md-nav__link">
+    Types and Classes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-types" title="Basic Types" class="md-nav__link">
+    Basic Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-classes" title="Type Classes" class="md-nav__link">
+    Type Classes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-functions" title="Defining Functions" class="md-nav__link">
+    Defining Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conditional-expression" title="Conditional Expression" class="md-nav__link">
+    Conditional Expression
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-matching" title="Pattern Matching" class="md-nav__link">
+    Pattern Matching
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-patterns" title="List Patterns" class="md-nav__link">
+    List Patterns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lambda-expressions" title="Lambda expressions" class="md-nav__link">
+    Lambda expressions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-sections" title="Operator Sections" class="md-nav__link">
+    Operator Sections
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-comprehension" title="List Comprehension" class="md-nav__link">
+    List Comprehension
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zip-function" title="Zip function" class="md-nav__link">
+    Zip function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-comprehensions" title="String comprehensions" class="md-nav__link">
+    String comprehensions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursive-functions" title="Recursive Functions" class="md-nav__link">
+    Recursive Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#higher-order-functions" title="Higher Order Functions" class="md-nav__link">
+    Higher Order Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-types" title="Data Types" class="md-nav__link">
+    Data Types
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polymorphism" title="Polymorphism" class="md-nav__link">
+    Polymorphism
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-programming" title="Interactive Programming" class="md-nav__link">
+    Interactive Programming
   </a>
   
 </li>
@@ -920,22 +1192,174 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Excape/hsr-docs-hs17/edit/master/docs/prfm/prolog_under-hood.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/Excape/hsr-docs-hs17/edit/master/docs/prfm/haskell_first-steps.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="prolog-under-the-hood">Prolog under the hood<a class="headerlink" href="#prolog-under-the-hood" title="Permanent link">&para;</a></h1>
+                <h1 id="haskell-introduction">Haskell Introduction<a class="headerlink" href="#haskell-introduction" title="Permanent link">&para;</a></h1>
 <ul>
-<li>Prolog is a subset of <em>FoPCe</em></li>
-<li>A horn clause is a disjunction of literals where at most one literal is positive</li>
-</ul>
-<h2 id="proof-by-resolution">Proof by resolution<a class="headerlink" href="#proof-by-resolution" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Union Sets in clauses and goals where a predicate is positive in one and negative in the other<ul>
-<li>e.g. <script type="math/tex">{\lnotA, \lnotB, C} \union {\lnotC}</script>
-</li>
+<li><code>Cons</code>: Constructor</li>
+<li><code>[1, 2, 3] !! 1</code>: Take second element from list<ul>
+<li>Infix, compared to most other list functions!</li>
 </ul>
 </li>
-<li>Repeat until set of goal clauses is empty</li>
+<li>Prefix function application has preference</li>
+<li>Convention: Name list arguments with suffix <code>s</code>, e.g. <code>xs</code></li>
+</ul>
+<h2 id="types-and-classes">Types and Classes<a class="headerlink" href="#types-and-classes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Every well-formed expression has a type</li>
+<li><code>e :: t</code>: expression <code>e</code> produces a value of <code>t</code></li>
+<li>Types are automatically determined by type inference at compile time<ul>
+<li>It will always determine the most general type (complete and total type inference)</li>
+</ul>
+</li>
+<li>A list is a sequence of values of the <em>same</em> type<ul>
+<li>type of a list is e.g. <code>[Bool]</code> or <code>[Char]</code></li>
+</ul>
+</li>
+<li>Function types: <code>f :: t1 -&gt; tResult</code></li>
+<li><em>Curried</em> Functions: Functions which take "multiple" arguments, i.e. one argument at a time, e.g. <code>add'</code> or <code>map</code><ul>
+<li>The arrow <code>-&gt;</code> associates to the right</li>
+</ul>
+</li>
+<li>Polymorphic functions: Type contains one or more <em>type variables</em> (like generics)</li>
+<li>Type constraints<ul>
+<li>e.g. <code>(+) :: Num a =&gt; a -&gt; a -&gt; a</code></li>
+<li><code>Num a</code> is a type constraint and can only occur once in a type</li>
+</ul>
+</li>
+</ul>
+<h3 id="basic-types">Basic Types<a class="headerlink" href="#basic-types" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Int</code>: Fixed-precision integer</li>
+<li><code>Integer</code>: arbitrary-precision integer</li>
+</ul>
+<h3 id="type-classes">Type Classes<a class="headerlink" href="#type-classes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Num</code>: Numeric Types</li>
+<li><code>Eq</code>: Equality types (e.g. for <code>(==)</code>)</li>
+<li><code>Ord</code>: Ordered types (for comparison)</li>
+</ul>
+<h2 id="defining-functions">Defining Functions<a class="headerlink" href="#defining-functions" title="Permanent link">&para;</a></h2>
+<h3 id="conditional-expression">Conditional Expression<a class="headerlink" href="#conditional-expression" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>abs n = if n &gt;= 0 then n else -n</code></li>
+<li>Can be nested</li>
+<li>Must always have an <code>else</code> branch (to be unambiguous)</li>
+<li>Guarded Equations (syntactic sugar):</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nf">abs</span> <span class="n">n</span>
+    <span class="o">|</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">=</span> <span class="n">n</span>
+    <span class="o">|</span> <span class="n">otherwise</span> <span class="ow">=</span> <span class="o">-</span><span class="n">n</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="pattern-matching">Pattern Matching<a class="headerlink" href="#pattern-matching" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Define functions with patterns</li>
+<li><code>_</code> is a wildcard</li>
+<li>Conditions are evaluated top-down</li>
+<li>Definition should be exhaustive</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">True</span> <span class="o">&amp;&amp;</span> <span class="kt">True</span> <span class="ow">=</span> <span class="kt">True</span>
+<span class="kr">_</span> <span class="o">&amp;&amp;</span> <span class="kr">_</span> <span class="ow">=</span> <span class="kt">False</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="list-patterns">List Patterns<a class="headerlink" href="#list-patterns" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>:</code> is the cons operator to concatenate two elements</li>
+<li>A list is defined as:</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="ow">=</span> <span class="kt">[]</span> <span class="o">|</span> <span class="p">(</span><span class="kr">_</span><span class="kt">:</span><span class="kr">_</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li><code>[1, 2, 3]</code> is syntactic sugar for ´1: (2: (3: []))´</li>
+</ul>
+<h3 id="lambda-expressions">Lambda expressions<a class="headerlink" href="#lambda-expressions" title="Permanent link">&para;</a></h3>
+<p>⁻ <code>\ x -&gt; x + x</code>
+- <code>\</code> is <script type="math/tex">\lambda</script>
+- <script type="math/tex">\lambda x. (x+1) * 2</script> is <code>(*2).(+1)</code> in "point-free" form</p>
+<h3 id="operator-sections">Operator Sections<a class="headerlink" href="#operator-sections" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Infix operators can be written as a curied functions in <code>()</code><ul>
+<li>like <code>(+) 1 2</code></li>
+</ul>
+</li>
+<li>Selections: <code>(1+)</code> = <script type="math/tex">\lambda x. 1 + x</script> is a "plus one" function</li>
+</ul>
+<h2 id="list-comprehension">List Comprehension<a class="headerlink" href="#list-comprehension" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>[x^2 | x &lt;- [1..5]]</code></li>
+<li><code>x &lt;- [1..5]</code> is a generator that generates values for <code>x</code></li>
+<li><code>[(x, y) | x &lt;- [1, 2, 3], y &lt;- [4, 5]]</code><ul>
+<li><code>[(1,4),(1,5),(2,4),(2,5),(3,4),(3,5)]</code></li>
+<li>Notice: the <code>y</code> generator is used up first</li>
+</ul>
+</li>
+<li>Think of later generators as deeper nested loops</li>
+<li>later generators can therefore depend on earlier ones</li>
+<li>Defining guards: <code>[x | x &lt;- [1 .. 10], even x]</code></li>
+</ul>
+<h3 id="zip-function">Zip function<a class="headerlink" href="#zip-function" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Map tWo lists to a list of pairs until one of the two lists ends<ul>
+<li><code>zip :: [a] -&gt; [b] -&gt; [(a, b)]</code></li>
+</ul>
+</li>
+<li><code>zip ['a', 'b', 'c'] [1, 2, 3, 4]</code> - <code>[('a',1),('b',2),('c',3)]</code></li>
+</ul>
+<h3 id="string-comprehensions">String comprehensions<a class="headerlink" href="#string-comprehensions" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Strings are represented as char lists, so they can be used like lists</li>
+</ul>
+<h2 id="recursive-functions">Recursive Functions<a class="headerlink" href="#recursive-functions" title="Permanent link">&para;</a></h2>
+<h2 id="higher-order-functions">Higher Order Functions<a class="headerlink" href="#higher-order-functions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Function which accepts functions as arguments and/or returns a function</li>
+<li>e.g. <code>map f xs = [f x | x &lt;- xs]</code></li>
+<li><code>filter p xs = [x | x &lt;- xs, p x]</code></li>
+<li>General reduce / fold pattern: <code>f (x : xs) = x (+) f xs</code> where <code>(+)</code> is some operator</li>
+<li>folder pattern is defined with <code>foldr</code><ul>
+<li>first argument: operator like <code>(+)</code> above</li>
+<li>second argument: result for base case <code>[]</code></li>
+<li>e.g. <code>sum = foldr (+) 0</code></li>
+</ul>
+</li>
+<li><code>(.)</code>-function: "of"<ul>
+<li><code>f . g = \ x -&gt; f (g x)</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="data-types">Data Types<a class="headerlink" href="#data-types" title="Permanent link">&para;</a></h2>
+<h3 id="polymorphism">Polymorphism<a class="headerlink" href="#polymorphism" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Slide 30: This is parametric polymorphism</li>
+<li>Haskell uses type classes to achieve ad-hoc polymorphism</li>
+<li>Similar to interfaces in Java</li>
+<li>class declarations specify which functions the type must have, and the type of the functions</li>
+<li>class types can be extended: <code>class Eq a =&gt; Ord a where ...</code> extends <code>Eq</code></li>
+<li>Functor is similar to the Visitor-Pattern</li>
+<li>The compiler can automatically generate default implementations for polymorphism with <code>deriving</code></li>
+</ul>
+<h2 id="interactive-programming">Interactive Programming<a class="headerlink" href="#interactive-programming" title="Permanent link">&para;</a></h2>
+<ul>
+<li>We need a way to input data with a keyboard and show data on a screen (side effects)</li>
+<li>Side effects are integrated into the type system of Haskell</li>
+<li>Basic Type: <code>IO a</code>: The type of actions that return a value of type <code>a</code></li>
+<li>Intuition: Function takes "the world" and returns it (possibly changed) along with a value</li>
+<li><code>IO ()</code> is a type that returns no value</li>
+<li><code>getChar</code> and <code>putChar</code> read and write characters from keyboard to screen</li>
+<li><code>do</code> composes sequential actions together<ul>
+<li><code>return</code> returns a value in a <code>do</code></li>
+<li>assignment with <code>x &lt;- func</code></li>
+</ul>
+</li>
 </ul>
                 
                   
@@ -955,7 +1379,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../prolog_arithmetic/" title="Prolog Arithmetic" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../fp_introduction/" title="Functional Programming Intro" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -964,19 +1388,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Prolog Arithmetic
+                Functional Programming Intro
               </span>
             </div>
           </a>
         
         
-          <a href="../lambda_calculus/" title="Lambda Calculus" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../pmqm/" title="Index" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Lambda Calculus
+                Index
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

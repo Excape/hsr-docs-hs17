@@ -97,6 +97,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>https://doc.robinsuter.ch/prfm/haskell_first-steps/</loc>
+     <lastmod>2017-12-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
@@ -184,6 +190,30 @@
     </url>
         
     <url>
+     <loc>https://doc.robinsuter.ch/apparch/esb/</loc>
+     <lastmod>2017-12-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://doc.robinsuter.ch/apparch/microservices/</loc>
+     <lastmod>2017-12-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://doc.robinsuter.ch/apparch/state_event_mgmt/</loc>
+     <lastmod>2017-12-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://doc.robinsuter.ch/apparch/cs-architecture/</loc>
+     <lastmod>2017-12-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>https://doc.robinsuter.ch</loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
@@ -237,6 +267,12 @@
         
     <url>
      <loc>https://doc.robinsuter.ch/apf/wam/</loc>
+     <lastmod>2017-12-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://doc.robinsuter.ch/apf/eclipse_architecture/</loc>
      <lastmod>2017-12-13</lastmod>
      <changefreq>daily</changefreq>
     </url>

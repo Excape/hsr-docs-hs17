@@ -386,6 +386,101 @@
             "title": "Functions"
         }, 
         {
+            "location": "/prfm/haskell_first-steps/", 
+            "text": "Haskell Introduction\n\n\n\n\nCons\n: Constructor\n\n\n[1, 2, 3] !! 1\n: Take second element from list\n\n\nInfix, compared to most other list functions!\n\n\n\n\n\n\nPrefix function application has preference\n\n\nConvention: Name list arguments with suffix \ns\n, e.g. \nxs\n\n\n\n\nTypes and Classes\n\n\n\n\nEvery well-formed expression has a type\n\n\ne :: t\n: expression \ne\n produces a value of \nt\n\n\nTypes are automatically determined by type inference at compile time\n\n\nIt will always determine the most general type (complete and total type inference)\n\n\n\n\n\n\nA list is a sequence of values of the \nsame\n type\n\n\ntype of a list is e.g. \n[Bool]\n or \n[Char]\n\n\n\n\n\n\nFunction types: \nf :: t1 -\n tResult\n\n\nCurried\n Functions: Functions which take \"multiple\" arguments, i.e. one argument at a time, e.g. \nadd'\n or \nmap\n\n\nThe arrow \n-\n associates to the right\n\n\n\n\n\n\nPolymorphic functions: Type contains one or more \ntype variables\n (like generics)\n\n\nType constraints\n\n\ne.g. \n(+) :: Num a =\n a -\n a -\n a\n\n\nNum a\n is a type constraint and can only occur once in a type\n\n\n\n\n\n\n\n\nBasic Types\n\n\n\n\nInt\n: Fixed-precision integer\n\n\nInteger\n: arbitrary-precision integer\n\n\n\n\nType Classes\n\n\n\n\nNum\n: Numeric Types\n\n\nEq\n: Equality types (e.g. for \n(==)\n)\n\n\nOrd\n: Ordered types (for comparison)\n\n\n\n\nDefining Functions\n\n\nConditional Expression\n\n\n\n\nabs n = if n \n= 0 then n else -n\n\n\nCan be nested\n\n\nMust always have an \nelse\n branch (to be unambiguous)\n\n\nGuarded Equations (syntactic sugar):\n\n\n\n\n1\n2\n3\nabs\n \nn\n\n    \n|\n \nn\n \n=\n \n0\n \n=\n \nn\n\n    \n|\n \notherwise\n \n=\n \n-\nn\n\n\n\n\n\n\n\nPattern Matching\n\n\n\n\nDefine functions with patterns\n\n\n_\n is a wildcard\n\n\nConditions are evaluated top-down\n\n\nDefinition should be exhaustive\n\n\n\n\n1\n2\nTrue\n \n \nTrue\n \n=\n \nTrue\n\n\n_\n \n \n_\n \n=\n \nFalse\n\n\n\n\n\n\n\nList Patterns\n\n\n\n\n:\n is the cons operator to concatenate two elements\n\n\nA list is defined as:\n\n\n\n\n1\n=\n \n[]\n \n|\n \n(\n_\n:\n_\n)\n\n\n\n\n\n\n\n\n\n[1, 2, 3]\n is syntactic sugar for \u00b41: (2: (3: []))\u00b4\n\n\n\n\nLambda expressions\n\n\n\u207b \n\\ x -\n x + x\n\n- \n\\\n is \n\\lambda\n\n- \n\\lambda x. (x+1) * 2\n is \n(*2).(+1)\n in \"point-free\" form\n\n\nOperator Sections\n\n\n\n\nInfix operators can be written as a curied functions in \n()\n\n\nlike \n(+) 1 2\n\n\n\n\n\n\nSelections: \n(1+)\n = \n\\lambda x. 1 + x\n is a \"plus one\" function\n\n\n\n\nList Comprehension\n\n\n\n\n[x^2 | x \n- [1..5]]\n\n\nx \n- [1..5]\n is a generator that generates values for \nx\n\n\n[(x, y) | x \n- [1, 2, 3], y \n- [4, 5]]\n\n\n[(1,4),(1,5),(2,4),(2,5),(3,4),(3,5)]\n\n\nNotice: the \ny\n generator is used up first\n\n\n\n\n\n\nThink of later generators as deeper nested loops\n\n\nlater generators can therefore depend on earlier ones\n\n\nDefining guards: \n[x | x \n- [1 .. 10], even x]\n\n\n\n\nZip function\n\n\n\n\nMap tWo lists to a list of pairs until one of the two lists ends\n\n\nzip :: [a] -\n [b] -\n [(a, b)]\n\n\n\n\n\n\nzip ['a', 'b', 'c'] [1, 2, 3, 4]\n - \n[('a',1),('b',2),('c',3)]\n\n\n\n\nString comprehensions\n\n\n\n\nStrings are represented as char lists, so they can be used like lists\n\n\n\n\nRecursive Functions\n\n\nHigher Order Functions\n\n\n\n\nFunction which accepts functions as arguments and/or returns a function\n\n\ne.g. \nmap f xs = [f x | x \n- xs]\n\n\nfilter p xs = [x | x \n- xs, p x]\n\n\nGeneral reduce / fold pattern: \nf (x : xs) = x (+) f xs\n where \n(+)\n is some operator\n\n\nfolder pattern is defined with \nfoldr\n\n\nfirst argument: operator like \n(+)\n above\n\n\nsecond argument: result for base case \n[]\n\n\ne.g. \nsum = foldr (+) 0\n\n\n\n\n\n\n(.)\n-function: \"of\"\n\n\nf . g = \\ x -\n f (g x)\n\n\n\n\n\n\n\n\nData Types\n\n\nPolymorphism\n\n\n\n\nSlide 30: This is parametric polymorphism\n\n\nHaskell uses type classes to achieve ad-hoc polymorphism\n\n\nSimilar to interfaces in Java\n\n\nclass declarations specify which functions the type must have, and the type of the functions\n\n\nclass types can be extended: \nclass Eq a =\n Ord a where ...\n extends \nEq\n\n\nFunctor is similar to the Visitor-Pattern\n\n\nThe compiler can automatically generate default implementations for polymorphism with \nderiving\n\n\n\n\nInteractive Programming\n\n\n\n\nWe need a way to input data with a keyboard and show data on a screen (side effects)\n\n\nSide effects are integrated into the type system of Haskell\n\n\nBasic Type: \nIO a\n: The type of actions that return a value of type \na\n\n\nIntuition: Function takes \"the world\" and returns it (possibly changed) along with a value\n\n\nIO ()\n is a type that returns no value\n\n\ngetChar\n and \nputChar\n read and write characters from keyboard to screen\n\n\ndo\n composes sequential actions together\n\n\nreturn\n returns a value in a \ndo\n\n\nassignment with \nx \n- func", 
+            "title": "Haskell"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#haskell-introduction", 
+            "text": "Cons : Constructor  [1, 2, 3] !! 1 : Take second element from list  Infix, compared to most other list functions!    Prefix function application has preference  Convention: Name list arguments with suffix  s , e.g.  xs", 
+            "title": "Haskell Introduction"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#types-and-classes", 
+            "text": "Every well-formed expression has a type  e :: t : expression  e  produces a value of  t  Types are automatically determined by type inference at compile time  It will always determine the most general type (complete and total type inference)    A list is a sequence of values of the  same  type  type of a list is e.g.  [Bool]  or  [Char]    Function types:  f :: t1 -  tResult  Curried  Functions: Functions which take \"multiple\" arguments, i.e. one argument at a time, e.g.  add'  or  map  The arrow  -  associates to the right    Polymorphic functions: Type contains one or more  type variables  (like generics)  Type constraints  e.g.  (+) :: Num a =  a -  a -  a  Num a  is a type constraint and can only occur once in a type", 
+            "title": "Types and Classes"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#basic-types", 
+            "text": "Int : Fixed-precision integer  Integer : arbitrary-precision integer", 
+            "title": "Basic Types"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#type-classes", 
+            "text": "Num : Numeric Types  Eq : Equality types (e.g. for  (==) )  Ord : Ordered types (for comparison)", 
+            "title": "Type Classes"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#defining-functions", 
+            "text": "", 
+            "title": "Defining Functions"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#conditional-expression", 
+            "text": "abs n = if n  = 0 then n else -n  Can be nested  Must always have an  else  branch (to be unambiguous)  Guarded Equations (syntactic sugar):   1\n2\n3 abs   n \n     |   n   =   0   =   n \n     |   otherwise   =   - n", 
+            "title": "Conditional Expression"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#pattern-matching", 
+            "text": "Define functions with patterns  _  is a wildcard  Conditions are evaluated top-down  Definition should be exhaustive   1\n2 True     True   =   True  _     _   =   False", 
+            "title": "Pattern Matching"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#list-patterns", 
+            "text": ":  is the cons operator to concatenate two elements  A list is defined as:   1 =   []   |   ( _ : _ )     [1, 2, 3]  is syntactic sugar for \u00b41: (2: (3: []))\u00b4", 
+            "title": "List Patterns"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#lambda-expressions", 
+            "text": "\u207b  \\ x -  x + x \n-  \\  is  \\lambda \n-  \\lambda x. (x+1) * 2  is  (*2).(+1)  in \"point-free\" form", 
+            "title": "Lambda expressions"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#operator-sections", 
+            "text": "Infix operators can be written as a curied functions in  ()  like  (+) 1 2    Selections:  (1+)  =  \\lambda x. 1 + x  is a \"plus one\" function", 
+            "title": "Operator Sections"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#list-comprehension", 
+            "text": "[x^2 | x  - [1..5]]  x  - [1..5]  is a generator that generates values for  x  [(x, y) | x  - [1, 2, 3], y  - [4, 5]]  [(1,4),(1,5),(2,4),(2,5),(3,4),(3,5)]  Notice: the  y  generator is used up first    Think of later generators as deeper nested loops  later generators can therefore depend on earlier ones  Defining guards:  [x | x  - [1 .. 10], even x]", 
+            "title": "List Comprehension"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#zip-function", 
+            "text": "Map tWo lists to a list of pairs until one of the two lists ends  zip :: [a] -  [b] -  [(a, b)]    zip ['a', 'b', 'c'] [1, 2, 3, 4]  -  [('a',1),('b',2),('c',3)]", 
+            "title": "Zip function"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#string-comprehensions", 
+            "text": "Strings are represented as char lists, so they can be used like lists", 
+            "title": "String comprehensions"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#recursive-functions", 
+            "text": "", 
+            "title": "Recursive Functions"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#higher-order-functions", 
+            "text": "Function which accepts functions as arguments and/or returns a function  e.g.  map f xs = [f x | x  - xs]  filter p xs = [x | x  - xs, p x]  General reduce / fold pattern:  f (x : xs) = x (+) f xs  where  (+)  is some operator  folder pattern is defined with  foldr  first argument: operator like  (+)  above  second argument: result for base case  []  e.g.  sum = foldr (+) 0    (.) -function: \"of\"  f . g = \\ x -  f (g x)", 
+            "title": "Higher Order Functions"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#data-types", 
+            "text": "", 
+            "title": "Data Types"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#polymorphism", 
+            "text": "Slide 30: This is parametric polymorphism  Haskell uses type classes to achieve ad-hoc polymorphism  Similar to interfaces in Java  class declarations specify which functions the type must have, and the type of the functions  class types can be extended:  class Eq a =  Ord a where ...  extends  Eq  Functor is similar to the Visitor-Pattern  The compiler can automatically generate default implementations for polymorphism with  deriving", 
+            "title": "Polymorphism"
+        }, 
+        {
+            "location": "/prfm/haskell_first-steps/#interactive-programming", 
+            "text": "We need a way to input data with a keyboard and show data on a screen (side effects)  Side effects are integrated into the type system of Haskell  Basic Type:  IO a : The type of actions that return a value of type  a  Intuition: Function takes \"the world\" and returns it (possibly changed) along with a value  IO ()  is a type that returns no value  getChar  and  putChar  read and write characters from keyboard to screen  do  composes sequential actions together  return  returns a value in a  do  assignment with  x  - func", 
+            "title": "Interactive Programming"
+        }, 
+        {
             "location": "/pmqm/", 
             "text": "Projekt- und Qualit\u00e4tsmanagement", 
             "title": "Index"
@@ -726,6 +821,116 @@
             "title": "HatEoAS"
         }, 
         {
+            "location": "/apparch/esb/", 
+            "text": "Enterprise Service Bus (Guest Lecture)\n\n\nMotivation\n\n\n\n\nViele Services (ERP, CRM, etc.)\n\n\nIntegration, um zwischen den Services kommunizieren zu k\u00f6nnen\n\n\nVerschiedene Protokolle / Datenformate der Systeme\n\n\nPunkt-zu-Punkt-Verbindungen erzeugen starke Kopplung der Systeme\n\n\n\n\nDefinitionen\n\n\n\n\n\"An enterprise service bus (ESB) is a software architecture model used for designing and implementing the interaction and communication between interacting software applications in service-oriented architecture (SOA).\u201c\n\n\nArchitektur-Pattern und Produktkategorie\n\n\nImplementation von Anti Corruption Layer (ACL)\n\n\n\n\nL\u00f6sung\n\n\n\n\nF\u00fcr jede Technologie einen Adapter\n\n\nVerarbeitungsflow wird innerhalb ESB definiert\n\n\nWenn Technologie an einer Schnittstelle \u00e4ndert, muss nur der Adapter ausgetauscht werden\n\n\nWenn ein kanonisches Datenmodell existiert (f\u00fcr die ganze Firma), muss lediglich jedes andere Datenmodell darin \u00fcbersetzt werden. Sonst muss f\u00fcr jede Verbindung zwischen zwei Protokolle \u00fcbersetzt werden\n\n\n\n\nVersionierung\n\n\n\n\nESB kann Funktionalit\u00e4t zur Verf\u00fcgung stellen, um zwischen verschiedenen Versionen zu \u00fcbersetzen\n\n\n\n\nXQuery\n\n\n\n\nMapping zwischen zwei Datenformaten\n\n\nCode oder \u00fcber grafische Tools", 
+            "title": "Enterprise Service Bus"
+        }, 
+        {
+            "location": "/apparch/esb/#enterprise-service-bus-guest-lecture", 
+            "text": "", 
+            "title": "Enterprise Service Bus (Guest Lecture)"
+        }, 
+        {
+            "location": "/apparch/esb/#motivation", 
+            "text": "Viele Services (ERP, CRM, etc.)  Integration, um zwischen den Services kommunizieren zu k\u00f6nnen  Verschiedene Protokolle / Datenformate der Systeme  Punkt-zu-Punkt-Verbindungen erzeugen starke Kopplung der Systeme", 
+            "title": "Motivation"
+        }, 
+        {
+            "location": "/apparch/esb/#definitionen", 
+            "text": "\"An enterprise service bus (ESB) is a software architecture model used for designing and implementing the interaction and communication between interacting software applications in service-oriented architecture (SOA).\u201c  Architektur-Pattern und Produktkategorie  Implementation von Anti Corruption Layer (ACL)", 
+            "title": "Definitionen"
+        }, 
+        {
+            "location": "/apparch/esb/#losung", 
+            "text": "F\u00fcr jede Technologie einen Adapter  Verarbeitungsflow wird innerhalb ESB definiert  Wenn Technologie an einer Schnittstelle \u00e4ndert, muss nur der Adapter ausgetauscht werden  Wenn ein kanonisches Datenmodell existiert (f\u00fcr die ganze Firma), muss lediglich jedes andere Datenmodell darin \u00fcbersetzt werden. Sonst muss f\u00fcr jede Verbindung zwischen zwei Protokolle \u00fcbersetzt werden", 
+            "title": "L\u00f6sung"
+        }, 
+        {
+            "location": "/apparch/esb/#versionierung", 
+            "text": "ESB kann Funktionalit\u00e4t zur Verf\u00fcgung stellen, um zwischen verschiedenen Versionen zu \u00fcbersetzen", 
+            "title": "Versionierung"
+        }, 
+        {
+            "location": "/apparch/esb/#xquery", 
+            "text": "Mapping zwischen zwei Datenformaten  Code oder \u00fcber grafische Tools", 
+            "title": "XQuery"
+        }, 
+        {
+            "location": "/apparch/microservices/", 
+            "text": "Service Contracts \n Microservices\n\n\nEinschub SOAP\n\n\n\n\nUrspr\u00fcnglich Simple Object Access Protocol, aber jetzt nur noch als Eigenname definiert\n\n\nXML-Format, was den \"Wunsch\" des Service Requestors an den Provider beschreibt\n\n\nIn jedem Body Entry ist ein Schema definiert, das den \"Contract\" bildet\n\n\nUnterscheiden von RPC! Ist konzeptionell nur ein \"Intent\" etwas zu machen, nicht direkt ein Call\n\n\nAlles geht \u00fcber POST (Kritik von REST-Leuten)\n\n\n\n\nWSDL\n\n\n\n\nXML-Schema f\u00fcr Service Contracts\n\n\nDefiniert auch Datenschema, was in REST lange nicht gemacht wurde\n\n\nREST kann auch mit WSDL 2.0 beschrieben werden, hat sich aber nicht durgesetzt gegen RESTful HTTP\n\n\n\n\nMicroservices\n\n\n\n\nVorher \"fine-grained SOA\"\n\n\nJede Komponente ist ein Service, der separat deployed werden kann (aber nicht muss)\n\n\nJeder Service kann unterschiedlichen Storage / Programmiersprache verwenden\n\n\nSo kann separat skaliert werden, z.B. nur den Katalog eines Online-Shops rauf skalieren bei Black Friday\n\n\nNach Fowler ein eigener Architektur-Stil (O. Zimmermann disagrees)\n\n\nAus DDD: Jedes Aggregate kann ein Microservice sein\n\n\n\n\nResources\n\n\n\n\nhttps://www.subbu.org/blog/2008/09/on-linking-part-2", 
+            "title": "Service Contract & Microservices"
+        }, 
+        {
+            "location": "/apparch/microservices/#service-contracts-microservices", 
+            "text": "", 
+            "title": "Service Contracts &amp; Microservices"
+        }, 
+        {
+            "location": "/apparch/microservices/#einschub-soap", 
+            "text": "Urspr\u00fcnglich Simple Object Access Protocol, aber jetzt nur noch als Eigenname definiert  XML-Format, was den \"Wunsch\" des Service Requestors an den Provider beschreibt  In jedem Body Entry ist ein Schema definiert, das den \"Contract\" bildet  Unterscheiden von RPC! Ist konzeptionell nur ein \"Intent\" etwas zu machen, nicht direkt ein Call  Alles geht \u00fcber POST (Kritik von REST-Leuten)", 
+            "title": "Einschub SOAP"
+        }, 
+        {
+            "location": "/apparch/microservices/#wsdl", 
+            "text": "XML-Schema f\u00fcr Service Contracts  Definiert auch Datenschema, was in REST lange nicht gemacht wurde  REST kann auch mit WSDL 2.0 beschrieben werden, hat sich aber nicht durgesetzt gegen RESTful HTTP", 
+            "title": "WSDL"
+        }, 
+        {
+            "location": "/apparch/microservices/#microservices", 
+            "text": "Vorher \"fine-grained SOA\"  Jede Komponente ist ein Service, der separat deployed werden kann (aber nicht muss)  Jeder Service kann unterschiedlichen Storage / Programmiersprache verwenden  So kann separat skaliert werden, z.B. nur den Katalog eines Online-Shops rauf skalieren bei Black Friday  Nach Fowler ein eigener Architektur-Stil (O. Zimmermann disagrees)  Aus DDD: Jedes Aggregate kann ein Microservice sein", 
+            "title": "Microservices"
+        }, 
+        {
+            "location": "/apparch/microservices/#resources", 
+            "text": "https://www.subbu.org/blog/2008/09/on-linking-part-2", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/apparch/state_event_mgmt/", 
+            "text": "State and Event Management / Service Granularity\n\n\n\n\nProblem bei Microservices: Ein Service kann nur auf eigenen Daten operieren. Was, wenn globale Transaktion ausgef\u00fchrt werden muss?\n\n\n\n\nStatelessness\n\n\n\n\nSession state\n und \nresource state\n sind Unterbegriffe von \napplication state\n\n\nsession state\n ist auf dem Presentation layer, nicht interessant f\u00fcr domain layer, z.B. Page flow auf website\n\n\nresource state\n ist auf Business Ebene, die Resources sind REST-Ressourcen, z.B. Entities\n\n\nREST erlaubt streng genommen gar keine Cookies\n\n\nServer Session State ist unpopul\u00e4r wegen schlechter Skalierbarkeit, besser gleich Session in Datenbank speichern (z.B. Redis)\n\n\nSo ist Session nat\u00fcrlich auch einfacher zu archivieren und auszuwerten. Bei REST ist das viel schwieriger (m\u00f6glicher Grund f\u00fcr Verbreitung)\n\n\n\n\n\n\n\n\nEvent Sourcing\n\n\n\n\nBei leerem application state anfangen und change logs verwenden (\u00e4hnlich Git)\n\n\nAlle \u00c4nderungen gehen \u00fcber Events\n\n\nEs werden Checkpoints gesetzt in der \"Kette\" der Events\n\n\nErlaubt komplette Audit Logs, oder z.B. Messaging zwischen Aggregates in DDD\n\n\nCoupling:\n\n\nEvents sind time- und reference-decoupled\n\n\nPlatform-decoupling mit XML / JSON\n\n\nFormat-coupling: Empf\u00e4nger und Sender m\u00fcssen sich auf Datenformat einigen\n\n\n\n\n\n\n\n\nCommand Query Responsibility Segregation (CQRS)\n\n\n\n\nDomain Model auseinander ziehen\n\n\nEines ist auf Reads und eines auf Writes optimiert\n\n\nN\u00fctzlich, wenn grosse Imbalance zwischen Read und Write \n\n\nRead-Cache f\u00fcr schnelles Lesen\n\n\nSchreib-Operationen werden eventually consistent in den Read Storage \u00fcbertragen\n\n\nGut, wenn Performance wichtiger als Korrektheit ist\n\n\nSchwierig, konsistent zu halten\n\n\n\n\nService Granularity\n\n\n\n\nMaster Data Separation: Lang-lebende Objekte werden abgekapselt\n\n\nLoose Kopplung zwischen gr\u00f6sseren Services ist einfacher als zwischen vielen kleinen Services\n\n\nBusiness Granularit\u00e4t: \"Gib den Status der Bestellung\" (fein granular)\n\n\nTechnische Granularit\u00e4t: Beeinflusst Performance und Skalierbarkeit, z.B. Anzahl Operationen im System\n\n\nBsp: \"Tweets der letzten 30 Minuten\" ist auf Business-Ebene feingranular, auf technischer Ebene sind das aber viele Daten, also grob granular", 
+            "title": "State and Event Management / Service Granularity"
+        }, 
+        {
+            "location": "/apparch/state_event_mgmt/#state-and-event-management-service-granularity", 
+            "text": "Problem bei Microservices: Ein Service kann nur auf eigenen Daten operieren. Was, wenn globale Transaktion ausgef\u00fchrt werden muss?", 
+            "title": "State and Event Management / Service Granularity"
+        }, 
+        {
+            "location": "/apparch/state_event_mgmt/#statelessness", 
+            "text": "Session state  und  resource state  sind Unterbegriffe von  application state  session state  ist auf dem Presentation layer, nicht interessant f\u00fcr domain layer, z.B. Page flow auf website  resource state  ist auf Business Ebene, die Resources sind REST-Ressourcen, z.B. Entities  REST erlaubt streng genommen gar keine Cookies  Server Session State ist unpopul\u00e4r wegen schlechter Skalierbarkeit, besser gleich Session in Datenbank speichern (z.B. Redis)  So ist Session nat\u00fcrlich auch einfacher zu archivieren und auszuwerten. Bei REST ist das viel schwieriger (m\u00f6glicher Grund f\u00fcr Verbreitung)", 
+            "title": "Statelessness"
+        }, 
+        {
+            "location": "/apparch/state_event_mgmt/#event-sourcing", 
+            "text": "Bei leerem application state anfangen und change logs verwenden (\u00e4hnlich Git)  Alle \u00c4nderungen gehen \u00fcber Events  Es werden Checkpoints gesetzt in der \"Kette\" der Events  Erlaubt komplette Audit Logs, oder z.B. Messaging zwischen Aggregates in DDD  Coupling:  Events sind time- und reference-decoupled  Platform-decoupling mit XML / JSON  Format-coupling: Empf\u00e4nger und Sender m\u00fcssen sich auf Datenformat einigen", 
+            "title": "Event Sourcing"
+        }, 
+        {
+            "location": "/apparch/state_event_mgmt/#command-query-responsibility-segregation-cqrs", 
+            "text": "Domain Model auseinander ziehen  Eines ist auf Reads und eines auf Writes optimiert  N\u00fctzlich, wenn grosse Imbalance zwischen Read und Write   Read-Cache f\u00fcr schnelles Lesen  Schreib-Operationen werden eventually consistent in den Read Storage \u00fcbertragen  Gut, wenn Performance wichtiger als Korrektheit ist  Schwierig, konsistent zu halten", 
+            "title": "Command Query Responsibility Segregation (CQRS)"
+        }, 
+        {
+            "location": "/apparch/state_event_mgmt/#service-granularity", 
+            "text": "Master Data Separation: Lang-lebende Objekte werden abgekapselt  Loose Kopplung zwischen gr\u00f6sseren Services ist einfacher als zwischen vielen kleinen Services  Business Granularit\u00e4t: \"Gib den Status der Bestellung\" (fein granular)  Technische Granularit\u00e4t: Beeinflusst Performance und Skalierbarkeit, z.B. Anzahl Operationen im System  Bsp: \"Tweets der letzten 30 Minuten\" ist auf Business-Ebene feingranular, auf technischer Ebene sind das aber viele Daten, also grob granular", 
+            "title": "Service Granularity"
+        }, 
+        {
+            "location": "/apparch/cs-architecture/", 
+            "text": "Guest Lecture Credit Suisse\n\n\nPlanning IT Infrastructure\n\n\n\n\nWhat is the current state?\n\n\nflows, pain point, etc.\n\n\n\n\n\n\nDefine Strategy\n\n\ntarget state, roadmap, agile\n\n\n\n\n\n\nGovernance\n\n\ncontrol and execution", 
+            "title": "Guest Lecture Credit Suisse"
+        }, 
+        {
+            "location": "/apparch/cs-architecture/#guest-lecture-credit-suisse", 
+            "text": "", 
+            "title": "Guest Lecture Credit Suisse"
+        }, 
+        {
+            "location": "/apparch/cs-architecture/#planning-it-infrastructure", 
+            "text": "What is the current state?  flows, pain point, etc.    Define Strategy  target state, roadmap, agile    Governance  control and execution", 
+            "title": "Planning IT Infrastructure"
+        }, 
+        {
             "location": "/apparch/exercises/ex1/", 
             "text": "Exercise 1\n\n\n\n\n\n\n\n\nRequirement\n\n\nScore\n\n\nMapping\n\n\nExplanation\n\n\n\n\n\n\n\n\n\n\nCache V2 Kubernetes provider resources (#1919)\n\n\n\n\n\n\n\n\n\n\n\n\nReplace all Frigga usage in Orca (#1920)\n\n\nL-M\n\n\n\n\nFrigga ist eine alte Library, die String Parsing macht; wohl nicht wichtig f\u00fcr QoS\n\n\n\n\n\n\nSupport for custom basePath of Swagger\n\n\nL\n\n\n\n\nSwagger ist API-Framework; Wohl nicht wichtig f\u00fcr Architektur", 
             "title": "Exercise 1"
@@ -1029,6 +1234,51 @@
             "location": "/apf/wam/#anwendungsbereich", 
             "text": "\"Sachbearbeiter\": Arbeitsfluss nicht strikt vorgegeben  Mensch braucht Kontrolle \u00fcber Abl\u00e4ufe - Freiheit und Flexibilit\u00e4t notwendig  Rascher Wandel der Anforderungen  Software muss flexibel erweiterbar sein", 
             "title": "Anwendungsbereich"
+        }, 
+        {
+            "location": "/apf/eclipse_architecture/", 
+            "text": "Eclipse Architecture and Patterns\n\n\n\u00dcberblick\n\n\n\n\nWurde zuerst als Framework f\u00fcr IDEs entwickelt\n\n\nDann mit dem Ziel, eine Software-Plattform f\u00fcr allgemeine Desktop-Applikationen zu sein\n\n\nFast alles ist als Plugin implementiert - auch der Workbench (das GUI)\n\n\n\n\nSWT / JFace\n\n\n\n\nPlattformunabh\u00e4ngig, aber Teil des GUIs ist aber plattform-spezifisch\n\n\nSWT selbst entwickelt\n\n\nD\u00fcnne Abstraktionsschicht \u00fcber das GUI des Betriebssystems\n\n\n\n\n\n\nJFace baut auf SWT auf und bildet die konkreten und komplexeren GUI-Komponenten\n\n\n\n\nOSGi\n\n\n\n\nOpen Services Gateway initiative\n\n\nKomponenten- und Service-Modell f\u00fcr Java + Dependency Management\n\n\nKomponenten k\u00f6nnen geb\u00fcndelt werden und dynamisch starten / stoppen\n\n\n\u00e4hnlich zu Java 9 Modularisierung\n\n\nStandard, der von Eclipse implementiert wird (mit Equinox)\n\n\n\n\nEclipse Plug-ins\n\n\n\n\nEclipse Plugins sind OSGi bundles\n\n\nPlugins k\u00f6nnen nicht ohne Neustart installiert werden, weil OSGi Services nicht benutzt werden\n\n\nJedes Plugin hat eigenen Class loader, womit mehrere Plugins auch unterschiedliche Versionen einer dependency benutzen k\u00f6nnen\n\n\nPlugins werden erst geladen, wenn es ben\u00f6tigt wird\n\n\nEclipse kann statische XML-Files durchsuchen, ohne daf\u00fcr Java Code zu laden\n\n\n\n\n\n\n\n\nExtension Points\n\n\n\n\nBsp: Plugin m\u00f6chte sich in ein Men\u00fc einh\u00e4ngen\n\n\nMen\u00fc bietet einen Extension Point an\n\n\nPlugin implementiert Interface des Extension Points\n\n\n\n\n\n\nPlugins k\u00f6nnen selbst EPs zur Verf\u00fcgung stellen\n\n\nWird definiert in \nplugin.xml\n\n\n\n\nEclipse Core Patterns\n\n\n\n\nViele Singletons - Unit testing unm\u00f6glich, ohne eigene Instanz zu starten\n\n\nProxy Pattern: Handler f\u00fcr eine Ressource anbieten, als Abstraktion auf das OS\n\n\nWird auch genutzt f\u00fcr Plugin Lazy Loading\n\n\nPlugin wird erst geladen, wenn der Proxy die \"action\" bekommt\n\n\n\n\n\n\nPluggable Adapter: Komplexe Komponenten in JFace\n\n\nObserver z.B. auf Ressourcen\n\n\nStrategy: Ein Teil eines Controls kann verschiedene Arten von Layouts (=Strategies) haben\n\n\nCommand: JFace Action, z.B. bei einem Klick auf ein Men\u00fc\n\n\n\n\nRefactoring Language Toolkit (LTK)\n\n\n\n\nSprach-unabh\u00e4ngige API f\u00fcr Refactorings\n\n\nTemplate Method, um Skeleton vorzugeben und bestimmte Schritte an Unterklassen weiter zu geben\n\n\nAm Endes des Refactorings wird ein \nChange\n Objekt erstellt, das vom Eclipse auf die Files angewendet wird\n\n\nEin Change kann aus mehreren Komponenten bestehen -\n \nComposite Pattern\n\n\nRefactorings k\u00f6nnen aus der History exportiert werden, daf\u00fcr werden sie serialisiert -\n \nMemento Pattern\n\n\nRefactorings arbeiten mit dem AST\n\n\nUm AST zu traversieren -\n \nVisitor Pattern\n\n\nTraversierung ist in den Knoten selbst, nur die ben\u00f6tigten Methoden werden implementiert", 
+            "title": "Eclipse Architecture"
+        }, 
+        {
+            "location": "/apf/eclipse_architecture/#eclipse-architecture-and-patterns", 
+            "text": "", 
+            "title": "Eclipse Architecture and Patterns"
+        }, 
+        {
+            "location": "/apf/eclipse_architecture/#uberblick", 
+            "text": "Wurde zuerst als Framework f\u00fcr IDEs entwickelt  Dann mit dem Ziel, eine Software-Plattform f\u00fcr allgemeine Desktop-Applikationen zu sein  Fast alles ist als Plugin implementiert - auch der Workbench (das GUI)", 
+            "title": "\u00dcberblick"
+        }, 
+        {
+            "location": "/apf/eclipse_architecture/#swt-jface", 
+            "text": "Plattformunabh\u00e4ngig, aber Teil des GUIs ist aber plattform-spezifisch  SWT selbst entwickelt  D\u00fcnne Abstraktionsschicht \u00fcber das GUI des Betriebssystems    JFace baut auf SWT auf und bildet die konkreten und komplexeren GUI-Komponenten", 
+            "title": "SWT / JFace"
+        }, 
+        {
+            "location": "/apf/eclipse_architecture/#osgi", 
+            "text": "Open Services Gateway initiative  Komponenten- und Service-Modell f\u00fcr Java + Dependency Management  Komponenten k\u00f6nnen geb\u00fcndelt werden und dynamisch starten / stoppen  \u00e4hnlich zu Java 9 Modularisierung  Standard, der von Eclipse implementiert wird (mit Equinox)", 
+            "title": "OSGi"
+        }, 
+        {
+            "location": "/apf/eclipse_architecture/#eclipse-plug-ins", 
+            "text": "Eclipse Plugins sind OSGi bundles  Plugins k\u00f6nnen nicht ohne Neustart installiert werden, weil OSGi Services nicht benutzt werden  Jedes Plugin hat eigenen Class loader, womit mehrere Plugins auch unterschiedliche Versionen einer dependency benutzen k\u00f6nnen  Plugins werden erst geladen, wenn es ben\u00f6tigt wird  Eclipse kann statische XML-Files durchsuchen, ohne daf\u00fcr Java Code zu laden", 
+            "title": "Eclipse Plug-ins"
+        }, 
+        {
+            "location": "/apf/eclipse_architecture/#extension-points", 
+            "text": "Bsp: Plugin m\u00f6chte sich in ein Men\u00fc einh\u00e4ngen  Men\u00fc bietet einen Extension Point an  Plugin implementiert Interface des Extension Points    Plugins k\u00f6nnen selbst EPs zur Verf\u00fcgung stellen  Wird definiert in  plugin.xml", 
+            "title": "Extension Points"
+        }, 
+        {
+            "location": "/apf/eclipse_architecture/#eclipse-core-patterns", 
+            "text": "Viele Singletons - Unit testing unm\u00f6glich, ohne eigene Instanz zu starten  Proxy Pattern: Handler f\u00fcr eine Ressource anbieten, als Abstraktion auf das OS  Wird auch genutzt f\u00fcr Plugin Lazy Loading  Plugin wird erst geladen, wenn der Proxy die \"action\" bekommt    Pluggable Adapter: Komplexe Komponenten in JFace  Observer z.B. auf Ressourcen  Strategy: Ein Teil eines Controls kann verschiedene Arten von Layouts (=Strategies) haben  Command: JFace Action, z.B. bei einem Klick auf ein Men\u00fc", 
+            "title": "Eclipse Core Patterns"
+        }, 
+        {
+            "location": "/apf/eclipse_architecture/#refactoring-language-toolkit-ltk", 
+            "text": "Sprach-unabh\u00e4ngige API f\u00fcr Refactorings  Template Method, um Skeleton vorzugeben und bestimmte Schritte an Unterklassen weiter zu geben  Am Endes des Refactorings wird ein  Change  Objekt erstellt, das vom Eclipse auf die Files angewendet wird  Ein Change kann aus mehreren Komponenten bestehen -   Composite Pattern  Refactorings k\u00f6nnen aus der History exportiert werden, daf\u00fcr werden sie serialisiert -   Memento Pattern  Refactorings arbeiten mit dem AST  Um AST zu traversieren -   Visitor Pattern  Traversierung ist in den Knoten selbst, nur die ben\u00f6tigten Methoden werden implementiert", 
+            "title": "Refactoring Language Toolkit (LTK)"
         }
     ]
 }
