@@ -56,3 +56,7 @@
 - Bringt viel Flexibilität, aber auch Unsicherheit
     - Kontrollfluss wird abgegeben an Endpoint
     - Dadurch oft nicht verwendet in Application Integration
+
+!!! info "Asynchrone Calls"
+    z.B. eine Ressource "Process" machen, über die der Status einer Operation (State) abgefragt werden kann
+
