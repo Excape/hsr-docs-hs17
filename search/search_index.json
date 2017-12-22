@@ -931,6 +931,31 @@
             "title": "Planning IT Infrastructure"
         }, 
         {
+            "location": "/apparch/evaluation_summary/", 
+            "text": "Evaluation \n Lecture Closure\n\n\nArchitectural Evaluation\n\n\n\n\n\"Burger\"-Technik: Positiv anfangen, Negatives in der Mitte, Positives am Ende\n\n\nFindings, die nicht umgesetzt werden k\u00f6nnen, sollten mit der Zeit verbessert werden k\u00f6nnen\n\n\n\n\nRepetition\n\n\n\n\nSW-Architektur vs. Application Architecture\n\n\nViewpoints\n\n\nNFR sollen SMART sein\n\n\nQuality Attribute Scenario (QAS) - was geh\u00f6rt wohin? -\n Template\n\n\nCRC Cards: Stichworte oder Kurzs\u00e4tze\n\n\nBounded Context vs. Subdomain: Reality vs. Wishful thinking\n\n\nLayers\n\n\nBPMN kann u.U. auf Architektur-Schichten \u00fcbertragen werden (z.B. mit \nKamunda\n)\n\n\n\n\nPr\u00fcfung\n\n\n\n\nFolien, \u00dcbungen, Factsheets, Wiederholungsfragen\n\n\nProbepr\u00fcfungen, \u00dcbung 14 mit Beispielfragen (und FAQ zur Pr\u00fcfung)\n\n\nSelf-study assignment 5 mit Bullet-list zu Pr\u00fcfungsthemen\n\n\nAusblick dieser Vorlesung nicht pr\u00fcfungsrelevant", 
+            "title": "Evaluation / Summary"
+        }, 
+        {
+            "location": "/apparch/evaluation_summary/#evaluation-lecture-closure", 
+            "text": "", 
+            "title": "Evaluation &amp; Lecture Closure"
+        }, 
+        {
+            "location": "/apparch/evaluation_summary/#architectural-evaluation", 
+            "text": "\"Burger\"-Technik: Positiv anfangen, Negatives in der Mitte, Positives am Ende  Findings, die nicht umgesetzt werden k\u00f6nnen, sollten mit der Zeit verbessert werden k\u00f6nnen", 
+            "title": "Architectural Evaluation"
+        }, 
+        {
+            "location": "/apparch/evaluation_summary/#repetition", 
+            "text": "SW-Architektur vs. Application Architecture  Viewpoints  NFR sollen SMART sein  Quality Attribute Scenario (QAS) - was geh\u00f6rt wohin? -  Template  CRC Cards: Stichworte oder Kurzs\u00e4tze  Bounded Context vs. Subdomain: Reality vs. Wishful thinking  Layers  BPMN kann u.U. auf Architektur-Schichten \u00fcbertragen werden (z.B. mit  Kamunda )", 
+            "title": "Repetition"
+        }, 
+        {
+            "location": "/apparch/evaluation_summary/#prufung", 
+            "text": "Folien, \u00dcbungen, Factsheets, Wiederholungsfragen  Probepr\u00fcfungen, \u00dcbung 14 mit Beispielfragen (und FAQ zur Pr\u00fcfung)  Self-study assignment 5 mit Bullet-list zu Pr\u00fcfungsthemen  Ausblick dieser Vorlesung nicht pr\u00fcfungsrelevant", 
+            "title": "Pr\u00fcfung"
+        }, 
+        {
             "location": "/apparch/exercises/ex1/", 
             "text": "Exercise 1\n\n\n\n\n\n\n\n\nRequirement\n\n\nScore\n\n\nMapping\n\n\nExplanation\n\n\n\n\n\n\n\n\n\n\nCache V2 Kubernetes provider resources (#1919)\n\n\n\n\n\n\n\n\n\n\n\n\nReplace all Frigga usage in Orca (#1920)\n\n\nL-M\n\n\n\n\nFrigga ist eine alte Library, die String Parsing macht; wohl nicht wichtig f\u00fcr QoS\n\n\n\n\n\n\nSupport for custom basePath of Swagger\n\n\nL\n\n\n\n\nSwagger ist API-Framework; Wohl nicht wichtig f\u00fcr Architektur", 
             "title": "Exercise 1"
@@ -1279,6 +1304,61 @@
             "location": "/apf/eclipse_architecture/#refactoring-language-toolkit-ltk", 
             "text": "Sprach-unabh\u00e4ngige API f\u00fcr Refactorings  Template Method, um Skeleton vorzugeben und bestimmte Schritte an Unterklassen weiter zu geben  Am Endes des Refactorings wird ein  Change  Objekt erstellt, das vom Eclipse auf die Files angewendet wird  Ein Change kann aus mehreren Komponenten bestehen -   Composite Pattern  Refactorings k\u00f6nnen aus der History exportiert werden, daf\u00fcr werden sie serialisiert -   Memento Pattern  Refactorings arbeiten mit dem AST  Um AST zu traversieren -   Visitor Pattern  Traversierung ist in den Knoten selbst, nur die ben\u00f6tigten Methoden werden implementiert", 
             "title": "Refactoring Language Toolkit (LTK)"
+        }, 
+        {
+            "location": "/apf/ppp/", 
+            "text": "Patterns for Parallel Programming\n\n\nHardware Architektur\n\n\n\n\nPentium konnte Berechnungen parallel auf floating-point unit und integer unit ausf\u00fchren\n\n\nIntel i / xeon CPU's haben Vector Registers, um Vektoren im einen Schritt zu berechnen\n\n\n\n\n\n\nInfo\n\n\nhttps://godbolt.org/\n als Compiler Explorer\n\n\n\n\nDecomposing Strategy\n\n\n\n\nZiel: Ein Problem in kleinere zerteilen, um diese zu parallelisieren\n\n\nAnsatz \nTask decomposition\n: Problem in Tasks zerlegen\n\n\nz.B. unabh\u00e4ngige Requests verarbeiten\n\n\n\n\n\n\nAnsatz \nData decomposition\n: Daten zerlegen\n\n\nz.B. in Physik, Raum in kleine unabh\u00e4ngige Teile zu teilen\n\n\n\n\n\n\nBeide Ans\u00e4tze k\u00f6nnen kombiniert eingesetzt werden\n\n\nSchwierigkeit: Abh\u00e4ngigkeiten (die nicht offensichtlich sind)\n\n\nloop-splitting: Unabh\u00e4ngige Iterationen parallelisieren\n\n\n\n\nKoordination\n\n\n\n\nlinear Abh\u00e4ngige Tasks: Pipes and Filters\n\n\n\"ungeordnete\" Abh\u00e4ngigkeiten: Event-based coordination, analog Thread Pools", 
+            "title": "Parallel Programming Patterns"
+        }, 
+        {
+            "location": "/apf/ppp/#patterns-for-parallel-programming", 
+            "text": "", 
+            "title": "Patterns for Parallel Programming"
+        }, 
+        {
+            "location": "/apf/ppp/#hardware-architektur", 
+            "text": "Pentium konnte Berechnungen parallel auf floating-point unit und integer unit ausf\u00fchren  Intel i / xeon CPU's haben Vector Registers, um Vektoren im einen Schritt zu berechnen    Info  https://godbolt.org/  als Compiler Explorer", 
+            "title": "Hardware Architektur"
+        }, 
+        {
+            "location": "/apf/ppp/#decomposing-strategy", 
+            "text": "Ziel: Ein Problem in kleinere zerteilen, um diese zu parallelisieren  Ansatz  Task decomposition : Problem in Tasks zerlegen  z.B. unabh\u00e4ngige Requests verarbeiten    Ansatz  Data decomposition : Daten zerlegen  z.B. in Physik, Raum in kleine unabh\u00e4ngige Teile zu teilen    Beide Ans\u00e4tze k\u00f6nnen kombiniert eingesetzt werden  Schwierigkeit: Abh\u00e4ngigkeiten (die nicht offensichtlich sind)  loop-splitting: Unabh\u00e4ngige Iterationen parallelisieren", 
+            "title": "Decomposing Strategy"
+        }, 
+        {
+            "location": "/apf/ppp/#koordination", 
+            "text": "linear Abh\u00e4ngige Tasks: Pipes and Filters  \"ungeordnete\" Abh\u00e4ngigkeiten: Event-based coordination, analog Thread Pools", 
+            "title": "Koordination"
+        }, 
+        {
+            "location": "/apf/flyweight_singleton/", 
+            "text": "Flyweight Boxing \n Singleton Assassination\n\n\nFlyweight\n\n\n\n\n\"Most state can be made extrinsic\": Wenn Zustand ausgelagert wird, sind die Flyweights leer, dadurch bringt es nicht viel\n\n\nFactory ist eigentlich der Manager der Flyweights\n\n\nUnsharedConcreteFlgyweight\n ist verwirrend und geh\u00f6rt eigentlich nicht zum Pattern\n\n\nFlyweight zeigt eigentlich mehrere Patterns\n\n\nFactory Method als Teil eines Managers\n\n\nImmutable Value\n\n\nPooling\n\n\n\n\n\n\n\n\n\n\nInfo\n\n\nFactory Method wird oft als Hook in einem Template Method Pattern verwendet\n\n\n\n\n\n\nTodo\n\n\nManager Design Pattern (Selbststudium) lesen\n\n\n\n\n\n\nInfo\n\n\nValue objects in Java: \nfinal\n fields \u00fcber Konstruktor setzen. Achtung vor Referenzen, \nfinal\n ist nicht transitiv wie in C++!\n\n\n\n\nConsequences\n\n\n\n\nLaufzeitkosten, vor allem heute relevant, da eigentlich alles gecached werden kann und nicht von einem zentralen Pool geholt werden muss\n\n\nDaf\u00fcr spart es Speicherplatz\n\n\n\n\nPattern Kombinationen\n\n\n\n\nTemplate Method -\n Factory Method\n\n\nComposite -\n Chain or Responsibility\n\n\n\n\nSingleton\n\n\n\n\nShared Resource, die nicht immutable ist -\n Problem!\n\n\nKann \nmaximal\n einmal instanziiert werden, also auch gar nicht (zur Optimierung)\n\n\nSingleton vererben: Superklasse muss Subklasse kennen, damit die Instanz erstellt werden kann\n\n\nGibt zirkul\u00e4re Abh\u00e4ngigkeit!\n\n\n\n\n\n\nGoF-Buch beschreibt keine Nachteile!\n\n\nDouble-Checked-Locking: Zuerst ohne Lock checken, ob die Instanz existiert, und erst dann wird gelockt (mit 2. Check)\n\n\nMonostate Pattern\n\n\nEs gibt nur einen State \u00fcber alle Instanzen\n\n\nKlasse wird mit \nstatic\n fields geschrieben, die von non-static-methoden zugegriffen werden\n\n\n\n\n\n\nAlternative: Parameterize from above, bzw. Dependency Injection\n\n\n\n\n\n\nQuote\n\n\n\"How do you provide global variables in languages without global variables? Don't. Your programs will thank you for taking the time to think about design instead.\" - Kent Beck", 
+            "title": "Flyweight Boxing / Singleton Assasination"
+        }, 
+        {
+            "location": "/apf/flyweight_singleton/#flyweight-boxing-singleton-assassination", 
+            "text": "", 
+            "title": "Flyweight Boxing &amp; Singleton Assassination"
+        }, 
+        {
+            "location": "/apf/flyweight_singleton/#flyweight", 
+            "text": "\"Most state can be made extrinsic\": Wenn Zustand ausgelagert wird, sind die Flyweights leer, dadurch bringt es nicht viel  Factory ist eigentlich der Manager der Flyweights  UnsharedConcreteFlgyweight  ist verwirrend und geh\u00f6rt eigentlich nicht zum Pattern  Flyweight zeigt eigentlich mehrere Patterns  Factory Method als Teil eines Managers  Immutable Value  Pooling      Info  Factory Method wird oft als Hook in einem Template Method Pattern verwendet    Todo  Manager Design Pattern (Selbststudium) lesen    Info  Value objects in Java:  final  fields \u00fcber Konstruktor setzen. Achtung vor Referenzen,  final  ist nicht transitiv wie in C++!", 
+            "title": "Flyweight"
+        }, 
+        {
+            "location": "/apf/flyweight_singleton/#consequences", 
+            "text": "Laufzeitkosten, vor allem heute relevant, da eigentlich alles gecached werden kann und nicht von einem zentralen Pool geholt werden muss  Daf\u00fcr spart es Speicherplatz", 
+            "title": "Consequences"
+        }, 
+        {
+            "location": "/apf/flyweight_singleton/#pattern-kombinationen", 
+            "text": "Template Method -  Factory Method  Composite -  Chain or Responsibility", 
+            "title": "Pattern Kombinationen"
+        }, 
+        {
+            "location": "/apf/flyweight_singleton/#singleton", 
+            "text": "Shared Resource, die nicht immutable ist -  Problem!  Kann  maximal  einmal instanziiert werden, also auch gar nicht (zur Optimierung)  Singleton vererben: Superklasse muss Subklasse kennen, damit die Instanz erstellt werden kann  Gibt zirkul\u00e4re Abh\u00e4ngigkeit!    GoF-Buch beschreibt keine Nachteile!  Double-Checked-Locking: Zuerst ohne Lock checken, ob die Instanz existiert, und erst dann wird gelockt (mit 2. Check)  Monostate Pattern  Es gibt nur einen State \u00fcber alle Instanzen  Klasse wird mit  static  fields geschrieben, die von non-static-methoden zugegriffen werden    Alternative: Parameterize from above, bzw. Dependency Injection    Quote  \"How do you provide global variables in languages without global variables? Don't. Your programs will thank you for taking the time to think about design instead.\" - Kent Beck", 
+            "title": "Singleton"
         }
     ]
 }
