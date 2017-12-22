@@ -44,6 +44,7 @@ pages:
         - Service Contract & Microservices: 'apparch/microservices.md'
         - State and Event Management / Service Granularity: 'apparch/state_event_mgmt.md'
         - Guest Lecture Credit Suisse: 'apparch/cs-architecture.md'
+        - Evaluation / Summary: 'apparch/evaluation_summary.md'
         - Exercises:
             - Exercise 1: 'apparch/exercises/ex1.md'
     - APF:
@@ -56,6 +57,8 @@ pages:
         - JUnit Dissection: 'apf/junit_dissection.md'
         - WAM: 'apf/wam.md'
         - Eclipse Architecture: 'apf/eclipse_architecture.md'
+        - Parallel Programming Patterns: 'apf/ppp.md'
+        - Flyweight Boxing / Singleton Assasination: 'apf/flyweight_singleton.md'
 
 markdown_extensions:
   - toc(permalink=true)
