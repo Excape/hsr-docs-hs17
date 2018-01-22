@@ -25,6 +25,7 @@ pages:
         - Lambda Computation: 'prfm/computation_lambda_calculus.md'
         - Functional Programming Intro: 'prfm/fp_introduction.md'
         - Haskell: 'prfm/haskell_first-steps.md'
+        - Summary: 'prfm/summary.md'
     - PmQm:
         - Index: 'pmqm/index.md'
         - Exam: 'pmqm/exam.md'
