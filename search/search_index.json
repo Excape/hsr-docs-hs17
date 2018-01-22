@@ -481,6 +481,96 @@
             "title": "Interactive Programming"
         }, 
         {
+            "location": "/prfm/summary/", 
+            "text": "Summary\n\n\nProlog\n\n\n\n\nVariables start with an uppercase letter\n\n\nAtoms are in \n''\n quotes or start with a lowercase letter\n\n\nArity\n is the number of arguments of a complex term\n\n\nPredicates with different arity are different (\"overloading\")\n\n\n\n\n\n\nTwo terms unify if either:\n\n\nthey are identical \n\n\nor can be instantiated uniformly such that the resulting terms are equal\n\n\n\n\n\n\nArithmetic: \n2 + 3 = 5\n -\n \n2+3 is 5\n\n\nSyntactic sugar for \nis(+(2,3),5)\n\n\n\n\n\n\n\n\nRecursion\n\n\n\n\nList recursion: \n[H|T]\n\n\nPrefer tail recursion (e.g. with accumulators), the search tree will be smaller\n\n\nin a recursive clause, base case should always come before the recursive \"call\", or it won't terminate!\n\n\n\n\nProof search\n\n\n\n\nCollecting Solutions\n\n\n\n\nFind all solutions from a goal for a specific object (here \nX\n and collect them in List \nL\n)\n\n\nAlways succeeds, empty List if no solutions found\n\n\nfindall (X, descend(martha,X), L).\n\n\n\n\n\n\n\n\nLambda Calculus\n\n\n\n\nApplication binds tighter than abstraction\n\n\n\n\n\\lambda x. M_1 M_2 \\Leftrightarrow \\lambda x. (M_1 M_2)\n\n\n\n\n\n\n\n\nApplication is left-associative\n\n\nA \n\\lambda\n term is in normal form if no further reductions can be applied to it\n\n\nEvery \nlambda\n term has \nat most\n one normal form (this makes computation deterministic)\n\n\n\n\n\n\n\n\n\\delta\n-reduction: substitution of a defined symbol with its definition\n\n\n\n\nStrategies\n\n\n\n\nInnermost-first\n: the innermost \nreducible expression\n (redex) first, i.e. there's no other redex inside it\n\n\nif ambiguous, the left-most first\n\n\nwith this strategy, function arguments are reduced exactly once\n\n\ncorresponds to \ncall by value\n\n\n\n\n\n\noutermost-first\n (normal form): the outermost redex first, i.e. there's no redex outside it\n\n\nif ambiguous, the left-most first\n\n\nAlways ends in a normal form\n\n\nwith this strategy, function arguments are reduced as many times as they're needed -\n unneeded arguments won't be reduced\n\n\ncorresponds to \ncall by name\n\n\n\n\n\n\n\n\nHaskell\n\n\nTypes\n\n\n\n\nInt\n has a fixed precision (64 bit), while \nInteger\n has an arbitrary precision\n\n\nFunction application is left-associative, while the type definition \nt1 -\n t2\n is \nright-associative\n\n\ntype\n declares a type as an alias of other types\n\n\nNo recursion allowed\n\n\nmay have parameters\n\n\nexample: \ntype Assoc k v = [(k,v)]\n\n\n\n\n\n\ndata\n declares a new type\n\n\nRecursive definitions possible\n\n\nwith type parameters: \ndata Shape = Circle Float | Rect Float Float\n\n\nif type has a single constructor, \nnewtype\n can be use for efficiency: \nnewtype Nat = N int\n\n\nexample: \ndata Tree a = Leaf a | Node (Tree a) a (Tree a)\n\n\n\n\n\n\n\n\nClasses\n\n\n\n\nlike an interface, defines what methods a type must have\n\n\ncan have default definitions\n\n\n\n\n1\n2\n3\nclass\n \nEq\n \na\n \nwhere\n\n    \n(\n==\n),\n \n(\n/=\n)\n \n::\n \na\n \n-\n \na\n \n-\n \nBool\n\n    \nx\n \n/=\n \ny\n \n=\n \nnot\n \n(\nx\n \n==\n \ny\n)\n \n-- default definition\n\n\n\n\n\n\n\n\n\nclasses can be extended: \nclass Eq a =\n Ord a where ...\n\n\nDefining instances:\n\n\n\n\n1\n2\n3\n4\ninstance\n \nEq\n \nBool\n \nwhere\n\n    \nFalse\n \n==\n \nFalse\n \n=\n \nTrue\n\n    \nTrue\n \n==\n \nTrue\n \n=\n \nTrue\n\n    \n_\n \n==\n \n_\n \n=\n \nFalse\n\n\n\n\n\n\n\n\n\ninstances can be defined directly inside the type definition \ndata\n with \nderiving\n\n\n\n\n1\n2\ndata\n \nBool\n \n=\n \nFalse\n \n|\n \nTrue\n \n-- order matters here, such that False \n True\n\n    \nderiving\n \n(\nEq\n,\n \nOrd\n,\n \nShow\n,\n \nRead\n)\n\n\n\n\n\n\n\nFunctions\n\n\n\n\nGuarded Equations (read \n|\n as \"such that\"):\n\n\n\n\n1\n2\nabs\n \nn\n \n|\n \nn\n \n=\n \n0\n    \n=\n \nn\n\n      \n|\n \notherwise\n \n=\n \n-\nn\n\n\n\n\n\n\n\n\n\ncons \n:\n is right-associative: \n1:2:3:[] == [1,2,3]\n\n\n\n\nFoldr / Foldl\n\n\n\n\nfoldr\n\n\n\n\n1\n2\n3\nfoldr\n \n::\n \n(\na\n \n-\n \nb\n \n-\n \nb\n)\n \n-\n \nb\n \n-\n \n[\na\n]\n \n-\n \nb\n\n\nfoldr\n \nf\n \nv\n \n[]\n \n=\n \nv\n\n\nfoldr\n \nf\n \nv\n \n(\nx\n \n:\nxs\n)\n \n=\n \nf\n \nx\n \n(\nfoldr\n \nf\n \nv\n \nxs\n)\n\n\n\n\n\n\n\n\n\nfoldl\n\n\n\n\n1\n2\n3\nfoldl\n \n::\n \n(\na\n \n-\n \nb\n \n-\n \na\n)\n \n-\n \na\n \n-\n \n[\nb\n]\n \n-\n \na\n\n\nfoldl\n \nf\n \nv\n \n[]\n \n=\n \nv\n\n\nfoldl\n \nf\n \nv\n \n(\nx\n \n:\nxs\n)\n \n=\n \nfold\n \nf\n \n(\nf\n \nv\n \nx\n)\n \nxs\n\n\n\n\n\n\n\n\n\nas non-recursive patterns:\n\n\n\n\n\n\n foldr \\, (\\#) \\, v \\, [x_0,x_1,\\ldots,x_n] = x_0 \\; \\# \\; (x_1\\, \\# \\, (\\ldots \\, (x_n \\, \\# \\, v) \\, \\ldots )) \n\n\n foldl \\, (\\#) \\, v \\, [x_0,x_1,\\ldots,x_n] = (\\ldots ((v \\, \\# \\, x_0) \\, \\# \\, x_1) \\; \\ldots) \\, \\# \\, x_n \n\n\n\n\nFunction composition\n\n\n\n\nf . g\n: Read \"f of g of ...\"\n\n\nf . g = \\x -\n f (g x)\n\n\n\n\nInteractive Programming\n\n\n\n\nIO\n is an built-in type\n\n\nModeled as \ntype IO a = \"world\" -\n (a, \"world\")\n, i.e. with side effects, \"impure\"\n\n\nSequencing\n\n\n\n\n1\n2\n3\n4\n5\nact\n \n::\n \nIO\n \n(\nChar\n,\nChar\n)\n\n\nact\n \n=\n \ndo\n \nx\n \n-\n \ngetChar\n\n         \ngetChar\n \n-- result discarded\n\n         \ny\n \n-\n \ngetChar\n\n         \nreturn\n \n(\nx\n,\ny\n)\n\n\n\n\n\n\n\nFunctors\n\n\n\n\nFunctors abstract the idea of \nmap\n to a general \nfmap\n\n\ne.g. with \nMaybe\n: \nfmap g (Just x) = Just (g x)\n\n\nApplies a function to the inner elements of a data struture\n\n\n\n\nApplicatives\n\n\n\n\nExtends \nFunctor\n\n\nExtends the concept of \nfmap\n to an arbitrary amount of function arguments (whereas \nfmap\n just takes 1 function)\n\n\n\n\n1\n2\n3\nclass\n \nFunctor\n \nf\n \n=\n \nApplicative\n \nf\n \nwhere\n\n    \npure\n \n::\n \na\n \n-\n \nf\n \na\n\n    \n(\n*\n)\n \n::\n \nf\n \n(\na\n \n-\n \nb\n)\n \n-\n \nf\n \na\n \n-\n \nf\n \nb\n\n\n\n\n\n\n\n\n\nApplicative form: \npure g \n*\n x1 \n*\n ... \n*\n xn\n\n\ng\n takes \nn\n arguments\n\n\ne.g. \npure (+1) \n*\n [1,2] = [2,3]\n = \nfmap (+1) [1,2]\n\n\n\n\nMonads\n\n\n\n\nAllows the \ndo\n notation\n\n\nExtends \nApplicative\n with a \"bind\"-operator \n=\n\n\n(\n=) :: m a -\n (a -\n m b) -\n m b\n\n\n\n\n\n\nreturn = pure\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\neval\n \n(\nVal\n \nn\n)\n \n=\n \nJust\n \nn\n \n-- applicative `pure` of Maybe is `just`\n\n\neval\n \n(\nDiv\n \nx\n \ny\n)\n \n=\n \neval\n \nx\n \n=\n \n\\\nn\n \n-\n \n-- n is the result of eval x\n\n                 \neval\n \ny\n \n=\n \n\\\nm\n \n-\n\n                 \nsafediv\n \nn\n \nm\n\n\n\n-- equivalent to --\n\n\neval\n \n(\nDiv\n \nx\n \ny\n)\n \n=\n \ndo\n \nn\n \n-\n \neval\n \nx\n\n                    \nm\n \n-\n \neval\n \ny\n\n                    \nsavediv\n \nn\n \nm", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/prfm/summary/#summary", 
+            "text": "", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/prfm/summary/#prolog", 
+            "text": "Variables start with an uppercase letter  Atoms are in  ''  quotes or start with a lowercase letter  Arity  is the number of arguments of a complex term  Predicates with different arity are different (\"overloading\")    Two terms unify if either:  they are identical   or can be instantiated uniformly such that the resulting terms are equal    Arithmetic:  2 + 3 = 5  -   2+3 is 5  Syntactic sugar for  is(+(2,3),5)", 
+            "title": "Prolog"
+        }, 
+        {
+            "location": "/prfm/summary/#recursion", 
+            "text": "List recursion:  [H|T]  Prefer tail recursion (e.g. with accumulators), the search tree will be smaller  in a recursive clause, base case should always come before the recursive \"call\", or it won't terminate!", 
+            "title": "Recursion"
+        }, 
+        {
+            "location": "/prfm/summary/#proof-search", 
+            "text": "", 
+            "title": "Proof search"
+        }, 
+        {
+            "location": "/prfm/summary/#collecting-solutions", 
+            "text": "Find all solutions from a goal for a specific object (here  X  and collect them in List  L )  Always succeeds, empty List if no solutions found  findall (X, descend(martha,X), L).", 
+            "title": "Collecting Solutions"
+        }, 
+        {
+            "location": "/prfm/summary/#lambda-calculus", 
+            "text": "Application binds tighter than abstraction   \\lambda x. M_1 M_2 \\Leftrightarrow \\lambda x. (M_1 M_2)     Application is left-associative  A  \\lambda  term is in normal form if no further reductions can be applied to it  Every  lambda  term has  at most  one normal form (this makes computation deterministic)     \\delta -reduction: substitution of a defined symbol with its definition", 
+            "title": "Lambda Calculus"
+        }, 
+        {
+            "location": "/prfm/summary/#strategies", 
+            "text": "Innermost-first : the innermost  reducible expression  (redex) first, i.e. there's no other redex inside it  if ambiguous, the left-most first  with this strategy, function arguments are reduced exactly once  corresponds to  call by value    outermost-first  (normal form): the outermost redex first, i.e. there's no redex outside it  if ambiguous, the left-most first  Always ends in a normal form  with this strategy, function arguments are reduced as many times as they're needed -  unneeded arguments won't be reduced  corresponds to  call by name", 
+            "title": "Strategies"
+        }, 
+        {
+            "location": "/prfm/summary/#haskell", 
+            "text": "", 
+            "title": "Haskell"
+        }, 
+        {
+            "location": "/prfm/summary/#types", 
+            "text": "Int  has a fixed precision (64 bit), while  Integer  has an arbitrary precision  Function application is left-associative, while the type definition  t1 -  t2  is  right-associative  type  declares a type as an alias of other types  No recursion allowed  may have parameters  example:  type Assoc k v = [(k,v)]    data  declares a new type  Recursive definitions possible  with type parameters:  data Shape = Circle Float | Rect Float Float  if type has a single constructor,  newtype  can be use for efficiency:  newtype Nat = N int  example:  data Tree a = Leaf a | Node (Tree a) a (Tree a)", 
+            "title": "Types"
+        }, 
+        {
+            "location": "/prfm/summary/#classes", 
+            "text": "like an interface, defines what methods a type must have  can have default definitions   1\n2\n3 class   Eq   a   where \n     ( == ),   ( /= )   ::   a   -   a   -   Bool \n     x   /=   y   =   not   ( x   ==   y )   -- default definition     classes can be extended:  class Eq a =  Ord a where ...  Defining instances:   1\n2\n3\n4 instance   Eq   Bool   where \n     False   ==   False   =   True \n     True   ==   True   =   True \n     _   ==   _   =   False     instances can be defined directly inside the type definition  data  with  deriving   1\n2 data   Bool   =   False   |   True   -- order matters here, such that False   True \n     deriving   ( Eq ,   Ord ,   Show ,   Read )", 
+            "title": "Classes"
+        }, 
+        {
+            "location": "/prfm/summary/#functions", 
+            "text": "Guarded Equations (read  |  as \"such that\"):   1\n2 abs   n   |   n   =   0      =   n \n       |   otherwise   =   - n     cons  :  is right-associative:  1:2:3:[] == [1,2,3]", 
+            "title": "Functions"
+        }, 
+        {
+            "location": "/prfm/summary/#foldr-foldl", 
+            "text": "foldr   1\n2\n3 foldr   ::   ( a   -   b   -   b )   -   b   -   [ a ]   -   b  foldr   f   v   []   =   v  foldr   f   v   ( x   : xs )   =   f   x   ( foldr   f   v   xs )     foldl   1\n2\n3 foldl   ::   ( a   -   b   -   a )   -   a   -   [ b ]   -   a  foldl   f   v   []   =   v  foldl   f   v   ( x   : xs )   =   fold   f   ( f   v   x )   xs     as non-recursive patterns:     foldr \\, (\\#) \\, v \\, [x_0,x_1,\\ldots,x_n] = x_0 \\; \\# \\; (x_1\\, \\# \\, (\\ldots \\, (x_n \\, \\# \\, v) \\, \\ldots ))    foldl \\, (\\#) \\, v \\, [x_0,x_1,\\ldots,x_n] = (\\ldots ((v \\, \\# \\, x_0) \\, \\# \\, x_1) \\; \\ldots) \\, \\# \\, x_n", 
+            "title": "Foldr / Foldl"
+        }, 
+        {
+            "location": "/prfm/summary/#function-composition", 
+            "text": "f . g : Read \"f of g of ...\"  f . g = \\x -  f (g x)", 
+            "title": "Function composition"
+        }, 
+        {
+            "location": "/prfm/summary/#interactive-programming", 
+            "text": "IO  is an built-in type  Modeled as  type IO a = \"world\" -  (a, \"world\") , i.e. with side effects, \"impure\"  Sequencing   1\n2\n3\n4\n5 act   ::   IO   ( Char , Char )  act   =   do   x   -   getChar \n          getChar   -- result discarded \n          y   -   getChar \n          return   ( x , y )", 
+            "title": "Interactive Programming"
+        }, 
+        {
+            "location": "/prfm/summary/#functors", 
+            "text": "Functors abstract the idea of  map  to a general  fmap  e.g. with  Maybe :  fmap g (Just x) = Just (g x)  Applies a function to the inner elements of a data struture", 
+            "title": "Functors"
+        }, 
+        {
+            "location": "/prfm/summary/#applicatives", 
+            "text": "Extends  Functor  Extends the concept of  fmap  to an arbitrary amount of function arguments (whereas  fmap  just takes 1 function)   1\n2\n3 class   Functor   f   =   Applicative   f   where \n     pure   ::   a   -   f   a \n     ( * )   ::   f   ( a   -   b )   -   f   a   -   f   b     Applicative form:  pure g  *  x1  *  ...  *  xn  g  takes  n  arguments  e.g.  pure (+1)  *  [1,2] = [2,3]  =  fmap (+1) [1,2]", 
+            "title": "Applicatives"
+        }, 
+        {
+            "location": "/prfm/summary/#monads", 
+            "text": "Allows the  do  notation  Extends  Applicative  with a \"bind\"-operator  =  ( =) :: m a -  (a -  m b) -  m b    return = pure   1\n2\n3\n4\n5\n6\n7\n8\n9 eval   ( Val   n )   =   Just   n   -- applicative `pure` of Maybe is `just`  eval   ( Div   x   y )   =   eval   x   =   \\ n   -   -- n is the result of eval x \n                  eval   y   =   \\ m   - \n                  safediv   n   m  -- equivalent to --  eval   ( Div   x   y )   =   do   n   -   eval   x \n                     m   -   eval   y \n                     savediv   n   m", 
+            "title": "Monads"
+        }, 
+        {
             "location": "/pmqm/", 
             "text": "Projekt- und Qualit\u00e4tsmanagement", 
             "title": "Index"
@@ -492,13 +582,28 @@
         }, 
         {
             "location": "/pmqm/exam/", 
-            "text": "Exam\n\n\n\n\nOpen Book", 
+            "text": "Exam\n\n\n\n\nOpen Book mit Laptop\n\n\n\n\nNotes Q\nA\n\n\n\n\n\n\nLiteraturliste anschauen\n\n\n\n\nB\u00fccher herunterladen\n\n\nu.A. ITIL-Buch\n\n\n\n\n\n\n\n\nRUP, Kanban, Scrum nur oberfl\u00e4chlich\n\n\n\n\nScrum guide auf deutsch und englisch herunterladen\n\n\nEVA und ROI kommen sicher (Excel Vorlagen!)\n\n\nSYSIGMA anschauen\n\n\n\n\nInhalt\n\n\n\n\nCPI muss optimalerweise 1 sein\n\n\n\n\n\n\n1 besser als geplant, \n1 schlechter als geplant\n\n\n\n\n\n\n\n\n\n\n\n\nPr\u00fcfung 2017\n\n\n\n\n1.13: Max Ausfallzeit ist von vorherein bekannt, bei CPI schaut man immer in Vergangenheit\n\n\n1.11: Spielt nicht Polizist", 
             "title": "Exam"
         }, 
         {
             "location": "/pmqm/exam/#exam", 
-            "text": "Open Book", 
+            "text": "Open Book mit Laptop", 
             "title": "Exam"
+        }, 
+        {
+            "location": "/pmqm/exam/#notes-qa", 
+            "text": "Literaturliste anschauen   B\u00fccher herunterladen  u.A. ITIL-Buch     RUP, Kanban, Scrum nur oberfl\u00e4chlich   Scrum guide auf deutsch und englisch herunterladen  EVA und ROI kommen sicher (Excel Vorlagen!)  SYSIGMA anschauen", 
+            "title": "Notes Q&amp;A"
+        }, 
+        {
+            "location": "/pmqm/exam/#inhalt", 
+            "text": "CPI muss optimalerweise 1 sein    1 besser als geplant,  1 schlechter als geplant", 
+            "title": "Inhalt"
+        }, 
+        {
+            "location": "/pmqm/exam/#prufung-2017", 
+            "text": "1.13: Max Ausfallzeit ist von vorherein bekannt, bei CPI schaut man immer in Vergangenheit  1.11: Spielt nicht Polizist", 
+            "title": "Pr\u00fcfung 2017"
         }, 
         {
             "location": "/pmqm/projekt_qualitaet/", 
