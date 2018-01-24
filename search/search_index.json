@@ -272,7 +272,7 @@
         }, 
         {
             "location": "/prfm/lambda_calculus/", 
-            "text": "Lambda Calculus\n\n\n\n\nWe will only look at pure untyped calculus\n\n\nLC builds directly on Sequent Calculus\n\n\n\n\nConventions\n\n\n\n\nApplication \nM M\n binds tighter than abstraction\n\n\nApplication is left associative\n\n\n\n\nFree and Bound variables\n\n\n\n\n\n\n\\lambda y.\n can be thought of as a quantifier\n\n\nBound variables are like parameters\n\n\ne.g. in an integral \n\\int{yx^2}{dx}\n, x is bound\n\n\n\n\n\n\n\n\nBeta Redcution\n\n\n\n\nReplace every \nx\n in the abstraction \nM\n with \nN\n\n\n\n\n\n\n\n\n\\frac{}{H\\vdash (\\lambda x. M) N = [x := N]M}\\beta\n\n\n\n\n\n\n\n\nExamples:\n\n\n\n\n\n\n(\\lambda x. square x) 5 = square 5\n\n\n\n\n\n\n(\\lambda x. square x) (\\lambda y. square y) 5 = (square (\\lambda y. square y)) 5\n\n\n\n\nNo further resolution!\n\n\n\n\n\n\n\n\n\n\n\n\nEven if there are different strategies of how to resolute something, the result is always the same", 
+            "text": "Lambda Calculus\n\n\n\n\nWe will only look at pure untyped calculus\n\n\nLC builds directly on Sequent Calculus\n\n\n\n\nConventions\n\n\n\n\nApplication \nM M\n binds tighter than abstraction\n\n\nA match with (\\lambda x. M) is attempted before a match with \"M M\".\n\n\n\n\n\n\nApplication is left associative\n\n\nWhen trying to match \"M1 M2\", the largest possible subterm is matched with \"M1\".\n\n\n\n\n\n\n\n\nAlthough it may sound counter intuitive, the tighter an operator is to be bound, the later its corresponding syntax rule is to be applied during parsing.\n\n\nFree and Bound variables\n\n\n\n\n\n\n\\lambda y.\n can be thought of as a quantifier\n\n\nBound variables are like parameters\n\n\ne.g. in an integral \n\\int{yx^2}{dx}\n, x is bound\n\n\n\n\n\n\n\n\nBeta Redcution\n\n\n\n\nReplace every \nx\n in the abstraction \nM\n with \nN\n\n\n\n\n\n\n\n\n\\frac{}{H\\vdash (\\lambda x. M) N = [x := N]M}\\beta\n\n\n\n\n\n\n\n\nExamples:\n\n\n\n\n\n\n(\\lambda x. square x) 5 = square 5\n\n\n\n\n\n\n(\\lambda x. square x) (\\lambda y. square y) 5 = (square (\\lambda y. square y)) 5\n\n\n\n\nNo further resolution!\n\n\n\n\n\n\n\n\n\n\n\n\nEven if there are different strategies of how to resolute something, the result is always the same", 
             "title": "Lambda Calculus"
         }, 
         {
@@ -282,7 +282,7 @@
         }, 
         {
             "location": "/prfm/lambda_calculus/#conventions", 
-            "text": "Application  M M  binds tighter than abstraction  Application is left associative", 
+            "text": "Application  M M  binds tighter than abstraction  A match with (\\lambda x. M) is attempted before a match with \"M M\".    Application is left associative  When trying to match \"M1 M2\", the largest possible subterm is matched with \"M1\".     Although it may sound counter intuitive, the tighter an operator is to be bound, the later its corresponding syntax rule is to be applied during parsing.", 
             "title": "Conventions"
         }, 
         {
