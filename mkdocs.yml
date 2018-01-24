@@ -46,8 +46,7 @@ pages:
         - State and Event Management / Service Granularity: 'apparch/state_event_mgmt.md'
         - Guest Lecture Credit Suisse: 'apparch/cs-architecture.md'
         - Evaluation / Summary: 'apparch/evaluation_summary.md'
-        - Exercises:
-            - Exercise 1: 'apparch/exercises/ex1.md'
+        - Exam: 'apparch/exam.md'
     - APF:
         - Index: 'apf/index.md'
         - Introduction: 'apf/intro.md'
