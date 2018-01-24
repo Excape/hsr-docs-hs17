@@ -4,7 +4,11 @@
 
 ## Conventions
 - Application \(M M\) binds tighter than abstraction
+    - A match with (\lambda x. M) is attempted before a match with "M M".
 - Application is left associative
+    - When trying to match "M1 M2", the largest possible subterm is matched with "M1".
+
+Although it may sound counter intuitive, the tighter an operator is to be bound, the later its corresponding syntax rule is to be applied during parsing.
 
 ## Free and Bound variables
 - \(\lambda y.\) can be thought of as a quantifier
