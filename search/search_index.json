@@ -817,7 +817,7 @@
         }, 
         {
             "location": "/apparch/component_dynamics_container_patterns/", 
-            "text": "Component Dynamics \n Container Patterns\n\n\n\n\nINSIEME nach 12 Jahren und 100 Mio. abgebrochen\n\n\n\n\nComponent Dynamics\n\n\n\n\nCandidate Components sind logische Komponenten der Architektur, die \u00e4hnliche Verantwortlichkeiten zusammen fassen\n\n\nImplementation Components sind aus dem Development Viewpoint, dies sind die konkreten Implementation mit deren Interfaces\n\n\nBei der Architektur geht es auch um den Fluss, d.h. um das Verhalten des Systems, nicht nur deren Struktur\n\n\n\n\n- \nComponent Interaction Diagrams\n sind UML Sequenzdiagramme, die das Zusammenspiel zwischen mehreren Komponenten zeigen\n\n\nContainer Patterns\n\n\nPlugin\n\n\n\n\nz.B. Eclipse, Browser\n\n\nFunktionen werden durch Konfiguration (ohne Neukompilieren) hinzugef\u00fcgt\n\n\n\n\nInversion of Control\n\n\n\n\nFrameworks steuern den Fluss selber, Komponenten werden  vom Framework aufgerufen\n\n\nProblem: Wie wird definiert, wie Frameworks die Komponenten finden kann?\n\n\n-\n Dependency Injection", 
+            "text": "Component Dynamics \n Container Patterns\n\n\n\n\nINSIEME nach 12 Jahren und 100 Mio. abgebrochen\n\n\n\n\nComponent Dynamics\n\n\n\n\nCandidate Components sind logische Komponenten der Architektur, die \u00e4hnliche Verantwortlichkeiten zusammen fassen\n\n\nImplementation Components sind aus dem Development Viewpoint, dies sind die konkreten Implementation mit deren Interfaces\n\n\nBei der Architektur geht es auch um den Fluss, d.h. um das Verhalten des Systems, nicht nur deren Struktur\n\n\nComponent Interaction Diagrams\n sind UML Sequenzdiagramme, die das Zusammenspiel zwischen mehreren Komponenten zeigen\n\n\n\n\nContainer Patterns\n\n\nPlugin\n\n\n\n\nz.B. Eclipse, Browser\n\n\nFunktionen werden durch Konfiguration (ohne Neukompilieren) hinzugef\u00fcgt\n\n\n\n\nInversion of Control\n\n\n\n\nFrameworks steuern den Fluss selber, Komponenten werden  vom Framework aufgerufen\n\n\nProblem: Wie wird definiert, wie Frameworks die Komponenten finden kann?\n\n\n-\n Dependency Injection", 
             "title": "Component Dynamics & Container Patterns"
         }, 
         {
@@ -827,13 +827,8 @@
         }, 
         {
             "location": "/apparch/component_dynamics_container_patterns/#component-dynamics", 
-            "text": "Candidate Components sind logische Komponenten der Architektur, die \u00e4hnliche Verantwortlichkeiten zusammen fassen  Implementation Components sind aus dem Development Viewpoint, dies sind die konkreten Implementation mit deren Interfaces  Bei der Architektur geht es auch um den Fluss, d.h. um das Verhalten des Systems, nicht nur deren Struktur", 
+            "text": "Candidate Components sind logische Komponenten der Architektur, die \u00e4hnliche Verantwortlichkeiten zusammen fassen  Implementation Components sind aus dem Development Viewpoint, dies sind die konkreten Implementation mit deren Interfaces  Bei der Architektur geht es auch um den Fluss, d.h. um das Verhalten des Systems, nicht nur deren Struktur  Component Interaction Diagrams  sind UML Sequenzdiagramme, die das Zusammenspiel zwischen mehreren Komponenten zeigen", 
             "title": "Component Dynamics"
-        }, 
-        {
-            "location": "/apparch/component_dynamics_container_patterns/#-component-interaction-diagrams-sind-uml-sequenzdiagramme-die-das-zusammenspiel-zwischen-mehreren-komponenten-zeigen", 
-            "text": "", 
-            "title": "- Component Interaction Diagrams sind UML Sequenzdiagramme, die das Zusammenspiel zwischen mehreren Komponenten zeigen"
         }, 
         {
             "location": "/apparch/component_dynamics_container_patterns/#container-patterns", 
