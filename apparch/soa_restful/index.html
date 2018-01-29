@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.2">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.3">
     
     
       
@@ -564,6 +564,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../architecture_fundamentals/" title="Fundamentals" class="md-nav__link">
       Fundamentals
     </a>
@@ -634,6 +646,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../DDD_strategic/" title="Strategic DDD & Buy vs. Build" class="md-nav__link">
+      Strategic DDD & Buy vs. Build
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -673,6 +697,33 @@
           <li class="md-nav__item">
   <a href="#service-layer-pattern" title="Service Layer Pattern" class="md-nav__link">
     Service Layer Pattern
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dto-pattern" title="DTO Pattern" class="md-nav__link">
+    DTO Pattern
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soa" title="SOA" class="md-nav__link">
+    SOA
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loose-kopplung" title="Loose Kopplung" class="md-nav__link">
+    Loose Kopplung
   </a>
   
 </li>
@@ -964,6 +1015,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#dto-pattern" title="DTO Pattern" class="md-nav__link">
+    DTO Pattern
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soa" title="SOA" class="md-nav__link">
+    SOA
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loose-kopplung" title="Loose Kopplung" class="md-nav__link">
+    Loose Kopplung
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
     </ul>
@@ -996,19 +1074,19 @@
 <li>Zwischen Domain- und UI-Layer einen Service-Layer einschieben, um komplexe Domain-Modelle vom Presentation-Layer zu verstecken</li>
 <li>Verantwortlichkeiten z.B. für Exception Handling, Access Control, Logging</li>
 </ul>
-<h1 id="dto-pattern">DTO Pattern<a class="headerlink" href="#dto-pattern" title="Permanent link">&para;</a></h1>
+<h2 id="dto-pattern">DTO Pattern<a class="headerlink" href="#dto-pattern" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Daten-Objekt ohne Businesslogik</li>
 <li>Kann z.B. Methoden wie <code>toXML()</code> haben</li>
 </ul>
-<h3 id="soa">SOA<a class="headerlink" href="#soa" title="Permanent link">&para;</a></h3>
+<h2 id="soa">SOA<a class="headerlink" href="#soa" title="Permanent link">&para;</a></h2>
 <ul>
 <li>"Begriff überladen"</li>
 <li>Grundsätzlich ein Set von Services, das von einem Business angeboten wird</li>
 <li>Auch ein Set von Architektur-Patterns</li>
 <li>Deployment Models wie mit Docker, Container, etc.</li>
 </ul>
-<h4 id="loose-kopplung">Loose Kopplung<a class="headerlink" href="#loose-kopplung" title="Permanent link">&para;</a></h4>
+<h3 id="loose-kopplung">Loose Kopplung<a class="headerlink" href="#loose-kopplung" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Zeitliche Entkopplung: Client und Server müssen nicht zur gleichen Zeit aktiv sein (ohne Datenverlust) - Message Queueing</li>
 <li>Adress-Transparenz/-Autonomie: "Location-Transparency"<ul>
@@ -1024,7 +1102,7 @@
 </ul>
 </li>
 </ol>
-<h2 id="rest">REST<a class="headerlink" href="#rest" title="Permanent link">&para;</a></h2>
+<h1 id="rest"># REST<a class="headerlink" href="#rest" title="Permanent link">&para;</a></h1>
 <ul>
 <li>Representational State Transfer</li>
 <li>REST ist ein Architekturstil, definiert über Constraints (Einschränkungen)</li>
@@ -1089,7 +1167,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../DDD_coding-style/" title="Tactic DDD & Architectural Coding Style" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../DDD_strategic/" title="Strategic DDD & Buy vs. Build" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1098,7 +1176,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Tactic DDD & Architectural Coding Style
+                Strategic DDD & Buy vs. Build
               </span>
             </div>
           </a>

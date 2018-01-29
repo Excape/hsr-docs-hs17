@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.2">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.3">
     
     
       
@@ -564,6 +564,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../architecture_fundamentals/" title="Fundamentals" class="md-nav__link">
       Fundamentals
     </a>
@@ -689,6 +701,18 @@
   <li class="md-nav__item">
     <a href="../DDD_coding-style/" title="Tactic DDD & Architectural Coding Style" class="md-nav__link">
       Tactic DDD & Architectural Coding Style
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DDD_strategic/" title="Strategic DDD & Buy vs. Build" class="md-nav__link">
+      Strategic DDD & Buy vs. Build
     </a>
   </li>
 
@@ -1023,11 +1047,12 @@
 <li>In frühen Phasen werden Komponenten erst temporär festgelegt, Komponenten heissen hier "candidate components"</li>
 <li>Buy vs. build (kann auch OS-Funktion wie Cron sein)</li>
 </ul>
+<p><img alt="" src="../img/component_modeling.png" /></p>
 <h3 id="component-identification">Component Identification<a class="headerlink" href="#component-identification" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Kandidaten identifizieren<ul>
 <li>Für jede Rolle (Actor) im System eine Channel-Komponente</li>
-<li>Für jedes Features pro Layer eine Komponente (z.B. <code>NumberPortingPresentation</code>)</li>
+<li>Für jedes Features pro Layer eine Komponente (z.B. <code>NumberPortingPresenrtation</code>)</li>
 </ul>
 </li>
 <li>CRC brainstorming<ul>
@@ -1041,7 +1066,14 @@
 <li>Mögliche Technologien</li>
 </ul>
 </li>
+<li><em>Components</em> pro Viewpoint<ul>
+<li><em>Candidate Components</em> sind auf dem logischen Viewpoint und gruppieren mehrere Requirements</li>
+<li><em>Implementation Components</em> sind auf dem Development-Viewpoint und sind z.B. mehrere Klassen in OO</li>
+<li><em>Deployment Components</em> sind auf dem Physical Viewpoint und gruppieren Implementation Components in separat deploybare Einheiten</li>
 </ul>
+</li>
+</ul>
+<p><img alt="" src="../img/crc_template.png" /></p>
 <h2 id="architectural-styles">Architectural Styles<a class="headerlink" href="#architectural-styles" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Analog Gebäude-Architektur (Gothisch, Romanisch)</li>
