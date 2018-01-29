@@ -19,6 +19,9 @@
 - Best Practice: An Aggregate-Grenzen nur Objekt-Ids überbgeben, keine Referenzen (Entkopplung)
 
 ### DDD Patterns
+
+![](img/ddd_patterns.png)
+
 - Einteilung von _Entities_, _Services_ und _value objects_ (siehe APF)
     - Klassen mit lediglich "Do-er" Methoden (stateless) sind _services_
 - Aggregate Pattern: Entities und Value Objects in _Aggregates_ gruppieren
@@ -29,9 +32,12 @@
 - Eine _Repository_-Klasse pro Aggregate für alle Entities definieren, die abgerufen werden sollen (per id)
     - z.B. `find()`, `store()`
 
+![](img/ddd_pattern_dynamics.png)
+
 ## Architecturally Evident Coding Styles (AECS)
 - Architektur soll im Code nicht "verloren" gehen
 - Startup-Code soll zentralisiert sein (und klar benannt)
 - In DDD: "Intention Revealing Interfaces"
 - 2-3 Wörter pro Name
+- Verben für Use Cases und Methods, Nomen für Komponenten, Data Members, etc.
 - Starke Verben verwenden (nicht "set", "change")

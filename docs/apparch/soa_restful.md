@@ -10,17 +10,17 @@
 - Zwischen Domain- und UI-Layer einen Service-Layer einschieben, um komplexe Domain-Modelle vom Presentation-Layer zu verstecken
 - Verantwortlichkeiten z.B. für Exception Handling, Access Control, Logging
 
-# DTO Pattern
+## DTO Pattern
 - Daten-Objekt ohne Businesslogik
 - Kann z.B. Methoden wie `toXML()` haben
 
-### SOA
+## SOA
 - "Begriff überladen"
 - Grundsätzlich ein Set von Services, das von einem Business angeboten wird
 - Auch ein Set von Architektur-Patterns
 - Deployment Models wie mit Docker, Container, etc.
 
-#### Loose Kopplung
+### Loose Kopplung
 1. Zeitliche Entkopplung: Client und Server müssen nicht zur gleichen Zeit aktiv sein (ohne Datenverlust) - Message Queueing
 2. Adress-Transparenz/-Autonomie: "Location-Transparency"
     - z.B. man gibt URI statt MAC-Adresse ein
@@ -29,7 +29,7 @@
 4. Format-Autonomie: Client und Server müssen sich nicht auf ein Datenmodell einigen
     - Siehe Pattern "Enterprise Service Bus", Anti-Corruption Layer
 
-## REST
+# # REST
 - Representational State Transfer
 - REST ist ein Architekturstil, definiert über Constraints (Einschränkungen)
 - Ursprünglich völlig Stateless (Server merkt sich nicht, was er vom Client schon erhalten hat)

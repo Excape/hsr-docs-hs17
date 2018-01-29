@@ -43,6 +43,8 @@
     - with this strategy, function arguments are reduced as many times as they're needed -> unneeded arguments won't be reduced
     - corresponds to **call by name**
 
+<div style="page-break-after: always"></div>
+
 ## Haskell
 
 ### Types
@@ -61,6 +63,8 @@
 ### Classes
 - like an interface, defines what methods a type must have
 - can have default definitions
+
+<div style="page-break-after: always"></div>
 
 ``` haskell
 class Eq a where
@@ -95,6 +99,8 @@ abs n | n >= 0    = n
 
 - cons `:` is right-associative: `1:2:3:[] == [1,2,3]`
 
+<div style="page-break-after: always"></div>
+
 ### Foldr / Foldl
 - `foldr`
 ``` haskell
@@ -118,6 +124,8 @@ $$ foldl \, (\#) \, v \, [x_0,x_1,\ldots,x_n] = (\ldots ((v \, \# \, x_0) \, \# 
 ### Function composition
 - `f . g`: Read "f of g of ..."
 - `f . g = \x -> f (g x)`
+
+<div style="page-break-after: always"></div>
 
 ### Interactive Programming
 - `IO` is an built-in type

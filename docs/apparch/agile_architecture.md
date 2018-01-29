@@ -22,6 +22,8 @@
 - Artifact: Welche Dokumente / Systeme sind betroffen?
 - **WICHTIG**: Response Measure: Wie wird das Resultat gemessen? Was muss diese Messung erfüllen?
 
+![](img/qas_template.png)
+
 ## User Story Template
 - User STories ergänzen mit "to achieve this goal, ..."
 - NFRs und andere messbare Ziele
