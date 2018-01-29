@@ -5,9 +5,8 @@
 - Candidate Components sind logische Komponenten der Architektur, die ähnliche Verantwortlichkeiten zusammen fassen
 - Implementation Components sind aus dem Development Viewpoint, dies sind die konkreten Implementation mit deren Interfaces
 - Bei der Architektur geht es auch um den Fluss, d.h. um das Verhalten des Systems, nicht nur deren Struktur
-
 - *Component Interaction Diagrams* sind UML Sequenzdiagramme, die das Zusammenspiel zwischen mehreren Komponenten zeigen
-- 
+
 ## Container Patterns
 
 ### Plugin
